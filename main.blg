@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+The style file: ieeetr.bst
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+Database file #1: Bibliography.bib
+Warning--empty journal in jacob2015digital
+You've used 42 entries,
+            1876 wiz_defined-function locations,
+            746 strings with 11222 characters,
+and the built_in function-call counts, 12737 in all, are:
+= -- 1339
+> -- 438
+< -- 0
++ -- 164
+- -- 122
+* -- 882
+:= -- 1731
+add.period$ -- 46
+call.type$ -- 42
+change.case$ -- 38
+chr.to.int$ -- 0
+cite$ -- 43
+duplicate$ -- 671
+empty$ -- 1156
+format.name$ -- 122
+if$ -- 3152
+int.to.chr$ -- 0
+int.to.str$ -- 42
+missing$ -- 45
+newline$ -- 133
+num.names$ -- 42
+pop$ -- 104
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 517
+stack$ -- 0
+substring$ -- 966
+swap$ -- 328
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 133
+width$ -- 44
+write$ -- 435
+(There was 1 warning)
