@@ -92,6 +92,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % INTRODUCTION %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\parskip}{0mm}
 
 \section{Introduction}
 
@@ -116,12 +117,12 @@ Because of the relationship of the mechanical properties of the nucleus with cel
  The principle shared by these techniques is the determination of the mechanical properties of the nucleus by using either a single cell or a single nucleus which is perturbed except for microreology. Based on the study of these techniques, a new technique is proposed, nuclear elastography, which shares the measurement of the mechanical properties of the nucleus with an external force applied by beads, as in microreology, but without introducing them into the nucleus. 
  
  \newpage
+ 
+ \setlength{\parskip}{0mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{The use of waves}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\setlength{\parskip}{0mm}
 
 The new technique currently under development, called nuclear elastography, takes its name from its similarity to elastography, a technique that measures the stiffness of tissues by propagating mechanical waves \cite{gennisson2013ultrasound}. In this project, to interrogate the nucleus, we will use the propagation of mechanical waves across the nuclear structure.
 
@@ -131,11 +132,11 @@ To understand why a mechanical wave is useful in the new technique, it is necess
 
 Here, it is proposed the use of sound waves propagating through of the chromatin to “visualise” its internal organisation and characterise its mechanical status.
 
+\setlength{\parskip}{0mm}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Indentation with optical tweezers}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\setlength{\parskip}{0mm}
 
 The induction of waves into the cell nucleus and their detection once they have passed through the nucleus requires the use of equipment capable of moving small objects that act as force carriers and is able to measure the force of the wave once it has passed through the nucleus. 
 
@@ -149,11 +150,11 @@ The concept of optical trapping as a mechanical reporter is insightful \cite{ash
 
 By means of an optical trap, it is set a shaking bead placed out of the nucleus to impinge a sound field as a propagation front wave travelling into the nucleus; the trap performing this task is referred to as a shaker trap (ST). Then, it is used as a single trap for detecting wave fading caused by the rigidity of the granular chromatin; this trap is referred to as a tactile trap (TT). Nevertheless, the measured signal by the TT will be very small, so it can be masked by environmental noise. 
 
+\setlength{\parskip}{0mm}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Data analysis}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\setlength{\parskip}{0mm}
 
 Data obtained from the sensors has environmental noise and the method to remove it is to use a filter. There are different filters depending on the linearity of the model, the assumed distribution and the computational cost that can be assumed. 
 
@@ -169,13 +170,14 @@ Thus, by using the extended Kalman filter coupled with a wave model for predicti
 
 Pre-filtering the noise in the captured signal is important, as the extended Kalman filter can filter signals with high-frequency noise but not low-frequency noise, as it converges to the estimated parameters before removing the low-frequency noise. In addition, filtering out high-frequency noise results in better parameter estimation, as the estimated state will be easier to achieve.
 
+\setlength{\parskip}{0mm}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{New sensor design}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\setlength{\parskip}{0mm}
-
-Therefore, due to the relationship between the mechanical properties of the nucleus and the cell cycle and some diseases, such as cancer, it has been decided to look for a new technique to determine them. Thus, a new sensor has been designed to determine the mechanical properties of the cell nucleus. For this purpose, previous techniques have been studied, concluding in the use of optical tweezing together with the extended Kalman filter coupled with a wave model. In addition, to improve the estimation of the extended Kalman filter, the data obtained with the optical tweezers were filtered with a low-pass and a high-pass finite impulse response filter. Three approaches have been used for this purpose. 
+Therefore, due to the relationship between the mechanical properties of the nucleus and the cell cycle and some diseases, such as cancer, it has been decided to look for a new technique to determine them. Thus, a new sensor has been designed to determine the mechanical properties of the cell nucleus. For this purpose, previous techniques have been studied, concluding in the use of optical tweezing together with the extended Kalman filter coupled with a wave model. In addition, to improve the estimation of the extended Kalman filter, the data obtained with the optical tweezers were filtered with a low-pass and a high-pass finite impulse response filter. Three approaches have been used for this purpose.
+ 
 \setlength{\parskip}{4mm}
 
 The first approach is the experimental design, in which different cell types have been used to obtain real data with optical tweezers. On one side, it has been worked with phagocytosis of beads in HeLa cells \cite{gey1952tissue} to obtain data with alive cells and on the other side with isolated nuclei of Jurkat cells \cite{schneider1977characterization, gioia2018genome} and isolated nuclei of Jurkat cells incubated with the drug jasplakinolide, so that it can be checked that the algorithm works with different cell parameters and detects the difference between both \cite{andersen2002directed}, since the druga promotes the polymerization  of actin \cite{holzinger2001jasplakinolide}.
@@ -185,7 +187,7 @@ The second approach is the computational design in which the extended Kalman fil
 The third approach is to validate that the developed sensor works using the developed algorithm with the real data obtained. 
 
 \newpage
-
+\setlength{\parskip}{0mm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % METHODS %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -208,13 +210,15 @@ An algorithm was developed to analyse the real data. First, a preprocessing syst
 
 Once the real data were obtained and the algorithms were verified to work, the sensor validation was started by inputting the real data instead of the simulated data into the algorithms. 
 
+\setlength{\parskip}{0mm}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Experimental desing}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\setlength{\parskip}{0mm}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Jurkat cells, cell fragmentation and incubation with drug}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 In this study, human Jurkat cells have been used,  which is a human CD4 T-lymphocyte leukaemia cell line \cite{schneider1977characterization}. They were cultured in a humidified atmosphere with 5\% of CO$_{2}$ and 95\% of air at 37ºC. The medium for Jurkat cells was composed of 90\% RPMI 1640 with L-Glutamine (Sigma-Aldrich/USA) and 10\% FBS (Sigma-Aldrich/USA).
 
@@ -222,56 +226,147 @@ In this study, human Jurkat cells have been used,  which is a human CD4 T-lympho
 
 For the isolation of Jurkat cell nuclei, 3ml of the indicated medium with a cell concentration of 3,1$\cdot$10$^5$cells/ml were used. First, the samples were centrifuged in the thermo scientific Micro 21R centrifuge at 2000rpm over 5 minutes. Then, the sobrenadant was discarded and the pellet was resuspended in 300$\mu$l buffer A and 3$\mu$l protease inhibitor cocktail (Sigma-Aldrich/USA) were added. The sample was incubated on ice for 5 minutes and subsequently centrifuged at 8000rpm for 5 minutes at 4ºC. The sobrenadant was removed and the pellet was resuspended with 300$\mu$l buffer A and 3$\mu$l protease inhibitors. It was incubated for 5 minutes on ice and then centrifuged for 5 minutes at 8000rpm at 4ºC in the same centrifuge. Finally, the sobrenadant was removed and the nucleus pellet was resuspended in TKM buffer. This was the stock solution of the cell nucleus.
 
-For experiments with drug-incubated nuclei, 3ml of nuclei extracted in TKM solution were used. These 3ml were separated into two samples of 1,5ml each. One of these samples was the control and the other sample with nuclei affected by the drug jasplakinolide. In the sample whose nuclei were affected by jasplakinolide, the nuclei were incubated with the drug at a concentration of 10$\mu$g/ml for 30 minutes at room temperature. To obtain this concentration, 11,11$\mu$l of jasplakinolide at a concentration of 100$\mu$g/ml was added to the 1,5ml sample. The control sample was added 11.11$\mu$l of DMSO, as the jasplakinolide drug was dissolved in this organic solvent, so if it affected the nucleus properties it would not have been attributed to jasplakinolide. The control sample was incubated for 30 minutes as well. Subsequently, both samples were centrifuged with the thermo scientific Micro 21R centrifuge at 8000rpm at 4ºC for 5 minutes. Finally, the sobrenadant was removed and the pellet was resuspended with 150$\mu$l of TKM. Both samples were stock solutions of nuclei, one sample affected by the drug and the other the control.
+\newpage
+
+For experiments with drug-incubated nuclei, 3ml of nuclei extracted in TKM solution were used. These 3ml were separated into two samples of 1,50ml each. One of these samples was the control and the other sample with nuclei affected by the drug jasplakinolide. In the sample whose nuclei were affected by jasplakinolide, the nuclei were incubated with the drug at a concentration of 10$\mu$g/ml for 30 minutes at room temperature. To obtain this concentration, 11,11$\mu$l of jasplakinolide at a concentration of 100$\mu$g/ml was added to the 1,50ml sample. The control sample was added 11.11$\mu$l of DMSO, as the jasplakinolide drug was dissolved in this organic solvent, so if it affected the nucleus properties it would not have been attributed to jasplakinolide. The control sample was incubated for 30 minutes as well. Subsequently, both samples were centrifuged with the thermo scientific Micro 21R centrifuge at 8000rpm at 4ºC for 5 minutes. Finally, the sobrenadant was removed and the pellet was resuspended with 150$\mu$l of TKM. Both samples were stock solutions of nuclei, one sample affected by the drug and the other the control.
 
 \setlength{\parskip}{0mm}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{HeLa cells and incubation with beads}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Human HeLa cells have been used, which is a human cervical cancer line \cite{gey1952tissue}. They were cultured in a humidified atmosphere with 5\% of CO$_{2}$ and 95\% of air at 37ºC. The medium for HeLa cells was composed of 90\% DMEM (GIBCO/UK) and 10\% FBS (GIBKO/UK).
 
 \setlength{\parskip}{4mm}
 
-Different methodologies have been used to incubate HeLa cells with beads. First, a cell-culture treated multidishes of 24 dishes was used, and 500$\mu$l of DMEM (GIBCO/UK) and 10$\mu$l of a concentration 3,95 $\times$ 10$^{5}$ cells/ml were added. After 48h, the medium was removed and each dish was filled with new medium and a different percentage of beads. 
+Different methodologies have been used to incubate HeLa cells with beads. First, a cell-culture treated multidishes of 24 dishes was used, and 500$\mu$l of DMEM (GIBCO/UK) and 10$\mu$l of a concentration 3,95 $\times$ 10$^{5}$ cells/ml were added. After 48h, the medium was removed and each dish was filled with new medium and a different percentage of beads of 2.0$\mu$m (Sigma-Aldrich/DE). In the control no beads were added, only 500$\mu$l DMEM, in another dish 500$\mu$l of DMEM with 0,05mg/ml of beads was added and in another one 500$\mu$l of DMEM with 0,1mg/ml of beads was added. After 24 hours, the medium was removed and the cells were washed. For this purpose, 500$\mu$l of PBS with pH 7.4 (GIBKO/UK) was added to each dish and after 3 minutes, PBS was removed and the process was repeated three times for each dish. When the PBS was removed for the last time, the cells were stored with 500$\mu$l of DMEM. These cells were then ready for use. 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Identation of cell nucleus with optical tweezers}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Another methodology used was to use individual sterile 60mm X 20mm petri dishes. Cover glasses of 20 mm x 20 mm were inserted into the petri dishes, and here the cells were incubated. 200$\mu$l of DMEM with a concentration of 3,95 cells/ml was added to each plate and 1,50ml of DMEM. After 24 hours, the medium was removed and each dish was filled with new medium and a different percentage of 2.0$\mu$m beads, the control one had no beads and was filled with 1,50ml of DMEM and the other dishes were filled with 0,05mg/ml of beads solution in DMEM. After 24 hours, the medium was removed and the cells were washed, 1,50ml of PBS with pH 7.4 (GIBKO/UK) was added to each dish and after 3 minutes, PBS was removed and the process was repeated three times for each dish. When the PBS was removed for the last time, the cells were stored with 1,50ml of DMEM. These cells were ready.
 
 \setlength{\parskip}{0mm}
 
-To perform the indentation on the isolated cell nucleus, a dilution of the previously isolated nuclei was performed. To obtain 100$\mu$l of final solution, 65$\mu$l of the isolated nuclei stock, 30$\mu$l of TKM buffer and 5$\mu$l of a 1:100 solution (Sigma-Aldrich/DE) of 3mm beads were needed.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Identation of cell nucleus with optical tweezers}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\setlength{\parskip}{4mm}
-
-\begin{wrapfigure}{l}{0.5\linewidth}
-    \centering
-    \includegraphics[width=0.45\textwidth]{figures/jurkat_nucleus_waves.png}
-    \caption{Isolated Jurkat cell nucleus with two beads (shaker and tactile beads) of size 3mm. The blue lines represent the ideal wave propagation through the nucleus.}
-    \label{fig:myfig2}
+\begin{wrapfigure}{l}{0.50\linewidth}
+	\centering
+	\includegraphics[width=0.45\textwidth]{figures/jurkat_nucleus_waves.png}
+	\caption{Isolated Jurkat cell nucleus with two beads (shaker and tactile beads) of size 3mm. The blue lines represent the ideal wave propagation through the nucleus.}
+	\label{fig:myfig2}
 \end{wrapfigure}
 
 The equipment used were an inverted microscope (Nikon Eclipse 2000Ti) connected with an external light and optical tweezers (Sensocell) coupled with a force sensor. A fast camera (FASCAM SA3-Photron) was used to visualise the sample under the microscope, with which the images presented in the paper were also taken.
 
-To view it with optical tweezers, a square of double-sided tape with a square cut out inside was cut out. This piece of tape was stuck on a 76 x 26 mm slide (Deltalab/ES) and it was placed on the internal square 40$\mu$l of nuclei solution with beads and a 22 x 40 mm cover glass (Deltalab/ES) was placed on the top.
+\setlength{\parskip}{4mm}
 
-The sample was placed on the microscope with optical tweezers attached to the cover glass at the bottom. The sample was focused and a rounded nucleus with no traces of the rest of the cell was looked for. Then, two beads were picked up with optical tweezers and placed on either side of the nucleus. Finally, one bead was oscillated and the position, force and tramp power at each time was collected by both other beads.
+To view it with optical tweezers, a square of double-sided tape with a square cut out inside was cut out. This piece of tape was stuck on a 76 x 26 mm slide (Deltalab/ES) and the cover glass was placed on the top. The sample was placed in the optical tweezers with the glass cover on the bottom.
+
+\setlength{\parindent}{0pt}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\textbf{Isolated Jurkat cell nucleus}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+To perform the indentation on the isolated Jurkat cell nucleus, a dilution of the previously isolated nuclei was performed. To obtain 100$\mu$l of final solution, 65$\mu$l of the isolated nuclei stock, 30$\mu$l of TKM buffer and 5$\mu$l of a 1:100 solution of 3$\mu$m beads (Sigma-Aldrich/DE) were needed. 40$\mu$l of nuclei solution with beads were poured in the double-sided tape square of the slide and it was covered by a 22 x 40 mm cover glass (Deltalab/ES).
+
+\setlength{\parindent}{8pt}
+
+The sample was focused and a rounded nucleus with no traces of the rest of the cell was looked for. Then, two beads were picked up with optical tweezers and placed on either side of the nucleus. Finally, one bead was oscillated and the position, force and tramp power at each time was collected by both other bead.
+
+\setlength{\parindent}{0pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\textbf{HeLa cells}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+To perform the indentation of HeLa cells there were two ways depending on the incubation method. If HeLa cells have been incubated in cell-culture treated multidishes, the cells have had to be detached (as they are adherent cells) and the dilution of cells with culture medium was placed inside the square of tape. If, on the other hand, they were incubated in individual petri dishes, the cover glas was picked up with tweezers and placed on top of the square of double-sided tape. With these cells, the aim was to find a cell with two embedded beads on opposite sides of the nucleus. Traps were placed on the beads and one of the beads was oscillated while the other one collected the signal after passing through the nucleus.
+
+\setlength{\parindent}{8pt}
 
 \setlength{\parskip}{0mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Wave model and implementation}
+\subsection{Computational desing}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-To interpret the data obtained from the optical tweezers, a wave system was modelled in Matlab. For this purpose, the wave equation with damping and external force was used as a starting point \cite{achenbach2012wave, d'alembert_1749}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Preprocessing of the signal}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The data obtained in the experiment required filtering as the installation in which they were obtained was not isolated. In addition to noise, the signal required off-set correction. 
+
+\setlength{\parskip}{4mm}
+
+The purpose of this first preprocessing was not only the preparation of my data, but the development of a script to process all data coming from the optical tweezers. For this reason, the functions have been realised in such a way that it was understandable and segmented, and the only thing that was needed to be entered in the script was the address of the data.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/esquema_preprocesado_metodos_1.png}
+	\caption{Block diagram of data preprocessing}
+	\label{fig:esquema_preprocesado}
+\end{figure}
+
+To process the data, low-pass and high-pass FIR filters were performed, checking that they worked properly by performing a Fourier transform before and after filtering. 
+
+\setlength{\parskip}{8mm}
+\setlength{\parindent}{0pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Obtain the data and its information and set the off-set}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\parskip}{0mm}
+
+Firstly, the address at which the data was stored on the computer was used to obtain both the data and information about the data. Information about this data was obtained from the name of the folder in which it was stored. This was important as it indicated which direction of identation and frequency was used in the experiment and the cell nucleus number. These parameters were interesting for the analysis.
+
+\setlength{\parindent}{8pt}
+\setlength{\parskip}{4mm}
+
+The offset of the data was corrected by averaging the values and subtracting that score from each of the values.
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Low and high pass finite impulse response filter}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\parskip}{0mm}
+
+The signals captured by the sensors have noise from different sources, high-frequency noise has electromagnetic origin, while low-frequency noise has mechanical origin. A low pass and high pass finite impulse response filter were implemented to remove noise from the signal captured by the sensor \cite{mondal2012novel}. 
+
+\setlength{\parskip}{4mm}
+\setlength{\parindent}{8pt}
+
+A high pass FIR filter has been used to reduce low-frequency noise, while low pass FIR filter reduced the noise of high frequencies. For this purpose, the matlab $desingfilt$ function has been used \cite{jacob2015digital}, in which it has been indicated whether it is a high pass or low pass FIR filter with a degree 5, with a passband ripple of 0.2dB and the frequencies filtered are those greater than 5Hz of the frequency with which the bead is identating and less than 1Hz if the frequency with which it has been identated is 2Hz, if the frequency with which it has been identated is less than 7Hz, the frequencies less than 2Hz are filtered, and if it is identated with a frequency greater than 7Hz, all frequencies 5Hz lower than the one used are filtered.
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Fast Fourier transform}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\parskip}{0mm}
+
+To verify before and after filtering that the filtering had been performed correctly, the fast Fourier transform was made. The Fourier transform obtains the spectrum of frequencies of a signal. This makes possible to find which frequencies are associated with the noise of a signal, so that it is possible to know which frequencies should be eliminated or which are not recommended to work with \cite{de2001transformada}.
+
+\setlength{\parskip}{4mm}
+\setlength{\parindent}{8pt}
+
+To perform the fast Fourier transform in Matlab, the $fft$ function has been used, and as this function reflects the punctual noise and not only the permanent noise in the experiment, the average of the Fourier transform has been performed \cite{shabaninezhad2021matlab}. For this purpose, a series of data were taken in which there are two cycles of oscillations, and these values were averaged. Subsequently, each value was divided by the number of total values, thus the spectrum P2 was obtained. The spectrum P1 is computed from P2 and the length of the signal. Finally, the frequency spectrum is defined and the amplitude of the frequencies is plotted \cite{FourierTransform, frigo1998fftw}.
+
+\setlength{\parskip}{0mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Wave model and implementation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+To interpret the results obtained from the optical tweezers, a one-dimensional polar wave model was implemented in Matlab. This makes the computational cost lower than with a two-wave model, and the energy dispersion is more representative than in a one dimension model with Cartesian coordinates. This model was coupled with the Kalman filter, so in order to verify that it worked, a two-dimensional wave model in Cartesian coordinates was also implemented, obtaining simulated values with which to perform the test. For this purpose, the wave equation with transmitting velocity $c$, damping $d$ and external force $\delta_{Fext}$, was used as a starting point \cite{achenbach2012wave, d'alembert_1749}.
 
 \setlength{\parskip}{4mm}
 
 \begin{equation} \label{eqn:wave_model}
    \frac{\partial^{2}u}{\partial t^{2}} = c^{2}\nabla^{2}u + d\frac{\partial u}{\partial t} + \delta_{Fext}
 \end{equation}
-
-It can be understood from this equation how an induced wave is transmitted with an external force $\delta_{Fext}$ in a medium with a transmitting velocity $c$ and a damping $d$, where $u$ indicates the spatial change over the initial position.
 
 The wave equation has been solved by the finite difference method \cite{petter2017finite} with Neumann boundary conditions \cite{mathews2000metodos}. The approximation of some terms was carried out using the finite difference method in the following way:
 
@@ -301,16 +396,70 @@ The force was defined by the following equation:
     \delta_{Fext} = Asin(wt) = Asin(f2\pi t)
 \end{equation}
 
-The amplitude was noted as $A$, the angular velocity as $w$ and the time as $t$, furthermore the angular velocity was replaced by the frequency $f$ multiplied by $2\pi$.
-
-To make an initial approximation with simulated data, a two-dimensional wave model and a one-dimensional wave model were implemented. Thus, the two-dimensional model was designed to obtain simulated data and the one-dimensional model was used to analyse both simulated and real values.
+The amplitude was noted as $A$, the angular velocity as $w$ and the time as $t$, furthermore the angular velocity was replaced by the frequency $f$ multiplied by $2\pi$. The implementation of the wave model has been carried out according to the following procedure.
 
 \setlength{\parindent}{0pt}
 
 \setlength{\parskip}{8mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\large{\textbf{Two-dimensional wave model}}
+\textbf{One-dimensional wave model}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\normalsize 
+
+\setlength{\parskip}{0mm}
+
+The wave equation (\ref{eqn:wave_model}) was solved in polar coordinates with the Neumann boundary condition and the finite difference method on a node grid in one dimension. 
+
+\setlength{\parindent}{8pt}
+\setlength{\parskip}{4mm}
+
+The squared gradient of u, $\nabla^{2}u$, was obtained as follows.
+
+\begin{equation} \label{eqn:nabla2u1d}
+	\nabla^{2}u = \frac{\partial^{2}u}{\partial r^{2}} + \frac{1}{r} \times \frac{\partial u}{\partial r} + \frac{1}{r^{2}} \times \frac{\partial ^{2} u}{\partial \theta^{2}}
+\end{equation}
+
+In the equation \ref{eqn:nabla2u1d}, $A$ was a matrix obtained from the equation \ref{eqn:deltau_deltat2} obtained by the finite difference method taking into account that in this case, since it has been solved in polar coordinates, the parameter $x$ is $r$. Thus it was resolved as:
+
+\begin{equation} \label{eqn:nabla2u1d_2}
+	\nabla^{2}u = \frac{1}{r} A_{2Da} + \frac{1}{r^{2}} A_{2Db}
+\end{equation}
+
+Matrix $A_{2Da}$ and matrix $A_{2Db}$ for a one-dimensional node network with three nodes were defined as:
+
+\begin{equation} \label{eqn:matrixA_2Da}
+	A_{2Da} = 
+	\begin{pmatrix}
+		-2 & 1 & 0\\
+		2 & -2 & 2\\
+		0 & 1 & -2
+	\end{pmatrix}
+\end{equation}
+
+\begin{equation} \label{eqn:matrixA_2Db}
+	A_{2Db} = 
+	\begin{pmatrix}
+		-1 & 1/2 & 0\\
+		0 & -1/2 & 1/3\\
+		0 & 0 & -1/3
+	\end{pmatrix}
+\end{equation}
+
+Once the parameters were substituted into the initial wave equation, the two final equations were obtained, which have been implemented to obtain the one-dimensional polar wave model in Matlab.
+
+\begin{equation} \label{eqn:uk+1}
+	u^{k + 1} = u^{k} + \Delta t v^{k} + \Delta t^{2} \delta_{Fext}
+\end{equation}
+
+\begin{equation} \label{eqn:vk+1}
+	v^{k + 1} = v^{k}(1 + \Delta t d) + \frac{\Delta t c^{2} u^{k}}{\Delta r^{2}} (A_{2Da} + A_{2Db}) +  \Delta t \delta_{Fext}
+\end{equation}
+
+\setlength{\parindent}{0pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Two-dimensional wave model}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \normalsize 
@@ -337,8 +486,6 @@ In the equation \ref{eqn:nabla2u}, $A_{2D}$ is the matrix that indicates the rel
             \emptyset & 2I & D_{2}
     \end{pmatrix}
 \end{equation}
-
-\newpage
 
 Matrix $A_{2D}$ is composed of three types of matrices. For a nine-node square network, the matrix $D_{1}$ would be as follows.
 
@@ -384,178 +531,19 @@ Matrix $\emptyset$ was assigned to a null matrix, and for a nine-node square net
     \end{pmatrix}
 \end{equation}
 
-\newpage
-
 Once the terms in the wave equation have been replaced by their approximations, the final equation was obtained and this solved wave equation was implemented in Matlab to obtain data from a simulated two-dimensional wave.
 
 \begin{equation} \label{eqn:uk+1}
    u^{k + 1} = \frac{1}{1 - d\Delta t} \left[u^{k} \left(2+ \frac{\Delta t^{2} c^{2} A_{2D}}{\Delta x{2}} - \Delta t d\right) + \Delta t^{2} \delta_{Fext} - u^{k - 1}\right]
 \end{equation}
 
-\setlength{\parindent}{0pt}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\large{\textbf{One-dimensional wave model}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\normalsize 
-
-\setlength{\parskip}{0mm}
-
-The wave equation (\ref{eqn:wave_model}) was solved in polar coordinates with the Neumann boundary condition and the finite difference method on a node grid in one dimension. 
-
-\setlength{\parindent}{8pt}
-\setlength{\parskip}{4mm}
-
-The squared gradient of u, $\nabla^{2}u$, was obtained as follows.
-
-\begin{equation} \label{eqn:nabla2u1d}
- \nabla^{2}u = \frac{\partial^{2}u}{\partial r^{2}} + \frac{1}{r} \times \frac{\partial u}{\partial r} + \frac{1}{r^{2}} \times \frac{\partial ^{2} u}{\partial \theta^{2}}
-\end{equation}
-
-In the equation \ref{eqn:nabla2u1d}, $A$ was a matrix obtained from the equation \ref{eqn:deltau_deltat2} obtained by the finite difference method taking into account that in this case, since it has been solved in polar coordinates, the parameter $x$ is $r$. Thus it was resolved as:
-
-\begin{equation} \label{eqn:nabla2u1d_2}
- \nabla^{2}u = \frac{1}{r} A_{2Da} + \frac{1}{r^{2}} A_{2Db}
-\end{equation}
-
-Matrix $A_{2Da}$ and matrix $A_{2Db}$ for a one-dimensional node network with three nodes were defined as:
-
-\begin{equation} \label{eqn:matrixA_2Da}
-    A_{2Da} = 
-        \begin{pmatrix}
-            -2 & 1 & 0\\
-            2 & -2 & 2\\
-            0 & 1 & -2
-    \end{pmatrix}
-\end{equation}
-
-\begin{equation} \label{eqn:matrixA_2Db}
-    A_{2Db} = 
-        \begin{pmatrix}
-            -1 & 1/2 & 0\\
-            0 & -1/2 & 1/3\\
-            0 & 0 & -1/3
-    \end{pmatrix}
-\end{equation}
-
-Once the parameters were substituted into the initial wave equation, the two final equations were obtained, which have been implemented to obtain the one-dimensional polar wave model in Matlab.
-
-\begin{equation} \label{eqn:uk+1}
-    u^{k + 1} = u^{k} + \Delta t v^{k} + \Delta t^{2} \delta_{Fext}
-\end{equation}
-
-\begin{equation} \label{eqn:vk+1}
-    v^{k + 1} = v^{k}(1 + \Delta t d) + \frac{\Delta t c^{2} u^{k}}{\Delta r^{2}} (A_{2Da} + A_{2Db}) +  \Delta t \delta_{Fext}
-\end{equation}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\large{\textbf{Set the parameters of the wave}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\normalsize 
-\setlength{\parskip}{0mm}
-
-To obtain the simulated data, it was necessary to have a set of parameters to which the system converges, so there were many possibilities. Thus, it has been presented how to obtain a possible set of parameters which were the ones estimated for the cell nucleus wave transmission experiment.
-
-\setlength{\parskip}{4mm}
-
-The initial step was to set a differential of time $dt$ and a differential of space $dx$. The differential of space, $dx$ or $dr$ for polar coordinates simulation has been calculated as follows:
-
-\begin{equation} \label{eqn:dx}
-    dx = \frac{l}{n}
-\end{equation}
-
-The diameter of the cell nucleus was set as $l/2$. Since the two-dimensional wave model was solved on a square grid of nodes, in which the total number of nodes was $N$, the parameter $n$ was set as:
-
-\newpage
-
-\begin{equation} \label{eqn:n}
-    n = \sqrt{N}
-\end{equation}
-
-For one-dimensional simulations, the number of nodes $N$ was the parameter $n$. The differential time differential value $dt$ was determined using the position differential of position, $dx$ and the transmission velocity of the medium, $c$.
-
-\begin{equation} \label{eqn:dt}
-    dt = \frac{dx}{c}10^{3}
-\end{equation}
-
-For this purpose, it was necessary to determine the transmission rate in the cell nucleus as shown below:
-
-\begin{equation} \label{eqn:c}
-    c = \sqrt{\frac{E}{p}}
-\end{equation}
-
-The parameter $E$ is Young's modulus, which can be obtained from the force contributed in an area, $\sigma$, and the proportional deformation of that area, $\epsilon$. The value of the initial Young's modulus has not been calculated in this work and depends on another project of the group. When that project is completed, the value obtained in this study will be used.
-
-The parameter $p$ is the density, which has been estimated as the density of water \cite{patterson1994measurement}. 
-
-The initial damping value has not been estimated in this project and when it has been obtained, it can be used in this model.
-
-\newpage
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Preprocessing of the signal}
+\subsubsection{Extended Kalman filter}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \setlength{\parskip}{0mm}
 
-The data obtained in the experiment required filtering as the installation in which they were obtained was not isolated. In addition to noise, the signal required off-set correction. 
-
-\setlength{\parskip}{4mm}
-
-The purpose of this first preprocessing was not only the preparation of my data, but the development of a script to process all data coming from the optical tweezers. For this reason, the functions have been realised in such a way that it was understandable and segmented, and the only thing that was needed to be entered in the script was the address of the data.
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=1\textwidth]{figures/esquema_preprocesado_metodos_1.png}
-  \caption{Block diagram of data preprocessing}
-  \label{fig:esquema_preprocesado}
-\end{figure}
-
-To process the data, low-pass and high-pass FIR filters were performed, checking that they worked properly by performing a Fourier transform before and after filtering. 
-
-\setlength{\parskip}{4mm}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\large{\textbf{Obtain the data and its information and set the off-set}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\normalsize
-
-Firstly, the address at which the data was stored on the computer was used to obtain both the data and information about the data. Information about this data was obtained from the name of the folder in which it was stored. This was important as it indicated which direction of identation and frequency was used in the experiment and the cell nucleus number. These parameters were interesting for the analysis.
-
-The offset of the data was corrected by averaging the values and subtracting that score from each of the values.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\large{\textbf{Low and high pass finite impulse response filter}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\normalsize
-\setlength{\parskip}{0mm}
-
-The signals captured by the sensors have noise from different sources, high-frequency noise has electromagnetic origin, while low-frequency noise has mechanical origin. A low pass and high pass finite impulse response filter were implemented to remove noise from the signal captured by the sensor \cite{mondal2012novel}. 
-
-\setlength{\parskip}{4mm}
-
-A high-pass FIR filter has been used to reduce low-frequency noise, while low-pass FIR filter reduced the noise of high frequencies. For this purpose, the matlab $desingfilt$ function has been used \cite{jacob2015digital}, in which it has been indicated whether it is a high-pass or low-pass FIR filter with a degree 5, with a passband ripple of 0.2dB and the frequencies filtered are those greater than 5Hz of the frequency with which the bead is identating and less than 1Hz if the frequency with which it has been identated is 2Hz, if the frequency with which it has been identated is less than 7Hz, the frequencies less than 2Hz are filtered, and if it is identated with a frequency greater than 7Hz, all frequencies 5Hz lower than the one used are filtered.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\large{\textbf{Fast Fourier transform}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\normalsize
-
-\setlength{\parskip}{0mm}
-
-To verify before and after filtering that the filtering had been performed correctly, the fast Fourier transform was made. The Fourier transform obtains the spectrum of frequencies of a signal. This makes possible to find which frequencies are associated with the noise of a signal, so that it is possible to know which frequencies should be eliminated or which are not recommended to work with \cite{de2001transformada}.
-
-\setlength{\parskip}{4mm}
-
-To perform the fast Fourier transform in Matlab, the $fft$ function has been used, and as this function reflects the punctual noise and not only the permanent noise in the experiment, the average of the Fourier transform has been performed \cite{shabaninezhad2021matlab}. For this purpose, a series of data were taken in which there are two cycles of oscillations, and these values were averaged. Subsequently, each value was divided by the number of total values, obtaining its absolute value, thus the bilateral spectrum P2 was obtained. The unilateral spectrum P1 based on P2 and the length of the signal has also been calculated. Finally, the frequency spectrum is defined and the amplitude of the frequencies is plotted.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Extended Kalman filter}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\setlength{\parskip}{0mm}
-
-The filtered data with the lowest possible level of high and low frequency noise had been analysed with the extended Kalman filter. The extended Kalman filter has two parts, the predictor part and the corrector part. The prediction equations are as follows:
+The filtered data with the lowest possible level of high and low frequency noise had been analysed with the extended Kalman filter. The extended Kalman filter has two parts as shown in the figure \ref{fig:kalman_esq}, the predictor part and the corrector part. The prediction equations are as follows:
 
 \setlength{\parskip}{4mm}
 
@@ -570,6 +558,13 @@ The filtered data with the lowest possible level of high and low frequency noise
 
 In these equations, $\hat{Z_{k}^{-}}$ is the a priori estimated state, the one obtained through the function defining system ,$M$, the previous a priori estimated state $\hat{Z_{k-1}}$ and other disturbances that affect the system, $D$, which in these case was the external force produced by the bead.
 The covariance of the a priori estimated state, $P_{k}^{-}$, is obtained through the Jacobian matrix defining the system $J_{t}$ and the covariance matrix of the a posteriori estimated state of the a priori state, $P_{k-1}$.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.65\textwidth]{figures/esquema_extended_kalman_filter.png}
+	\caption{Block diagram of extended Kalman filter}
+	\label{fig:kalman_esq}
+\end{figure}
 
 The equations that define the correction in the Extended Kalman filter are as follows:
 
@@ -588,6 +583,50 @@ The correction of the extended Kalman filter is controlled by the Kalman gain, $
 These equations have been implemented in Matlab, where the function that defined the system was the wave equation in one dimension in polar coordinates as in the equation \ref{eqn:vk+1} and the force has been defined in the equation \ref{eqn:force}. 
 
 The problem with this implementation of the extended Kalman filter is that it is a corrector, i.e., it is necessary to have an a priori value. The value of the initial position is 0 and then it is estimated with the model to which the filter has been coupled, however, it is necessary to determine an a priori value of the transmission velocity $c$ and the damping $d$. It is therefore necessary to analyse the performance of the extended Kalman filter in terms of how different the a priori values $c$ and $d$ are from the true value.
+
+\setlength{\parskip}{0mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Validation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Obtain the real parameters}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+To obtain the simulated data, it was necessary to have a set of parameters to which the system converges, so there were many possibilities. Thus, it has been presented how to obtain a possible set of parameters which were the ones estimated for the cell nucleus wave transmission experiment.
+
+\setlength{\parskip}{4mm}
+
+The initial step was to set a differential of time $dt$ and a differential of space $dx$. The differential of space, $dx$ or $dr$ for polar coordinates simulation has been calculated as follows:
+
+\begin{equation} \label{eqn:dx}
+	dx = \frac{l}{n}
+\end{equation}
+
+The diameter of the cell nucleus was set as $l/2$. Since the two-dimensional wave model was solved on a square grid of nodes, in which the total number of nodes was $N$, the parameter $n$ was set as:
+
+\begin{equation} \label{eqn:n}
+	n = \sqrt{N}
+\end{equation}
+
+For one-dimensional simulations, the number of nodes $N$ was the parameter $n$. The differential time differential value $dt$ was determined using the position differential of position, $dx$ and the transmission velocity of the medium, $c$.
+
+\begin{equation} \label{eqn:dt}
+	dt = \frac{dx}{c}10^{3}
+\end{equation}
+
+For this purpose, it was necessary to determine the transmission rate in the cell nucleus as shown below:
+
+\begin{equation} \label{eqn:c}
+	c = \sqrt{\frac{E}{p}}
+\end{equation}
+
+The parameter $E$ is Young's modulus, which can be obtained from the force contributed in an area, $\sigma$, and the proportional deformation of that area, $\epsilon$. The value of the initial Young's modulus has not been calculated in this work and depends on another project of the group. When that project is completed, the value obtained in this study will be used.
+
+The parameter $p$ is the density, which has been estimated as the density of water \cite{patterson1994measurement}. 
+
+The initial damping value has not been estimated in this project and when it has been obtained, it can be used in this model.
 
 \newpage
 

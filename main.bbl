@@ -175,6 +175,29 @@ J.~S. Andersen, C.~E. Lyon, A.~H. Fox, A.~K. Leung, Y.~W. Lam, H.~Steen,
 A.~Holzinger, ``Jasplakinolide,'' {\em Cytoskeleton Methods and Protocols},
   pp.~109--120, 2001.
 
+\bibitem{jacob2015digital}
+T.~Jacob, ``Digital filter design using matlab,'' 2015.
+
+\bibitem{de2001transformada}
+L.~De~la Fraga, ``La transformada discreta de fourier y la transformada
+  r{\'a}pida de fourier,'' 2001.
+
+\bibitem{shabaninezhad2021matlab}
+M.~Shabaninezhad, M.~Awan, and G.~Ramakrishna, ``Matlab package for discrete
+  dipole approximation by graphics processing unit: Fast fourier transform and
+  biconjugate gradient,'' {\em Journal of Quantitative Spectroscopy and
+  Radiative Transfer}, vol.~262, p.~107501, 2021.
+
+\bibitem{FourierTransform}
+M.~Magdowski, ``Example on how to do a discrete fourier transform (fft) and to
+  plot the amplitude and phase spectrum in matlab,'' 2021.
+
+\bibitem{frigo1998fftw}
+M.~Frigo and S.~G. Johnson, ``Fftw: An adaptive software architecture for the
+  fft,'' in {\em Proceedings of the 1998 IEEE International Conference on
+  Acoustics, Speech and Signal Processing, ICASSP'98 (Cat. No. 98CH36181)},
+  vol.~3, pp.~1381--1384, IEEE, 1998.
+
 \bibitem{d'alembert_1749}
 J.~l.~R. d'Alembert, ``Recherches sur la courbe que forme une corde tendue mise
   en vibration,'' {\em Histoire de l'académie royale des sciences et des
@@ -192,18 +215,5 @@ J.~H. Mathews and K.~D. Fink, {\em M{\'e}todos Num{\'e}ricos}.
 \bibitem{patterson1994measurement}
 J.~Patterson and E.~Morris, ``Measurement of absolute water density, 1 c to 40
   c,'' {\em Metrologia}, vol.~31, no.~4, p.~277, 1994.
-
-\bibitem{jacob2015digital}
-T.~Jacob, ``Digital filter design using matlab,'' 2015.
-
-\bibitem{de2001transformada}
-L.~De~la Fraga, ``La transformada discreta de fourier y la transformada
-  r{\'a}pida de fourier,'' 2001.
-
-\bibitem{shabaninezhad2021matlab}
-M.~Shabaninezhad, M.~Awan, and G.~Ramakrishna, ``Matlab package for discrete
-  dipole approximation by graphics processing unit: Fast fourier transform and
-  biconjugate gradient,'' {\em Journal of Quantitative Spectroscopy and
-  Radiative Transfer}, vol.~262, p.~107501, 2021.
 
 \end{thebibliography}
