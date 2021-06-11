@@ -356,9 +356,9 @@ To verify before and after filtering that the filtering had been performed corre
 To perform the fast Fourier transform in Matlab, the $fft$ function has been used, and as this function reflects the punctual noise and not only the permanent noise in the experiment, the average of the Fourier transform has been performed \cite{shabaninezhad2021matlab}. For this purpose, a series of data were taken in which there are two cycles of oscillations, and these values were averaged. Subsequently, each value was divided by the number of total values, thus the spectrum P2 was obtained. The spectrum P1 is computed from P2 and the length of the signal. Finally, the frequency spectrum is defined and the amplitude of the frequencies is plotted \cite{FourierTransform, frigo1998fftw}.
 
 \setlength{\parskip}{0mm}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Wave model and implementation}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 To interpret the results obtained from the optical tweezers, a one-dimensional polar wave model was implemented in Matlab. This makes the computational cost lower than with a two-wave model, and the energy dispersion is more representative than in a one dimension model with Cartesian coordinates. This model was coupled with the Kalman filter, so in order to verify that it worked, a two-dimensional wave model in Cartesian coordinates was also implemented, obtaining simulated values with which to perform the test. For this purpose, the wave equation with transmitting velocity $c$, damping $d$ and external force $\delta_{Fext}$, was used as a starting point \cite{achenbach2012wave, d'alembert_1749}.
 
@@ -594,14 +594,14 @@ The problem with this implementation of the extended Kalman filter is that it is
 \subsubsection{Obtain the real parameters}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-To obtain the simulated data, it was necessary to have a set of parameters to which the system converges, so there were many possibilities. Thus, it has been presented how to obtain a possible set of parameters which were the ones estimated for the cell nucleus wave transmission experiment.
+To validate the system it was necessary to merge the real data obtained with the computational system. To do this it was necessary to establish what the actual values were, which were then introduced into the computational model.
 
 \setlength{\parskip}{4mm}
 
-The initial step was to set a differential of time $dt$ and a differential of space $dx$. The differential of space, $dx$ or $dr$ for polar coordinates simulation has been calculated as follows:
+The initial step was to set a differential of time $dt$ and a differential of space $dx$ and $dr$ for the wave models. The differential of space, $dx$ and $dr$ has been calculated as follows:
 
 \begin{equation} \label{eqn:dx}
-	dx = \frac{l}{n}
+	dx = dr = \frac{l}{n}
 \end{equation}
 
 The diameter of the cell nucleus was set as $l/2$. Since the two-dimensional wave model was solved on a square grid of nodes, in which the total number of nodes was $N$, the parameter $n$ was set as:
@@ -613,10 +613,10 @@ The diameter of the cell nucleus was set as $l/2$. Since the two-dimensional wav
 For one-dimensional simulations, the number of nodes $N$ was the parameter $n$. The differential time differential value $dt$ was determined using the position differential of position, $dx$ and the transmission velocity of the medium, $c$.
 
 \begin{equation} \label{eqn:dt}
-	dt = \frac{dx}{c}10^{3}
+	dt = \frac{dx}{c}
 \end{equation}
 
-For this purpose, it was necessary to determine the transmission rate in the cell nucleus as shown below:
+For this purpose, it was necessary to determine the transmission rate initial for the extended Kalman filter in the cell nucleus as shown below:
 
 \begin{equation} \label{eqn:c}
 	c = \sqrt{\frac{E}{p}}
@@ -626,7 +626,13 @@ The parameter $E$ is Young's modulus, which can be obtained from the force contr
 
 The parameter $p$ is the density, which has been estimated as the density of water \cite{patterson1994measurement}. 
 
-The initial damping value has not been estimated in this project and when it has been obtained, it can be used in this model.
+The initial damping value for the extended kalman filter has not been estimated in this project and when it has been obtained, it can be used in this model.
+
+The force that generated the mechanical wave was obtained from the real data captured by the bead that performs the shakes (shaker trap) and the real change of position was calculated with the data captured by the tactile trap. This trap captured the force of the waves after passing through the nucleus, by using the elastic constant of the trap, $k$, a value obtained experimentally by the optical tweezers, the change of position, $u$, was obtained in the following way:
+
+\begin{equation} \label{eqn:real_desp}
+	u = \frac{\delta_{Fext}}{k}
+\end{equation}
 
 \newpage
 
@@ -638,7 +644,7 @@ The initial damping value has not been estimated in this project and when it has
 \section{Results}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{One-dimension simulation}
+\subsubsection{One-dimension simulation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \setlength{\parskip}{0mm}

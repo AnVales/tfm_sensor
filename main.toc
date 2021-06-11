@@ -14,8 +14,8 @@
 \contentsline {subsubsection}{\numberline {2.2.1}Preprocessing of the signal}{11}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}Wave model and implementation}{13}{subsubsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.3}Extended Kalman filter}{17}{subsubsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.3}Validation}{20}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Obtain the real parameters}{20}{subsubsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3}Validation}{19}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Obtain the real parameters}{19}{subsubsection.2.3.1}%
 \contentsline {section}{\numberline {3}Results}{22}{section.3}%
 \contentsline {subsection}{\numberline {3.1}One-dimension simulation}{22}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Two-dimension simulation}{23}{subsection.3.2}%
