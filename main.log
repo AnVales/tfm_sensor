@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.10)  11 JUN 2021 17:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.10)  12 JUN 2021 13:28
 entering extended mode
 **./main.tex
 (main.tex
@@ -875,7 +875,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
 [6]
-<figures/esquema_trabajo_metodos_2.png, id=276, 583.58025pt x 290.70607pt>
+<figures/esquema_trabajo_metodos_2.png, id=290, 583.58025pt x 290.70607pt>
 File: figures/esquema_trabajo_metodos_2.png Graphic file (type png)
 <use figures/esquema_trabajo_metodos_2.png>
 Package pdftex.def Info: figures/esquema_trabajo_metodos_2.png  used on input l
@@ -915,7 +915,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
 [9]
-<figures/jurkat_nucleus_waves.png, id=299, 569.12625pt x 516.0078pt>
+<figures/jurkat_nucleus_waves.png, id=313, 569.12625pt x 516.0078pt>
 File: figures/jurkat_nucleus_waves.png Graphic file (type png)
 <use figures/jurkat_nucleus_waves.png>
 Package pdftex.def Info: figures/jurkat_nucleus_waves.png  used on input line 2
@@ -960,7 +960,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
 [10 <./figures/jurkat_nucleus_waves.png>]
-<figures/esquema_preprocesado_metodos_1.png, id=306, 536.78543pt x 135.1449pt>
+<figures/esquema_preprocesado_metodos_1.png, id=320, 536.78543pt x 135.1449pt>
 File: figures/esquema_preprocesado_metodos_1.png Graphic file (type png)
 <use figures/esquema_preprocesado_metodos_1.png>
 Package pdftex.def Info: figures/esquema_preprocesado_metodos_1.png  used on in
@@ -1030,7 +1030,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
 [17]
-<figures/esquema_extended_kalman_filter.png, id=387, 312.38707pt x 235.78087pt>
+<figures/esquema_extended_kalman_filter.png, id=401, 312.38707pt x 235.78087pt>
 
 File: figures/esquema_extended_kalman_filter.png Graphic file (type png)
 <use figures/esquema_extended_kalman_filter.png>
@@ -1079,10 +1079,32 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
 [21]
+<figures/jurkat_cell_shape.png, id=431, 426.75435pt x 119.2455pt>
+File: figures/jurkat_cell_shape.png Graphic file (type png)
+<use figures/jurkat_cell_shape.png>
+Package pdftex.def Info: figures/jurkat_cell_shape.png  used on input line 662.
+
+(pdftex.def)             Requested size: 422.52054pt x 118.06248pt.
+<figures/hela_cell_shape.png, id=432, 302.26927pt x 115.99335pt>
+File: figures/hela_cell_shape.png Graphic file (type png)
+<use figures/hela_cell_shape.png>
+Package pdftex.def Info: figures/hela_cell_shape.png  used on input line 679.
+(pdftex.def)             Requested size: 281.68513pt x 108.09923pt.
+
+
+Package fancyhdr Warning: \headheight is too small (10.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
+
+[22 <./figures/jurkat_cell_shape.png> <./figures/hela_cell_shape.png>]
 Package svg Info: Last page of `./svg-inkscape/modelo_1d_sin_ruido_1_svg-tex.pd
-f' is 1 on input line 658.
- (svg-inkscape/modelo_1d_sin_ruido_1_svg-tex.pdf_tex
-<./svg-inkscape/modelo_1d_sin_ruido_1_svg-tex.pdf, id=420, page=1, 251.54779pt 
+f' is 1 on input line 726.
+
+(svg-inkscape/modelo_1d_sin_ruido_1_svg-tex.pdf_tex
+<./svg-inkscape/modelo_1d_sin_ruido_1_svg-tex.pdf, id=445, page=1, 251.54779pt 
 x 154.78769pt>
 File: ./svg-inkscape/modelo_1d_sin_ruido_1_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/modelo_1d_sin_ruido_1_svg-tex.pdf, page 1>
@@ -1098,16 +1120,16 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
-[22 <./svg-inkscape/modelo_1d_sin_ruido_1_svg-tex.pdf>]
-Overfull \hbox (1.13855pt too wide) in paragraph at lines 672--673
+[23 <./svg-inkscape/modelo_1d_sin_ruido_1_svg-tex.pdf>]
+Overfull \hbox (1.13855pt too wide) in paragraph at lines 740--741
 \OT1/cmr/m/n/12 From the two-dimensional wave model in po-lar co-or-di-nates im
 -ple-mented in Mat-lab, sim-u-lated
  []
 
 Package svg Info: Last page of `./svg-inkscape/modelo_2d_con_sin_ruido_svg-tex.
-pdf' is 1 on input line 678.
+pdf' is 1 on input line 746.
 (svg-inkscape/modelo_2d_con_sin_ruido_svg-tex.pdf_tex
-<./svg-inkscape/modelo_2d_con_sin_ruido_svg-tex.pdf, id=431, page=1, 503.25905p
+<./svg-inkscape/modelo_2d_con_sin_ruido_svg-tex.pdf, id=456, page=1, 503.25905p
 t x 153.74518pt>
 File: ./svg-inkscape/modelo_2d_con_sin_ruido_svg-tex.pdf Graphic file (type pdf
 )
@@ -1124,12 +1146,12 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
-[23 <./svg-inkscape/modelo_2d_con_sin_ruido_svg-tex.pdf>]
+[24 <./svg-inkscape/modelo_2d_con_sin_ruido_svg-tex.pdf>]
 Package svg Info: Last page of `./svg-inkscape/filtro_kalman_1_fixed_svg-tex.pd
-f' is 1 on input line 698.
+f' is 1 on input line 766.
 
 (svg-inkscape/filtro_kalman_1_fixed_svg-tex.pdf_tex
-<./svg-inkscape/filtro_kalman_1_fixed_svg-tex.pdf, id=445, page=1, 513.88643pt 
+<./svg-inkscape/filtro_kalman_1_fixed_svg-tex.pdf, id=470, page=1, 513.88643pt 
 x 407.63565pt>
 File: ./svg-inkscape/filtro_kalman_1_fixed_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/filtro_kalman_1_fixed_svg-tex.pdf, page 1>
@@ -1145,12 +1167,12 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
-[24 <./svg-inkscape/filtro_kalman_1_fixed_svg-tex.pdf>]
+[25 <./svg-inkscape/filtro_kalman_1_fixed_svg-tex.pdf>]
 Package svg Info: Last page of `./svg-inkscape/filtro_kalman_1_25_c_fixed_svg-t
-ex.pdf' is 1 on input line 708.
+ex.pdf' is 1 on input line 776.
 
 (svg-inkscape/filtro_kalman_1_25_c_fixed_svg-tex.pdf_tex
-<./svg-inkscape/filtro_kalman_1_25_c_fixed_svg-tex.pdf, id=455, page=1, 513.887
+<./svg-inkscape/filtro_kalman_1_25_c_fixed_svg-tex.pdf, id=480, page=1, 513.887
 59pt x 407.3868pt>
 File: ./svg-inkscape/filtro_kalman_1_25_c_fixed_svg-tex.pdf Graphic file (type 
 pdf)
@@ -1160,10 +1182,10 @@ Package pdftex.def Info: ./svg-inkscape/filtro_kalman_1_25_c_fixed_svg-tex.pdf
 (pdftex.def)             Requested size: 469.47046pt x 372.17715pt.
 )
 Package svg Info: Last page of `./svg-inkscape/filtro_kalman_1_25_d_fixed_svg-t
-ex.pdf' is 1 on input line 717.
+ex.pdf' is 1 on input line 785.
 
 (svg-inkscape/filtro_kalman_1_25_d_fixed_svg-tex.pdf_tex
-<./svg-inkscape/filtro_kalman_1_25_d_fixed_svg-tex.pdf, id=458, page=1, 513.354
+<./svg-inkscape/filtro_kalman_1_25_d_fixed_svg-tex.pdf, id=483, page=1, 513.354
 66pt x 406.92763pt>
 File: ./svg-inkscape/filtro_kalman_1_25_d_fixed_svg-tex.pdf Graphic file (type 
 pdf)
@@ -1183,7 +1205,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
-[25 <./svg-inkscape/filtro_kalman_1_25_c_fixed_svg-tex.pdf>]
+[26 <./svg-inkscape/filtro_kalman_1_25_c_fixed_svg-tex.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (10.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1192,12 +1214,12 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
-[26 <./svg-inkscape/filtro_kalman_1_25_d_fixed_svg-tex.pdf>]
+[27 <./svg-inkscape/filtro_kalman_1_25_d_fixed_svg-tex.pdf>]
 Package svg Info: Last page of `./svg-inkscape/filtro_kalman_1_25_c_d_fixed_svg
--tex.pdf' is 1 on input line 730.
+-tex.pdf' is 1 on input line 798.
 
 (svg-inkscape/filtro_kalman_1_25_c_d_fixed_svg-tex.pdf_tex
-<./svg-inkscape/filtro_kalman_1_25_c_d_fixed_svg-tex.pdf, id=476, page=1, 513.3
+<./svg-inkscape/filtro_kalman_1_25_c_d_fixed_svg-tex.pdf, id=502, page=1, 513.3
 4491pt x 407.3542pt>
 File: ./svg-inkscape/filtro_kalman_1_25_c_d_fixed_svg-tex.pdf Graphic file (typ
 e pdf)
@@ -1207,10 +1229,10 @@ f , page1 used on input line 56.
 (pdftex.def)             Requested size: 469.47046pt x 372.55762pt.
 )
 Package svg Info: Last page of `./svg-inkscape/dependencia_valores_iniciales_sv
-g-tex.pdf' is 7 on input line 739.
+g-tex.pdf' is 7 on input line 807.
 
 (svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf_tex
-<./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf, id=479, page=1, 512.
+<./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf, id=505, page=1, 512.
 16052pt x 310.02167pt>
 File: ./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf Graphic file (ty
 pe pdf)
@@ -1218,7 +1240,7 @@ pe pdf)
 Package pdftex.def Info: ./svg-inkscape/dependencia_valores_iniciales_svg-tex.p
 df , page1 used on input line 56.
 (pdftex.def)             Requested size: 469.47046pt x 284.17793pt.
-<./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf, id=480, page=2, 512.
+<./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf, id=506, page=2, 512.
 16052pt x 310.02167pt>
 File: ./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf Graphic file (ty
 pe pdf)
@@ -1226,7 +1248,7 @@ pe pdf)
 Package pdftex.def Info: ./svg-inkscape/dependencia_valores_iniciales_svg-tex.p
 df , page2 used on input line 63.
 (pdftex.def)             Requested size: 469.47046pt x 284.17793pt.
-<./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf, id=481, page=3, 512.
+<./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf, id=507, page=3, 512.
 16052pt x 310.02167pt>
 File: ./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf Graphic file (ty
 pe pdf)
@@ -1234,7 +1256,7 @@ pe pdf)
 Package pdftex.def Info: ./svg-inkscape/dependencia_valores_iniciales_svg-tex.p
 df , page3 used on input line 69.
 (pdftex.def)             Requested size: 469.47046pt x 284.17793pt.
-<./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf, id=482, page=4, 512.
+<./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf, id=508, page=4, 512.
 16052pt x 310.02167pt>
 File: ./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf Graphic file (ty
 pe pdf)
@@ -1242,7 +1264,7 @@ pe pdf)
 Package pdftex.def Info: ./svg-inkscape/dependencia_valores_iniciales_svg-tex.p
 df , page4 used on input line 76.
 (pdftex.def)             Requested size: 469.47046pt x 284.17793pt.
-<./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf, id=483, page=5, 512.
+<./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf, id=509, page=5, 512.
 16052pt x 310.02167pt>
 File: ./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf Graphic file (ty
 pe pdf)
@@ -1250,7 +1272,7 @@ pe pdf)
 Package pdftex.def Info: ./svg-inkscape/dependencia_valores_iniciales_svg-tex.p
 df , page5 used on input line 83.
 (pdftex.def)             Requested size: 469.47046pt x 284.17793pt.
-<./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf, id=484, page=6, 512.
+<./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf, id=510, page=6, 512.
 16052pt x 310.02167pt>
 File: ./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf Graphic file (ty
 pe pdf)
@@ -1258,7 +1280,7 @@ pe pdf)
 Package pdftex.def Info: ./svg-inkscape/dependencia_valores_iniciales_svg-tex.p
 df , page6 used on input line 90.
 (pdftex.def)             Requested size: 469.47046pt x 284.17793pt.
-<./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf, id=485, page=7, 512.
+<./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf, id=511, page=7, 512.
 16052pt x 310.02167pt>
 File: ./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf Graphic file (ty
 pe pdf)
@@ -1278,21 +1300,21 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
-[27 <./svg-inkscape/filtro_kalman_1_25_c_d_fixed_svg-tex.pdf>]
-<figures/recorte_nucleo.png, id=494, 313.17pt x 188.20313pt>
+[28 <./svg-inkscape/filtro_kalman_1_25_c_d_fixed_svg-tex.pdf>]
+<figures/recorte_nucleo.png, id=519, 313.17pt x 188.20313pt>
 File: figures/recorte_nucleo.png Graphic file (type png)
 <use figures/recorte_nucleo.png>
-Package pdftex.def Info: figures/recorte_nucleo.png  used on input line 753.
+Package pdftex.def Info: figures/recorte_nucleo.png  used on input line 826.
 (pdftex.def)             Requested size: 211.26027pt x 126.96269pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--759
+Underfull \hbox (badness 10000) in paragraph at lines 831--832
 
  []
 
 Package svg Info: Last page of `./svg-inkscape/raw_data_graph_2_svg-tex.pdf' is
- 1 on input line 764.
+ 1 on input line 837.
 (svg-inkscape/raw_data_graph_2_svg-tex.pdf_tex
-<./svg-inkscape/raw_data_graph_2_svg-tex.pdf, id=498, page=1, 569.76628pt x 222
+<./svg-inkscape/raw_data_graph_2_svg-tex.pdf, id=523, page=1, 569.76628pt x 222
 .24928pt>
 File: ./svg-inkscape/raw_data_graph_2_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/raw_data_graph_2_svg-tex.pdf, page 1>
@@ -1308,7 +1330,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
-[28 <./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf> <./svg-inkscape/
+[29 <./svg-inkscape/dependencia_valores_iniciales_svg-tex.pdf> <./svg-inkscape/
 dependencia_valores_iniciales_svg-tex.pdf
 
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/dependencia_valores_iniciales
@@ -1341,10 +1363,10 @@ _svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a singl
 e page
 > <./figures/recorte_nucleo.png>]
 Package svg Info: Last page of `./svg-inkscape/fourier_sin_filtro_todo_svg-tex.
-pdf' is 1 on input line 775.
+pdf' is 1 on input line 848.
 
 (svg-inkscape/fourier_sin_filtro_todo_svg-tex.pdf_tex
-<./svg-inkscape/fourier_sin_filtro_todo_svg-tex.pdf, id=539, page=1, 511.92203p
+<./svg-inkscape/fourier_sin_filtro_todo_svg-tex.pdf, id=564, page=1, 511.92203p
 t x 409.21002pt>
 File: ./svg-inkscape/fourier_sin_filtro_todo_svg-tex.pdf Graphic file (type pdf
 )
@@ -1353,7 +1375,7 @@ Package pdftex.def Info: ./svg-inkscape/fourier_sin_filtro_todo_svg-tex.pdf , p
 age1 used on input line 56.
 (pdftex.def)             Requested size: 328.62788pt x 262.69899pt.
 )
-Overfull \hbox (7.66774pt too wide) in paragraph at lines 782--783
+Overfull \hbox (7.66774pt too wide) in paragraph at lines 855--856
 []\OT1/cmr/m/n/12 Moreover, the Fourier trans-form and the av-er-age of the Fou
 rier trans-form were also per-formed
  []
@@ -1366,7 +1388,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
-[29 <./svg-inkscape/raw_data_graph_2_svg-tex.pdf>]
+[30 <./svg-inkscape/raw_data_graph_2_svg-tex.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (10.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1375,12 +1397,12 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
-[30 <./svg-inkscape/fourier_sin_filtro_todo_svg-tex.pdf>]
+[31 <./svg-inkscape/fourier_sin_filtro_todo_svg-tex.pdf>]
 Package svg Info: Last page of `./svg-inkscape/filtered_data_graph_2_svg-tex.pd
-f' is 1 on input line 790.
+f' is 1 on input line 863.
 
 (svg-inkscape/filtered_data_graph_2_svg-tex.pdf_tex
-<./svg-inkscape/filtered_data_graph_2_svg-tex.pdf, id=558, page=1, 564.53838pt 
+<./svg-inkscape/filtered_data_graph_2_svg-tex.pdf, id=583, page=1, 564.53838pt 
 x 220.08049pt>
 File: ./svg-inkscape/filtered_data_graph_2_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/filtered_data_graph_2_svg-tex.pdf, page 1>
@@ -1389,10 +1411,10 @@ e1 used on input line 56.
 (pdftex.def)             Requested size: 469.47046pt x 183.01935pt.
 )
 Package svg Info: Last page of `./svg-inkscape/fourier_datos_pinzas_filtrados_f
-ixed_svg-tex.pdf' is 1 on input line 797.
+ixed_svg-tex.pdf' is 1 on input line 870.
 
 (svg-inkscape/fourier_datos_pinzas_filtrados_fixed_svg-tex.pdf_tex
-<./svg-inkscape/fourier_datos_pinzas_filtrados_fixed_svg-tex.pdf, id=560, page=
+<./svg-inkscape/fourier_datos_pinzas_filtrados_fixed_svg-tex.pdf, id=585, page=
 1, 511.92215pt x 409.21002pt>
 File: ./svg-inkscape/fourier_datos_pinzas_filtrados_fixed_svg-tex.pdf Graphic f
 ile (type pdf)
@@ -1409,7 +1431,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
-[31 <./svg-inkscape/filtered_data_graph_2_svg-tex.pdf> <./svg-inkscape/fourier_
+[32 <./svg-inkscape/filtered_data_graph_2_svg-tex.pdf> <./svg-inkscape/fourier_
 datos_pinzas_filtrados_fixed_svg-tex.pdf
 
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/fourier_datos_pinzas_filtrado
@@ -1424,7 +1446,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
-[32]
+[33]
 
 Package fancyhdr Warning: \headheight is too small (10.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1433,7 +1455,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
-[33] (main.bbl
+[34] (main.bbl
 Underfull \hbox (badness 3735) in paragraph at lines 32--35
 []\OT1/cmr/m/n/12 C. Hoff-mann, K. Ohlsen, and C. R. Hauck, ``Integrin-mediated
  up-take of
@@ -1445,7 +1467,7 @@ Underfull \hbox (badness 1102) in paragraph at lines 32--35
 our-nal of cell bi-ol-ogy\OT1/cmr/m/n/12 , vol. 90, no. 11,
  []
 
-[34]
+[35]
 Underfull \hbox (badness 2050) in paragraph at lines 66--70
 \OT1/cmr/m/n/12 as-pi-ra-tion: ap-pli-ca-tions in cell biome-chan-ics, mod-els,
  and ex-tended stud-ies,''
@@ -1457,22 +1479,22 @@ Underfull \hbox (badness 1259) in paragraph at lines 72--76
 m-part-ments by atomic force
  []
 
-[35] [36] [37]) [38] (main.aux)
+[36] [37] [38]) [39] (main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E74C4C78F7A533F4BC89D6E7E815DE0A;4449.
+(rerunfilecheck)             Checksum: 37EAA1183F66D4179143536E43456C91;4229.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 33 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 16283 strings out of 478864
- 272562 string characters out of 2848660
- 629318 words of memory out of 3000000
- 33659 multiletter control sequences out of 15000+600000
+ 16309 strings out of 478864
+ 273213 string characters out of 2848660
+ 629678 words of memory out of 3000000
+ 33673 multiletter control sequences out of 15000+600000
  411509 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,14n,94p,1741b,2017s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1489,9 +1511,9 @@ ers/avale/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb
 msy10.pfb><D:/Users/avale/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmsy8.pfb><D:/Users/avale/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (42 pages, 6219605 bytes).
+Output written on main.pdf (43 pages, 7543457 bytes).
 PDF statistics:
- 682 PDF objects out of 1000 (max. 8388607)
- 160 named destinations out of 1000 (max. 500000)
- 396 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 710 PDF objects out of 1000 (max. 8388607)
+ 170 named destinations out of 1000 (max. 500000)
+ 406 words of extra memory for PDF output out of 10000 (max. 10000000)
 
