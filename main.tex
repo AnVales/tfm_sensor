@@ -687,11 +687,16 @@ HeLa cells have been incubated with the beads in two possible approaches, the fi
 \subsubsection{Identation of cell nucleus with optical tweezers}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+The nuclei of HeLa cells and Jurkat cells have been indented. A dataset of eight cells (two HeLa cells and six Jurkat cells), with a total of 54 indentations, was obtained. Some of the data captured with the optical tweezers traps are as follows:
 
 \setlength{\parskip}{4mm}
 
-
+\begin{figure}[htbp]
+	\centering
+	\includesvg[width=1\textwidth]{figures/datos_pinzas_no_filtrados_hela_jurkat.svg}
+	\caption{Force values recorded on the optical tweezers. The first row corresponds to the identation in the nucleus of a HeLa cell and the second row to the identation in the isolated nucleus of a Jurkat cell.The first column corresponds to the beads that make identations and the second column to the beads that receive the signal at the other side of the nucleus. The frequency of the identations is 2Hz.}
+	\label{fig:raw_data_cells}
+\end{figure}
 
 \setlength{\parskip}{0mm}
 
@@ -703,14 +708,34 @@ HeLa cells have been incubated with the beads in two possible approaches, the fi
 \subsubsection{Preprocessing of the signal}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+A test has been carried out to check that the preprocessing algorithm works. To do this, a simulated signal (\ref{eqn:simulated_signal_preprocess}) in which the units are simulation units, has been created with the desired study frequency, 10Hz, and two frequencies associated with the noise of 2Hz and 24Hz. 
 
 \setlength{\parskip}{4mm}
 
+\begin{equation} \label{eqn:simulated_signal_preprocess}
+	x = sin(2\pi\cdot 2t) + sin(2\pi\cdot 10t) + sin(2\pi\cdot 24t)
+\end{equation}
 
+A plot of the generated signal, the fourier transform, and the averaged fourier transform is shown below in figure \ref{fig:noisy_data_simulated}. Also, modelled signal was filtered using the high-pass and low-pass filter, obtaining the filtered signal shown below in figure \ref{fig:noisy_filtered_data_simulated}.
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[width=0.9\textwidth]{figures/noisy_data_fourier_composition.svg}
+	\caption{The first row shows the modelled signal with frequencies of 2, 10 and 24Hz. The second row shows firstly the Fourier transform frequency spectrum and secondly the averaged Fourier transform frequency spectrum.}
+	\label{fig:noisy_data_simulated}
+\end{figure}
+
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[width=0.9\textwidth]{figures/noisy_data_fourier_composition_filter.svg}
+	\caption{The first row shows the modelled signal with frequencies of 2, 10 and 24Hz filtered to remove frequencies below and above 10Hz. The second row shows firstly the Fourier transform frequency spectrum and secondly the averaged Fourier transform frequency spectrum.}
+	\label{fig:noisy_filtered_data_simulated}
+\end{figure}
 
 \setlength{\parskip}{0mm}
 
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{One-dimension wave model simulation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -737,14 +762,14 @@ As the one-dimensional wave model is the model used to estimate the parameters o
 
 \setlength{\parskip}{0mm}
 
-From the two-dimensional wave model in polar coordinates implemented in Matlab, simulated data have been obtained in which a sensor located 0.112 u.p. away from where a force is produced, captures the change in position. The values used in the simulation of this wave were the same as in figure \ref{fig:modelo1}. The graphs are presented in figure \ref{fig:modelo2}, the first graph is an ideal model without external noise, while in the second one there is a random noise of 50\%.
+From the two-dimensional wave model in polar coordinates implemented in Matlab, simulated data have been obtained in which a sensor located 0.112 u.p. away from where a force is produced, captures the change in position. The values used in the simulation of this wave were the same as in figure \ref{fig:modelo1}. The graphs are presented in figure \ref{fig:modelo2}, the first graph is an ideal model without external noise, while in the second one there is a random noise of 40\%.
 
 \setlength{\parskip}{4mm}
 
 \begin{figure}[h!]
     \centering
     \includesvg[width=1\textwidth]{figures/modelo_2d_con_sin_ruido.svg}
-    \caption{Simulated wave captured by a sensor located at a distance 0.112 u.p. from the force that produces the wave. It has been simulated with the 2-dimensional wave model in cartesian coordinates with Matlab. The first graph is an ideal model without noise and the second one has 50\% random noise.}
+    \caption{Simulated wave captured by a sensor located at a distance 0.112 u.p. from the force that produces the wave. It has been simulated with the 2-dimensional wave model in cartesian coordinates with Matlab. The first graph is an ideal model without noise and the second one has 40\% random noise.}
     \label{fig:modelo2}
 \end{figure}
 
@@ -764,7 +789,7 @@ The figure \ref{fig:kalman1} shows the parameters obtained by the extended Kalma
 \begin{figure}[h!]
     \centering
     \includesvg[width=1\textwidth]{figures/filtro_kalman_1_fixed.svg}
-    \caption{Estimation of the change of position, transmission velocity and damping using the extended Kalman filter. The real data are simulated with two-dimensional wave model and the model data are obtained with one-dimensional wave model. The initial values for propagation speed and damping are the real values. In the first column the real data have no noise and in the second column they have 50\% random noise.}
+    \caption{Estimation of the change of position, transmission velocity and damping using the extended Kalman filter. The real data are simulated with two-dimensional wave model and the model data are obtained with one-dimensional wave model. The initial values for propagation speed and damping are the real values. In the first column the real data have no noise and in the second column they have 40\% random noise.}
     \label{fig:kalman1}
 \end{figure}
 
@@ -774,7 +799,7 @@ First, figure \ref{fig:kalman1c} shows an initial value of the propagation veloc
 \begin{figure}[h!]
     \centering
     \includesvg[width=1\textwidth]{figures/filtro_kalman_1_25_c_fixed.svg}
-    \caption{Estimation of the change in position, transmission velocity and damping using the extended Kalman filter when the initial value of the propagation velocity, $c$, is 25\% higher than the real one. The real data are simulated using the two-dimensional wave model, the model data are obtained using the one-dimensional wave model. In the first column the real data have no noise and in the second column they have 50\% random noise.}
+    \caption{Estimation of the change in position, transmission velocity and damping using the extended Kalman filter when the initial value of the propagation velocity, $c$, is 25\% higher than the real one. The real data are simulated using the two-dimensional wave model, the model data are obtained using the one-dimensional wave model. In the first column the real data have no noise and in the second column they have 40\% random noise.}
     \label{fig:kalman1c}
 \end{figure}
 
@@ -783,7 +808,7 @@ Furthermore, the value of the parameters obtained with the extended Kalman filte
 \begin{figure}[h!]
     \centering
     \includesvg[width=1\textwidth]{figures/filtro_kalman_1_25_d_fixed.svg}
-    \caption{Estimation of the change in position, transmission velocity and damping using the extended Kalman filter when the initial value of the damping, $d$, is 25\% higher than the real one. The real data are simulated using the two-dimensional wave model, the model data are obtained using the one-dimensional wave model. In the first column the real data have no noise and in the second column they have 50\% random noise.}
+    \caption{Estimation of the change in position, transmission velocity and damping using the extended Kalman filter when the initial value of the damping, $d$, is 25\% higher than the real one. The real data are simulated using the two-dimensional wave model, the model data are obtained using the one-dimensional wave model. In the first column the real data have no noise and in the second column they have 40\% random noise.}
     \label{fig:kalman1d}
 \end{figure}
 
@@ -796,11 +821,11 @@ As it is not usual to have the exact value of one parameter a priori and not of 
 \begin{figure}[h!]
     \centering
     \includesvg[width=1\textwidth]{figures/filtro_kalman_1_25_c_d_fixed.svg}
-    \caption{Estimation of the change in position, transmission velocity and damping using the extended Kalman filter when the initial value of the damping, $d$, and transmision velocity, $c$, is 25\% higher than the real one. The real data are simulated using the two-dimensional wave model, the model data are obtained using the one-dimensional wave model. In the first column the real data have no noise and in the second column they have 50\% random noise.}
+    \caption{Estimation of the change in position, transmission velocity and damping using the extended Kalman filter when the initial value of the damping, $d$, and transmision velocity, $c$, is 25\% higher than the real one. The real data are simulated using the two-dimensional wave model, the model data are obtained using the one-dimensional wave model. In the first column the real data have no noise and in the second column they have 40\% random noise.}
     \label{fig:kalman1dc}
 \end{figure}
 
-Several simulations have been carried out with the extended Kalman filter to determine the final error of the parameters $c$ and $d$ as a function of the percentage difference between the initial value of the parameters and the actual value. The results of this analysis are presented the figure \ref{fig:valorescd}. The heat map shows if the final estimated value of the parameter is higher or lower than the real one, depending on the initial estimated parameter value is higher or lower than the real one. In addition, it is distinguished according to whether the system is noiseless or has 50\% random noise.
+Several simulations have been carried out with the extended Kalman filter to determine the final error of the parameters $c$ and $d$ as a function of the percentage difference between the initial value of the parameters and the actual value. The results of this analysis are presented the figure \ref{fig:valorescd}. The heat map shows if the final estimated value of the parameter is higher or lower than the real one, depending on the initial estimated parameter value is higher or lower than the real one. In addition, it is distinguished according to whether the system is noiseless or has 40\% random noise.
 
 \begin{figure}[h!]
     \centering

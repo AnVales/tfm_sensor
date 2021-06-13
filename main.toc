@@ -23,19 +23,19 @@
 \contentsline {subsubsection}{\numberline {3.1.3}Identation of cell nucleus with optical tweezers}{23}{subsubsection.3.1.3}%
 \contentsline {subsection}{\numberline {3.2}Computational desing}{23}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Preprocessing of the signal}{23}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}One-dimension wave model simulation}{23}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Two-dimension wave model simulation}{24}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}Kalman filter analysis with simulated data}{25}{subsubsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.3}Validation}{29}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Pre-processing of real data}{29}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Kalman filter analysis with real data}{33}{subsection.3.5}%
-\contentsline {section}{\numberline {4}Discussion}{34}{section.4}%
-\contentsline {subsection}{\numberline {4.1}One-dimension simulation}{34}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Two-dimension simulation}{34}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Kalman filter analysis with simulated data}{34}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Pre-processing of real data}{34}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Kalman filter analysis with real data}{34}{subsection.4.5}%
-\contentsline {section}{\numberline {5}Appendix}{39}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Buffer A recipe}{39}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}TKM recipe}{39}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Jasplakinolide recipe}{39}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {3.2.2}One-dimension wave model simulation}{25}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Two-dimension wave model simulation}{26}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Kalman filter analysis with simulated data}{27}{subsubsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.3}Validation}{31}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Pre-processing of real data}{31}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Kalman filter analysis with real data}{35}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Discussion}{36}{section.4}%
+\contentsline {subsection}{\numberline {4.1}One-dimension simulation}{36}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Two-dimension simulation}{36}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Kalman filter analysis with simulated data}{36}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Pre-processing of real data}{36}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Kalman filter analysis with real data}{36}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Appendix}{41}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Buffer A recipe}{41}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}TKM recipe}{41}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Jasplakinolide recipe}{41}{subsection.5.3}%
