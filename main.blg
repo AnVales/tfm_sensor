@@ -7,45 +7,45 @@ Reallocating 'name_of_file' (item size: 1) to 17 items.
 Database file #1: Bibliography.bib
 Warning--empty journal in jacob2015digital
 Warning--empty journal in FourierTransform
-You've used 44 entries,
+You've used 45 entries,
             1876 wiz_defined-function locations,
-            756 strings with 11622 characters,
-and the built_in function-call counts, 13260 in all, are:
-= -- 1392
-> -- 450
+            760 strings with 11795 characters,
+and the built_in function-call counts, 13391 in all, are:
+= -- 1403
+> -- 454
 < -- 0
-+ -- 169
-- -- 125
-* -- 914
-:= -- 1798
-add.period$ -- 48
-call.type$ -- 44
-change.case$ -- 40
++ -- 171
+- -- 126
+* -- 921
+:= -- 1820
+add.period$ -- 49
+call.type$ -- 45
+change.case$ -- 41
 chr.to.int$ -- 0
-cite$ -- 46
-duplicate$ -- 702
-empty$ -- 1213
-format.name$ -- 125
-if$ -- 3282
+cite$ -- 47
+duplicate$ -- 711
+empty$ -- 1230
+format.name$ -- 126
+if$ -- 3313
 int.to.chr$ -- 0
-int.to.str$ -- 44
-missing$ -- 47
-newline$ -- 139
-num.names$ -- 44
-pop$ -- 115
+int.to.str$ -- 45
+missing$ -- 48
+newline$ -- 142
+num.names$ -- 45
+pop$ -- 119
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 538
+skip$ -- 539
 stack$ -- 0
 substring$ -- 1006
-swap$ -- 339
+swap$ -- 340
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 138
-width$ -- 46
-write$ -- 453
+while$ -- 139
+width$ -- 47
+write$ -- 461
 (There were 2 warnings)

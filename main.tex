@@ -626,9 +626,49 @@ The parameter $E$ is Young's modulus, which can be obtained from the force contr
 
 The parameter $p$ is the density, which has been estimated as the density of water \cite{patterson1994measurement}. 
 
-The initial damping value for the extended kalman filter has not been estimated in this project and when it has been obtained, it can be used in this model.
+The initial value of the damping has been proposed to be estimated in the following way, firstly the complex viscosity was obtained from the study of the microrheology \cite{el2008measuring}. 
 
-The force that generated the mechanical wave was obtained from the real data captured by the bead that performs the shakes (shaker trap) and the real change of position was calculated with the data captured by the tactile trap. This trap captured the force of the waves after passing through the nucleus, by using the elastic constant of the trap, $k$, a value obtained experimentally by the optical tweezers, the change of position, $u$, was obtained in the following way:
+\begin{equation} \label{eqn:microreology}
+	\begin{array}{ l }
+		
+		G'(w) = \frac{F_{max}}{6\pi R x_{max}} cos(\Delta \theta) \\
+		G''(w) = \frac{F_{max}}{6\pi R x_{max}} sin(\Delta \theta) \\
+		\eta *(w) = [G'(w)^{2}+G'(w)^{2}]^{1/2}/w = [G'(w)^{2}+G'(w)^{2}]^{1/2}/2\pi f
+		
+	\end{array}
+\end{equation}
+
+For correlating damping with viscosity, the damped spring-mass model was used:
+
+\begin{equation} \label{eqn:modelo_masa_resorte}
+	\begin{array}{ l }
+		
+		m\"x - \xi \.{x} = 0 \\
+		\"x = \frac{\xi}{m^{3}p}\.{x} \\
+		b = \frac{\xi}{\={V} p} = \frac{\xi}{\Delta x p}
+		
+	\end{array}
+\end{equation}
+
+To obtain the value of $\xi$ , the Stokes problem was considered, in which there is a ball that has a frictional force..
+
+\begin{equation} \label{eqn:stokes}
+	F = 6\pi D \eta v = \xi v
+\end{equation}
+
+In this case, it was not a single sphere problem, but there were strands of chromatin in the nucleus, so the value of $\xi$ was obtained by calculating the fraction of the volume occupied by chromatin in the nucleus.
+
+\begin{equation} \label{eqn:frac_nucl_chro}
+	\Theta = \frac{Vol_{chromatin}}{Vol_{nucleus}} = \frac{\pi r_{c}^{2} l}{\frac{4\pi r_{n}^{3}}{3}}
+\end{equation}
+
+Thus, $\xi$ was approximated as:
+
+\begin{equation} \label{eqn:frac_nucl_chro}
+	\xi = \frac{\Delta x}{\Theta} \eta
+\end{equation}
+
+The force that generated the mechanical wave was obtained from the real data captured by the shaker trap and the real change of position was calculated with the data captured by the tactile trap. By using the elastic constant of the trap, $k$, a value obtained experimentally by the optical tweezers, the change of position, $u$, was obtained in the following way:
 
 \begin{equation} \label{eqn:real_desp}
 	u = \frac{\delta_{Fext}}{k}
@@ -742,34 +782,31 @@ A plot of the generated signal, the fourier transform, and the averaged fourier 
 
 \setlength{\parskip}{0mm}
 
-A one-dimensional wave has been obtained from the one-dimensional wave model in polar coordinates with Matlab. The units of the parameters are simulation units. The figure shows the change in the position of a sensor located 10 nodes away from where a force has been produced.  To obtain these values, equations \ref{eqn:uk+1} and \ref{eqn:vk+1} has been solved with $\Delta t$ of 0.0005 u.t., $\Delta u$ of 0.0112 u.p., $c$ of 0.2236 u.c., $d$ of 2 u.d. and a force that is defined by the equation \ref{eqn:force}, with an amplitude of 0.03 u.p. and a frequency of 5 u.t.$^{-1}$.
+A one-dimensional wave has been obtained from the one-dimensional wave model in polar coordinates with Matlab. The units of the parameters are simulation units.
 
 \setlength{\parskip}{4mm}
 
 \begin{figure}[htbp]
     \centering
     \includesvg[width=0.5\textwidth]{figures/modelo_1d_sin_ruido_1.svg}
-    \caption{Simulated wave captured by a sensor located at a distance 0.112 u.p. from the force that produces the wave. It has been simulated with the 1-dimensional wave model in polar coordinates with Matlab.}
+    \caption{Simulated wave captured by a sensor. It has been simulated with the 1-dimensional wave model in polar coordinates with Matlab.}
     \label{fig:modelo1}
 \end{figure}
 
-As the one-dimensional wave model is the model used to estimate the parameters of the Extended Kalman filter, no simulation with noise is shown, as it only affects those values captured by the sensor.
-
-\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Two-dimension wave model simulation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \setlength{\parskip}{0mm}
 
-From the two-dimensional wave model in polar coordinates implemented in Matlab, simulated data have been obtained in which a sensor located 0.112 u.p. away from where a force is produced, captures the change in position. The values used in the simulation of this wave were the same as in figure \ref{fig:modelo1}. The graphs are presented in figure \ref{fig:modelo2}, the first graph is an ideal model without external noise, while in the second one there is a random noise of 40\%.
+From the two-dimensional wave model in polar coordinates implemented in Matlab, simulated data have been obtained. The values used in the simulation of this wave were the same as in figure \ref{fig:modelo1}. The graphs are presented in figure \ref{fig:modelo2}, the first graph is an ideal model without external noise, while in the second one there is a random noise of 40\%.
 
 \setlength{\parskip}{4mm}
 
 \begin{figure}[h!]
     \centering
     \includesvg[width=1\textwidth]{figures/modelo_2d_con_sin_ruido.svg}
-    \caption{Simulated wave captured by a sensor located at a distance 0.112 u.p. from the force that produces the wave. It has been simulated with the 2-dimensional wave model in cartesian coordinates with Matlab. The first graph is an ideal model without noise and the second one has 40\% random noise.}
+    \caption{Simulated wave captured by a sensor. It has been simulated with the two-dimensional wave model in cartesian coordinates with Matlab. The first graph is an ideal model without noise and the second one has 40\% random noise.}
     \label{fig:modelo2}
 \end{figure}
 
@@ -780,11 +817,11 @@ From the two-dimensional wave model in polar coordinates implemented in Matlab, 
 
 \setlength{\parskip}{0mm}
 
-An analysis of the performance of the extended Kalman filter implemented in Matlab with equation systems \ref{eqn:predictor} and \ref{eqn:corrector} has been carried out. In all these simulations, the data obtained from the two-dimension model of figure \ref{fig:modelo2} have been used as real data and the data obtained from the 1-D wave model in figure \ref{fig:modelo1} have been used as model data.
+An analysis of the performance of the extended Kalman filter implemented in Matlab with equation systems \ref{eqn:predictor} and \ref{eqn:corrector} has been carried out. In all these simulations, the data obtained from the two-dimension model of figure \ref{fig:modelo2} have been used as real data and the data obtained from the one dimensional wave model in figure \ref{fig:modelo1} have been used as model data.
 
 \setlength{\parskip}{4mm}
 
-The figure \ref{fig:kalman1} shows the parameters obtained by the extended Kalman filter, the change in position, $u$, transmission velocity, $c$,and damping, $d$. In addition, the proposed initial values for propagation speed, $c$, and damping, $d$, are the real values.
+The figure \ref{fig:kalman1} shows the parameters obtained by the extended Kalman filter, the change in position, $u$, transmission velocity, $c$, and damping, $d$. In addition, the proposed initial values for propagation speed, $c$, and damping, $d$, are the real values.
 
 \begin{figure}[h!]
     \centering
@@ -793,35 +830,35 @@ The figure \ref{fig:kalman1} shows the parameters obtained by the extended Kalma
     \label{fig:kalman1}
 \end{figure}
 
-To see the robustness of the Kalman extended filter depending on how close the proposed initial values of the transmission rate and damping are to the real ones, several tests have been performed by changing the proposed initial value.  
-First, figure \ref{fig:kalman1c} shows an initial value of the propagation velocity $c$ that is 25\% higher than the real one.
+To see the robustness of the extended Kalman filter depending on how close the proposed initial values of the transmission rate and damping are to the real ones, several tests have been performed changing the proposed initial value.  
+First, figure \ref{fig:kalman1c} shows an initial value of the propagation velocity $c$ that is 25\% higher than the real one, that is an initial value of $1,25 c_{real}$.
 
 \begin{figure}[h!]
     \centering
     \includesvg[width=1\textwidth]{figures/filtro_kalman_1_25_c_fixed.svg}
-    \caption{Estimation of the change in position, transmission velocity and damping using the extended Kalman filter when the initial value of the propagation velocity, $c$, is 25\% higher than the real one. The real data are simulated using the two-dimensional wave model, the model data are obtained using the one-dimensional wave model. In the first column the real data have no noise and in the second column they have 40\% random noise.}
+    \caption{Estimation of the change in position, transmission velocity and damping using the extended Kalman filter when the initial value of the propagation velocity is $1,25 c_{real}$. The real data are simulated using the two-dimensional wave model, the model data are obtained using the one-dimensional wave model. In the first column the real data has no noise and in the second column they have 40\% random noise.}
     \label{fig:kalman1c}
 \end{figure}
 
-Furthermore, the value of the parameters obtained with the extended Kalman filter is shown when the damping given at the beginning is 25\% higher than the actual damping in figure \ref{fig:kalman1d}.
+Furthermore, the value of the parameters obtained with the extended Kalman filter is shown when the damping given at the beginning is $1,25 d_{real}$ in figure \ref{fig:kalman1d}.
 
 \begin{figure}[h!]
     \centering
     \includesvg[width=1\textwidth]{figures/filtro_kalman_1_25_d_fixed.svg}
-    \caption{Estimation of the change in position, transmission velocity and damping using the extended Kalman filter when the initial value of the damping, $d$, is 25\% higher than the real one. The real data are simulated using the two-dimensional wave model, the model data are obtained using the one-dimensional wave model. In the first column the real data have no noise and in the second column they have 40\% random noise.}
+    \caption{Estimation of the change in position, transmission velocity and damping using the extended Kalman filter when the initial value of the damping, $d$, is $ 1,25 d_{real}$. The real data are simulated using the two-dimensional wave model, the model data are obtained using the one-dimensional wave model. In the first column the real data have no noise and in the second column they have 40\% random noise.}
     \label{fig:kalman1d}
 \end{figure}
 
 \newpage
 
-As it is not usual to have the exact value of one parameter a priori and not of another, in figure \ref{fig:kalman1dc} an estimation of the parameters with Kalman filter is performed where the initial values of c and d are 25\% higher in both cases.
+As it is not usual to have the exact value of one parameter a priori and not of another, in figure \ref{fig:kalman1dc} an estimation of the parameters with Kalman filter is performed where the initial values of the propagation rate is $1,25 c_{real}$ and the damping is $1,25 d_{real}$.
 
 \newpage
 
 \begin{figure}[h!]
     \centering
     \includesvg[width=1\textwidth]{figures/filtro_kalman_1_25_c_d_fixed.svg}
-    \caption{Estimation of the change in position, transmission velocity and damping using the extended Kalman filter when the initial value of the damping, $d$, and transmision velocity, $c$, is 25\% higher than the real one. The real data are simulated using the two-dimensional wave model, the model data are obtained using the one-dimensional wave model. In the first column the real data have no noise and in the second column they have 40\% random noise.}
+    \caption{Estimation of the change in position, transmission velocity and damping using the extended Kalman filter when the initial value of the damping is $1,25 d_{real}$ and transmision velocity is $1,25 c_{real}$. The real data are simulated using the two-dimensional wave model, the model data are obtained using the one-dimensional wave model. In the first column the real data have no noise and in the second column they have 40\% random noise.}
     \label{fig:kalman1dc}
 \end{figure}
 
@@ -829,8 +866,8 @@ Several simulations have been carried out with the extended Kalman filter to det
 
 \begin{figure}[h!]
     \centering
-    \includesvg[width=1\textwidth]{figures/dependencia_valores_iniciales.svg}
-    \caption{Estimation of  transmission velocity and damping using the extended Kalman filter depending on the initial parameter value.}
+    \includegraphics[width=1\textwidth]{figures/dependencia_valores_iniciales_1.png}
+    \caption{Estimation of  transmission velocity and damping using the extended Kalman filter depending on the initial parameter value. The top row corresponds to the ratio between the final value and the real value of the transmission rate, while the second row corresponds to the ratio between the final value and the real value of the damping. The first column is obtained from values without noise, and the second column from real data (obtained from the two-dimensional wave model) with 40\% random noise.}
     \label{fig:valorescd}
 \end{figure}
 
@@ -853,58 +890,47 @@ Several simulations have been carried out with the extended Kalman filter to det
     \label{fig:myfig3}
 \end{wrapfigure}
 
-Real data have been obtained by embedding a bead in a Jurkat cell nucleus while another bead captured the waves at the other edge of the nucleus. The results presented have been obtained from the image \ref{fig:myfig3} of the cell nucleus. It has been indented with a force amplitude of 0,5$\mu$m and frequencies of 2Hz, 4Hz, 5Hz, 8Hz, and 10Hz for 30 seconds. Figure \ref{fig:raw_data} have several graphs which compare the force emitted by the identing bead and the force that reaches the bead sensor. \\
+Real data have been obtained by embedding a bead in a cell nucleus while another bead captured the waves at the other edge of the nucleus. The results presented have been obtained from the image \ref{fig:myfig3}, a isolated Jurkat cell nucleus. It has been indented with a force amplitude of 0,5$\mu$m and frequencies of 2Hz, 4Hz, 5Hz, 8Hz, and 10Hz for 30 seconds. Figure \ref{fig:raw_data} have several graphs which compare the force emitted by the identing bead and the force that reaches the bead sensor. \\
 
 \setlength{\parskip}{4mm}
 
 \begin{figure}[htbp]
   \centering
   \includesvg[width=1\textwidth]{figures/raw_data_graph_2.svg}
-  \caption{Force captured by the optical tweezers during identation. The first column corresponds to the beads that make identations and the second column to the beads that receive the signal at the other side of the nucleus. The frequency of the identations is 2Hz in the first row, 5Hz in the second row and 10Hz in the third row.}
+  \caption{Force captured by the optical tweezers during identation of a isolated Jurkat cell nucleus. The first column corresponds to the beads that make identations and the second column to the beads that receive the signal at the other side of the nucleus. The frequency of the identations was 2Hz in the first row, 5Hz in the second row and 10Hz in the third row.}
   \label{fig:raw_data}
 \end{figure}
 
-\newpage
+As the values captured by the force sensor of the optical tweezers were noisy, a filtering was performed. An averaged fast Fourier transform was used to determine the frequencies corresponding to the noise. Although the force values collected by the bead performing the identations had noise, only the fast Fourier transform and averaged fast Fourier transform of the beads acting as sensors are shown in figure \ref{fig:fourier_sin_filtro}, as these values were the most affected by noise. 
 
-As the values captured by the force sensor of the optical tweezers were noisy, a filtering was performed. An averaged fast Fourier transform was used to determine the frequencies corresponding to the noise. Although the force values collected by the bead performing the identations had noise, only the fast Fourier transform and averaged fast Fourier transform of the beads acting as sensors are shown in figure \ref{fig:fourier_sin_filtro}, as the values they collected were the target values. 
+\newpage
 
 \begin{figure}[htbp]
   \centering
-  \includesvg[width=0.70\textwidth]{figures/fourier_sin_filtro_todo.svg}
-  \caption{Fast Fourier transforms and the average of the fast Fourier transform of the signal captured by the bead sensor. The first column corresponds to the fast Fourier transform and the second to the average of the fast Fourier transform in which the mean has been averaged over two-cycle data sets. The frequencies applied in the indentation are 2Hz in the first row, 5Hz in the second row and 10Hz in the third row.}
+  \includesvg[width=0.70\textwidth]{figures/transformada_fourier_limpia.svg}
+  \caption{Fast Fourier transforms and the average of the fast Fourier transform of the signal captured by the tactile trap. The first column corresponds to the fast Fourier transform and the second to the average of the fast Fourier transform in which the mean has been averaged over two-cycle data sets. The frequencies applied in the indentation were 2Hz in the first row, 5Hz in the second row and 10Hz in the third row.}
   \label{fig:fourier_sin_filtro}
 \end{figure}
 
-These signals were filtered using the low-pass and high-pass finite impulse response filter to obtain the filtered forces shown in figure \ref{fig:filtered_data}.
+Then, these signals were filtered using the low pass and high pass finite impulse response filter to obtain the filtered forces shown in figure \ref{fig:filtered_data}. Moreover, the Fourier transform and the average of the Fourier transform were also performed to verify that the signal has been filtered by removing high and low frequency noise with the low pass and high pass FIR filter. Both Fourier transforms are plotted in the figure \ref{fig:fourier_con_filtro_todo}.
 
-Moreover, the Fourier transform and the average of the Fourier transform were also performed to verify that the signal has been filtered by removing high and low frequency noise with the low-pass and high-pass FIR filter. Both Fourier transforms are plotted in the figure \ref{fig:fourier_con_filtro_todo}.
-
-With this analysis, the preprocessing of the real data is finished and the force captured by the optical tweezers is stored and filtered.
+With this analysis, the preprocessing of the real data was finished and the force captured by the optical tweezers was stored filtered.
 
 \newpage
 
 \begin{figure}[htbp]
   \centering
   \includesvg[width=1\textwidth]{figures/filtered_data_graph_2.svg}
-  \caption{Force captured by the optical tweezers during identation filtered with the high pass and low pass FIR filter. The first column corresponds to the beads that make identations and the second column to the beads that receive the signal at the other side of the nucleus. The frequency of the identations is 2Hz in the first row, 5Hz in the second row and 10Hz in the third row.}
+  \caption{Force captured by the optical tweezers during identation, filtered with the high pass and low pass FIR filter. The first column corresponds to the beads that make identations and the second column to the beads that receive the signal at the other side of the nucleus. The frequency of the identations was 2Hz in the first row, 5Hz in the second row and 10Hz in the third row.}
   \label{fig:filtered_data}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includesvg[width=0.7\textwidth]{figures/fourier_datos_pinzas_filtrados_fixed.svg}
-  \caption{Force captured by the optical tweezers during identation filtered with the high pass and low pass FIR filter. The first column corresponds to the beads that make identations and the second column to the beads that receive the signal at the other side of the nucleus. The frequency of the identations is 2Hz in the first row, 5Hz in the second row and 10Hz in the third row.}
+  \caption{Force captured by the optical tweezers during identation filtered with the high pass and low pass FIR filter. The first column corresponds to the beads that make identations and the second column to the beads that receive the signal at the other side of the nucleus. The frequency of the identations was 2Hz in the first row, 5Hz in the second row and 10Hz in the third row.}
   \label{fig:fourier_con_filtro_todo}
 \end{figure}
-
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Kalman filter analysis with real data}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\setlength{\parskip}{0mm}
-
-\setlength{\parskip}{4mm}
 
 \newpage
 
@@ -963,14 +989,16 @@ With this analysis, the preprocessing of the real data is finished and the force
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % BIBLIOGRAPHY %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\spacing{1}
 \pagestyle{empty}
 \bibliographystyle{ieeetr}
 \bibliography{Bibliography.bib}
 
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % APPENDIX %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\parskip}{0mm}
 \section{Appendix}
 
 \subsection{Buffer A recipe}
