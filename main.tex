@@ -271,7 +271,7 @@ To view it with optical tweezers, a square of double-sided tape with a square cu
 {\textbf{Isolated Jurkat cell nucleus}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-To perform the indentation on the isolated Jurkat cell nucleus, a dilution of the previously isolated nuclei was performed. To obtain 100$\mu$l of final solution, 65$\mu$l of the isolated nuclei stock, 30$\mu$l of TKM buffer and 5$\mu$l of a 1:100 solution of 3$\mu$m beads (Sigma-Aldrich/DE) were needed. 40$\mu$l of nuclei solution with beads were poured in the double-sided tape square of the slide and it was covered by a 22 x 40 mm cover glass (Deltalab/ES).
+To perform the indentation on the isolated Jurkat cell nucleus, a dilution of the isolated nuclei was performed in the same day as the nucleus were isolated. To obtain 100$\mu$l of final solution, 65$\mu$l of the isolated nuclei stock, 30$\mu$l of TKM buffer and 5$\mu$l of a 1:100 solution of 3.0$\mu$m beads or 2.0$\mu$m (Sigma-Aldrich/DE) were needed. 40$\mu$l of nuclei solution with beads were poured in the double-sided tape square of the slide and it was covered by a 22 x 40 mm cover glass (Deltalab/ES).
 
 \setlength{\parindent}{8pt}
 
@@ -643,9 +643,9 @@ For correlating damping with viscosity, the damped spring-mass model was used:
 \begin{equation} \label{eqn:modelo_masa_resorte}
 	\begin{array}{ l }
 		
-		m\"x - \xi \.{x} = 0 \\
-		\"x = \frac{\xi}{m^{3}p}\.{x} \\
-		b = \frac{\xi}{\={V} p} = \frac{\xi}{\Delta x p}
+		m\ddot{x} - \xi \dot{x} = 0 \\
+		\ddot{x} = \frac{\xi}{m^{3}p}\dot{x} \\
+		b = \frac{\xi}{\bar{Vol} p} = \frac{\xi}{\Delta x p}
 		
 	\end{array}
 \end{equation}
@@ -664,7 +664,7 @@ In this case, it was not a single sphere problem, but there were strands of chro
 
 Thus, $\xi$ was approximated as:
 
-\begin{equation} \label{eqn:frac_nucl_chro}
+\begin{equation} \label{eqn:xi_approx}
 	\xi = \frac{\Delta x}{\Theta} \eta
 \end{equation}
 
@@ -745,7 +745,7 @@ The nuclei of HeLa cells and Jurkat cells have been indented. A dataset of eight
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Preprocessing of the signal}
+\subsubsection{Preprocessing of the simulated data}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 A test has been carried out to check that the preprocessing algorithm works. To do this, a simulated signal (\ref{eqn:simulated_signal_preprocess}) in which the units are simulation units, has been created with the desired study frequency, 10Hz, and two frequencies associated with the noise of 2Hz and 24Hz. 
@@ -942,47 +942,105 @@ With this analysis, the preprocessing of the real data was finished and the forc
 \section{Discussion}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{One-dimension simulation}
+\subsection{Experimental desing}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Jurkat cells, cell fragmentation and incubation with drug}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\parskip}{0mm}
+
+First, the Jurkat cell nuclei were isolated correctly as the methodology was optimized. However, it was important to perform the indentation on the same day as the extraction because if they were stored in the eppendorf in which the extraction was performed, they would stick together and it was difficult to resuspend them.
+
+\setlength{\parskip}{4mm} 
+
+Also, it was expected that over time the cell nuclei would start to degrade and therefore the mechanical properties of the cell nuclei would change. It could be an interesting experiment to determine the lifetime of the isolated nuclei to perform indentation with them, in which they not only remain unbroken, but the mechanical properties they exhibit change as little as possible and are recognisable.
+
+On the other hand, the concentration of drug that was used degraded most nuclei and it was quite difficult to find unbroken nuclei. Perhaps it would be better to use a lower drug concentration or the same drug concentration for a shorter time. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{HeLa cells and incubation with beads}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\parskip}{0mm}
+
+As the long-term goal is to obtain measurements of the mechanical properties of the nucleus in living cells, it is important to optimise the phagocytosis of the beads in the cells. In this case, experiments have been performed with Hela cells, with which several factors have been determined that could influence bead internalisation. On the one hand, it is necessary to have a high concentration of cells when the incubation is started, because when the beads were added, the cells grew worse and divided less. It is also important that the medium is changed when the beads are added, firstly to have a better control of the percentage of beads in the medium and secondly, if the medium has been used for more than two days, it has been observed that the beads are barely internalised. It also seems that if they have been attached to the substrate for a short time (24 hours), more beads are internalised and this could happen because they are adherent cells that tend to extend, which could cause that the cell membrane is too tense to internalise the beads. It is important to carry out a more detailed study in the future in which cells that have internalised beads and those that have not are counted to optimise this methodology.
+
+\setlength{\parskip}{4mm}
+
+In addition, incubation of the cells on the cover glass in an individual petri dish has the advantage that the cells are attached and not in suspension, so there is no need to wait for them to re-attach to the cover glass as those in the multidishes that need to be detached, because the indentation cannot be performed correctly if the cell is sinking. In addition, the properties of the nucleus may change if it is unattached, attaching and already attached, which requires additional control.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Identation of cell nucleus with optical tweezers}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\parskip}{0mm}
+
+Indentation in the optical tweezers has been performed on isolated Jurkat cell nuclei and HeLa nuclei with different results.
+
+\setlength{\parskip}{4mm}
+
+On the one hand, indentations on single nuclei of Jurkat cells have been successfully performed by obtaining data on the force produced on one side of the nucleus and the force transmitted to the other side of the nucleus. However, this was only possible with 3$\mu$m beads, as 2$\mu$m beads were very difficult to trap. 
+
+On the other hand, no results have been obtained with HeLa cells. Indentations were made with the shaker trap, but the tactile bead did not register the force after passing through the nucleus. This may happen because 2$\mu$m beads were used, which were later discovered that they are poorly trapped, and they were apparently trapped in the cell but in fact were not, or it maybe they were not close enough to the nucleus for either of the two beads. 
+
+An important difference between the two experiments is that in the Jurkat cells, the shaker trap was able to perform a higher force while in the HeLa cells the beads were in a vesicle inside the cell, where it could hardly move and produced a lower force. In addition, this probably contributed to the non-capture of the force in the tactile trap of the HeLa cell.
+
+Perhaps in order to perform force detection correctly in the Hela cell it is necessary to internalise 3$\mu$m beads which are better captured,
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Computational desing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Preprocessing of the simulated data}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\parskip}{0mm}
+
+To check that the data pre-processing algorithm works correctly, it was tested with a simulated signal. The simulated signal was composed of three sine components with different frequencies, which results in an apparently very noisy signal. The fast Fourier transform and the averaged fast Fourier transform showed the three frequencies of the signal, however, the averaged one has a smaller number of values in the representation. This signal was processed with the high pass and low pass FIR filter, removing frequencies above and below 10Hz. The signal showed flattened maxima and peaked minima, a perfect signal was not obtained, however, with the fast Fourier transform and the averaged fast Fourier transform it can be seen that the only frequency of the signal was the desired one. In both transforms it was observed that the 10Hz peak lost a little intensity and in the averaged one the close frequencies were observed with a little intensity. This could be due to artefacts in the averaging or because the reduction of higher and lower frequencies did not result in a perfect signal and this is due to the maxima and minima, which did not have the shape of a perfect curve, but instead had straight lines and peaks.
+
+\setlength{\parskip}{4mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{One-dimension wave model simulation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \setlength{\parskip}{0mm}
 
 \setlength{\parskip}{4mm}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Two-dimension wave model simulation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Two-dimension simulation}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \setlength{\parskip}{0mm}
 
 \setlength{\parskip}{4mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Kalman filter analysis with simulated data}
+\subsubsection{Kalman filter analysis with simulated data}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \setlength{\parskip}{0mm}
 
 \setlength{\parskip}{4mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Pre-processing of real data}
+\subsection{Validation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Pre-processing of real data}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \setlength{\parskip}{0mm}
 
 \setlength{\parskip}{4mm}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Kalman filter analysis with real data}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\setlength{\parskip}{0mm}
-
-\setlength{\parskip}{4mm}
-
-\newpage
 
 \newpage
 
