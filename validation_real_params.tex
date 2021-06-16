@@ -1,0 +1,87 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Validation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Obtain the real parameters}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+To validate the system it was necessary to merge the real data obtained with the computational system. To do this it was necessary to establish what the actual values were, which were then introduced into the computational model.
+
+\setlength{\parskip}{4mm}
+
+The initial step was to set a differential of time $dt$ and a differential of space $dx$ and $dr$ for the wave models. The differential of space, $dx$ and $dr$ has been calculated as follows:
+
+\begin{equation} \label{eqn:dx}
+	dx = dr = \frac{l}{n}
+\end{equation}
+
+The diameter of the cell nucleus was set as $l/2$. Since the two-dimensional wave model was solved on a square grid of nodes, in which the total number of nodes was $N$, the parameter $n$ was set as:
+
+\begin{equation} \label{eqn:n}
+	n = \sqrt{N}
+\end{equation}
+
+For one-dimensional simulations, the number of nodes $N$ was the parameter $n$. The differential time differential value $dt$ was determined using the position differential of position, $dx$ and the transmission velocity of the medium, $c$.
+
+\begin{equation} \label{eqn:dt}
+	dt = \frac{dx}{c}
+\end{equation}
+
+For this purpose, it was necessary to determine the transmission rate initial for the extended Kalman filter in the cell nucleus as shown below:
+
+\begin{equation} \label{eqn:c}
+	c = \sqrt{\frac{E}{p}}
+\end{equation}
+
+The parameter $E$ is Young's modulus, which can be obtained from the force contributed in an area, $\sigma$, and the proportional deformation of that area, $\epsilon$. The value of the initial Young's modulus has not been calculated in this work and depends on another project of the group. When that project is completed, the value obtained in this study will be used.
+
+The parameter $p$ is the density, which has been estimated as the density of water \cite{patterson1994measurement}. 
+
+The initial value of the damping has been proposed to be estimated in the following way, firstly the complex viscosity was obtained from the study of the microrheology \cite{el2008measuring}. 
+
+\begin{equation} \label{eqn:microreology}
+	\begin{array}{ l }
+		
+		G'(w) = \frac{F_{max}}{6\pi R x_{max}} cos(\Delta \theta) \\
+		G''(w) = \frac{F_{max}}{6\pi R x_{max}} sin(\Delta \theta) \\
+		\eta *(w) = [G'(w)^{2}+G'(w)^{2}]^{1/2}/w = [G'(w)^{2}+G'(w)^{2}]^{1/2}/2\pi f
+		
+	\end{array}
+\end{equation}
+
+For correlating damping with viscosity, the damped spring-mass model was used:
+
+\begin{equation} \label{eqn:modelo_masa_resorte}
+	\begin{array}{ l }
+		
+		m\ddot{x} - \xi \dot{x} = 0 \\
+		\ddot{x} = \frac{\xi}{m^{3}p}\dot{x} \\
+		b = \frac{\xi}{\bar{Vol} p} = \frac{\xi}{\Delta x p}
+		
+	\end{array}
+\end{equation}
+
+To obtain the value of $\xi$ , the Stokes problem was considered, in which there is a ball that has a frictional force..
+
+\begin{equation} \label{eqn:stokes}
+	F = 6\pi D \eta v = \xi v
+\end{equation}
+
+In this case, it was not a single sphere problem, but there were strands of chromatin in the nucleus, so the value of $\xi$ was obtained by calculating the fraction of the volume occupied by chromatin in the nucleus.
+
+\begin{equation} \label{eqn:frac_nucl_chro}
+	\Theta = \frac{Vol_{chromatin}}{Vol_{nucleus}} = \frac{\pi r_{c}^{2} l}{\frac{4\pi r_{n}^{3}}{3}}
+\end{equation}
+
+Thus, $\xi$ was approximated as:
+
+\begin{equation} \label{eqn:xi_approx}
+	\xi = \frac{\Delta x}{\Theta} \eta
+\end{equation}
+
+The force that generated the mechanical wave was obtained from the real data captured by the shaker trap and the real change of position was calculated with the data captured by the tactile trap. By using the elastic constant of the trap, $k$, a value obtained experimentally by the optical tweezers, the change of position, $u$, was obtained in the following way:
+
+\begin{equation} \label{eqn:real_desp}
+	u = \frac{\delta_{Fext}}{k}
+\end{equation}
