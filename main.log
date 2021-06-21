@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.10)  20 JUN 2021 16:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.10)  21 JUN 2021 13:29
 entering extended mode
 **./main.tex
 (main.tex
@@ -764,11 +764,23 @@ Overfull \hbox (8.0pt too wide) in paragraph at lines 47--49
 [1
 
 {C:/Users/avale/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./svg-inkscape/
-logos_svg-tex.pdf>]pdfTeX warning (ext4): destination with the same identifier 
-(name{page.1}) has been already used, duplicate ignored
+logos_svg-tex.pdf>]
+Overfull \hbox (12.14398pt too wide) in paragraph at lines 76--77
+\OT1/cmr/m/n/12 based on a new method-ol-ogy which is called nu-clear elas-tog-
+ra-phy, to de-ter-mine some me-chan-i-cal
+ []
+
+
+Overfull \hbox (7.933pt too wide) in paragraph at lines 84--85
+[]\OT1/cmr/m/n/12 Although the fi-nal val-i-da-tion sec-tion has not been com-p
+leted, the pre-filtering of ex-per-i-men-tal
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.76 \newpage
+l.90 \newpage
               [1] (main.toc
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 3
 .
@@ -789,13 +801,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout6 = `main.toc'.
 
  [3]
-Overfull \hbox (7.5269pt too wide) in paragraph at lines 107--108
+Overfull \hbox (7.5269pt too wide) in paragraph at lines 121--122
 \OT1/cmr/m/n/12 cel-lu-lar ac-tiv-i-ties [[]]. In ad-di-tion, the nu-cleus has 
 rel-e-vant struc-ture and me-chan-i-cal prop-er-ties,
  []
 
 
-Overfull \hbox (8.48846pt too wide) in paragraph at lines 113--114
+Overfull \hbox (8.48846pt too wide) in paragraph at lines 127--128
 \OT1/cmr/m/n/12 prop-er-ties but have some prob-lems such as dam-age to the nu-
 cleus, the in-va-sive-ness, de-pen-dence
  []
@@ -812,9 +824,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.114 
+l.128 
        [1]
-Overfull \hbox (0.19975pt too wide) in paragraph at lines 115--116
+Overfull \hbox (0.19975pt too wide) in paragraph at lines 129--130
 []\OT1/cmr/m/n/12 Based on the study of these tech-niques, a new tech-nique was
  pro-posed, nu-clear elas-tog-ra-phy,
  []
@@ -831,7 +843,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.142 
+l.156 
        [2]
 
 Package fancyhdr Warning: \headheight is too small (10.0pt): 
@@ -845,7 +857,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.160 
+l.174 
        [3]
 
 Package fancyhdr Warning: \headheight is too small (10.0pt): 
@@ -860,7 +872,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 File: figures/esquema_trabajo_metodos_2.png Graphic file (type png)
 <use figures/esquema_trabajo_metodos_2.png>
 Package pdftex.def Info: figures/esquema_trabajo_metodos_2.png  used on input l
-ine 186.
+ine 200.
 (pdftex.def)             Requested size: 469.47046pt x 233.8693pt.
 
 
@@ -872,7 +884,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
 [5 <./figures/esquema_trabajo_metodos_2.png>]
-Overfull \hbox (40.36464pt too wide) in paragraph at lines 211--212
+Overfull \hbox (40.36464pt too wide) in paragraph at lines 225--226
 \OT1/cmr/m/n/12 the pel-let was re-sus-pended in 300$\OML/cmm/m/it/12 $\OT1/cm
 r/m/n/12 l buffer A and 3$\OML/cmm/m/it/12 $\OT1/cmr/m/n/12 l pro-tease in-hib
 itor cock-tail (Sigma-Aldrich/USA)
@@ -891,7 +903,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 File: figures/jurkat_nucleus_waves.png Graphic file (type png)
 <use figures/jurkat_nucleus_waves.png>
 Package pdftex.def Info: figures/jurkat_nucleus_waves.png  used on input line 2
-37.
+51.
 (pdftex.def)             Requested size: 211.26027pt x 191.5419pt.
 
 
@@ -903,32 +915,32 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
 [7]
-Underfull \hbox (badness 3302) in paragraph at lines 242--243
+Underfull \hbox (badness 3302) in paragraph at lines 256--257
 []\OT1/cmr/m/n/12 The equip-ment used were an in-verted
  []
 
 
-Overfull \hbox (4.02213pt too wide) in paragraph at lines 242--243
+Overfull \hbox (4.02213pt too wide) in paragraph at lines 256--257
 \OT1/cmr/m/n/12 mi-cro-scope (Nikon Eclipse 2000Ti) con-nected
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 242--243
+Underfull \hbox (badness 1264) in paragraph at lines 256--257
 \OT1/cmr/m/n/12 (Sensocell) cou-pled with a force sen-sor.
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 242--243
+Underfull \hbox (badness 1442) in paragraph at lines 256--257
 \OT1/cmr/m/n/12 A fast cam-era (FAS-CAM SA3-Photron)
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 242--243
+Underfull \hbox (badness 1521) in paragraph at lines 256--257
 \OT1/cmr/m/n/12 the mi-cro-scope, with which the im-ages
  []
 
 
-Underfull \hbox (badness 1189) in paragraph at lines 246--247
+Underfull \hbox (badness 1189) in paragraph at lines 260--261
 \OT1/cmr/m/n/12 and the cover glass was placed on the
  []
 
@@ -945,7 +957,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 File: figures/esquema_preprocesado_metodos_1.png Graphic file (type png)
 <use figures/esquema_preprocesado_metodos_1.png>
 Package pdftex.def Info: figures/esquema_preprocesado_metodos_1.png  used on in
-put line 288.
+put line 302.
 (pdftex.def)             Requested size: 469.47046pt x 118.1958pt.
 
 
@@ -998,7 +1010,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 File: figures/esquema_extended_kalman_filter.png Graphic file (type png)
 <use figures/esquema_extended_kalman_filter.png>
 Package pdftex.def Info: figures/esquema_extended_kalman_filter.png  used on in
-put line 509.
+put line 523.
 (pdftex.def)             Requested size: 305.15292pt x 230.32613pt.
 
 
@@ -1010,13 +1022,13 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
 
 [14 <./figures/esquema_extended_kalman_filter.png>]
-Overfull \hbox (5.74683pt too wide) in paragraph at lines 530--531
+Overfull \hbox (5.74683pt too wide) in paragraph at lines 544--545
 \OT1/cmr/m/n/12 To val-i-date the sys-tem it was nec-es-sary to merge the real 
 data ob-tained with the com-pu-ta-tional
  []
 
 
-Overfull \hbox (4.47977pt too wide) in paragraph at lines 541--543
+Overfull \hbox (4.47977pt too wide) in paragraph at lines 555--557
 \OT1/cmr/m/n/12 For one-dimensional sim-u-la-tions, the num-ber of nodes $\OML/
 cmm/m/it/12 N$ \OT1/cmr/m/n/12 was the pa-ram-e-ter $\OML/cmm/m/it/12 n$\OT1/cm
 r/m/n/12 . The dif-fer-en-tial
@@ -1052,13 +1064,13 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 <figures/jurkat_cell_shape.png, id=425, 426.75435pt x 119.2455pt>
 File: figures/jurkat_cell_shape.png Graphic file (type png)
 <use figures/jurkat_cell_shape.png>
-Package pdftex.def Info: figures/jurkat_cell_shape.png  used on input line 614.
+Package pdftex.def Info: figures/jurkat_cell_shape.png  used on input line 628.
 
 (pdftex.def)             Requested size: 422.52054pt x 118.06248pt.
 <figures/hela_cell_shape.png, id=426, 282.93706pt x 115.99335pt>
 File: figures/hela_cell_shape.png Graphic file (type png)
 <use figures/hela_cell_shape.png>
-Package pdftex.def Info: figures/hela_cell_shape.png  used on input line 631.
+Package pdftex.def Info: figures/hela_cell_shape.png  used on input line 645.
 (pdftex.def)             Requested size: 281.68513pt x 115.49214pt.
 
 
@@ -1071,7 +1083,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 [18 <./figures/jurkat_cell_shape.png> <./figures/hela_cell_shape.png>]
 Package svg Info: Last page of `./svg-inkscape/datos_pinzas_no_filtrados_hela_j
-urkat_svg-tex.pdf' is 1 on input line 648.
+urkat_svg-tex.pdf' is 1 on input line 662.
 
 (svg-inkscape/datos_pinzas_no_filtrados_hela_jurkat_svg-tex.pdf_tex
 <./svg-inkscape/datos_pinzas_no_filtrados_hela_jurkat_svg-tex.pdf, id=436, page
@@ -1084,7 +1096,7 @@ vg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 469.47046pt x 127.87918pt.
 )
 Package svg Info: Last page of `./svg-inkscape/noisy_data_fourier_composition_s
-vg-tex.pdf' is 1 on input line 672.
+vg-tex.pdf' is 1 on input line 686.
 
 (svg-inkscape/noisy_data_fourier_composition_svg-tex.pdf_tex
 <./svg-inkscape/noisy_data_fourier_composition_svg-tex.pdf, id=441, page=1, 525
@@ -1097,7 +1109,7 @@ pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 422.52054pt x 249.11362pt.
 )
 Package svg Info: Last page of `./svg-inkscape/noisy_data_fourier_composition_f
-ilter_svg-tex.pdf' is 1 on input line 680.
+ilter_svg-tex.pdf' is 1 on input line 694.
 
 (svg-inkscape/noisy_data_fourier_composition_filter_svg-tex.pdf_tex
 <./svg-inkscape/noisy_data_fourier_composition_filter_svg-tex.pdf, id=443, page
@@ -1134,7 +1146,7 @@ n_filter_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in
  a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/modelo_1d_sin_ruido_1_svg-tex.pd
-f' is 1 on input line 700.
+f' is 1 on input line 714.
  (svg-inkscape/modelo_1d_sin_ruido_1_svg-tex.pdf_tex
 <./svg-inkscape/modelo_1d_sin_ruido_1_svg-tex.pdf, id=462, page=1, 251.54779pt 
 x 154.78769pt>
@@ -1145,7 +1157,7 @@ e1 used on input line 56.
 (pdftex.def)             Requested size: 234.73523pt x 144.44232pt.
 )
 Package svg Info: Last page of `./svg-inkscape/modelo_2d_con_sin_ruido_svg-tex.
-pdf' is 1 on input line 717.
+pdf' is 1 on input line 731.
 
 (svg-inkscape/modelo_2d_con_sin_ruido_svg-tex.pdf_tex
 <./svg-inkscape/modelo_2d_con_sin_ruido_svg-tex.pdf, id=466, page=1, 503.25905p
@@ -1173,7 +1185,7 @@ ex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 
 >]
 Package svg Info: Last page of `./svg-inkscape/filtro_kalman_1_fixed_svg-tex.pd
-f' is 1 on input line 738.
+f' is 1 on input line 752.
  (svg-inkscape/filtro_kalman_1_fixed_svg-tex.pdf_tex
 <./svg-inkscape/filtro_kalman_1_fixed_svg-tex.pdf, id=483, page=1, 513.88643pt 
 x 407.63565pt>
@@ -1193,7 +1205,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 [22 <./svg-inkscape/filtro_kalman_1_fixed_svg-tex.pdf>]
 Package svg Info: Last page of `./svg-inkscape/filtro_kalman_1_25_c_fixed_svg-t
-ex.pdf' is 1 on input line 748.
+ex.pdf' is 1 on input line 762.
 
 (svg-inkscape/filtro_kalman_1_25_c_fixed_svg-tex.pdf_tex
 <./svg-inkscape/filtro_kalman_1_25_c_fixed_svg-tex.pdf, id=493, page=1, 513.887
@@ -1206,7 +1218,7 @@ Package pdftex.def Info: ./svg-inkscape/filtro_kalman_1_25_c_fixed_svg-tex.pdf
 (pdftex.def)             Requested size: 469.47046pt x 372.17715pt.
 )
 Package svg Info: Last page of `./svg-inkscape/filtro_kalman_1_25_d_fixed_svg-t
-ex.pdf' is 1 on input line 757.
+ex.pdf' is 1 on input line 771.
 
 (svg-inkscape/filtro_kalman_1_25_d_fixed_svg-tex.pdf_tex
 <./svg-inkscape/filtro_kalman_1_25_d_fixed_svg-tex.pdf, id=496, page=1, 513.354
@@ -1240,7 +1252,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 [24 <./svg-inkscape/filtro_kalman_1_25_d_fixed_svg-tex.pdf>]
 Package svg Info: Last page of `./svg-inkscape/filtro_kalman_1_25_c_d_fixed_svg
--tex.pdf' is 1 on input line 770.
+-tex.pdf' is 1 on input line 784.
 
 (svg-inkscape/filtro_kalman_1_25_c_d_fixed_svg-tex.pdf_tex
 <./svg-inkscape/filtro_kalman_1_25_c_d_fixed_svg-tex.pdf, id=514, page=1, 513.3
@@ -1257,7 +1269,7 @@ f , page1 used on input line 56.
 File: figures/dependencia_valores_iniciales_1.png Graphic file (type png)
 <use figures/dependencia_valores_iniciales_1.png>
 Package pdftex.def Info: figures/dependencia_valores_iniciales_1.png  used on i
-nput line 779.
+nput line 793.
 (pdftex.def)             Requested size: 469.47046pt x 246.77783pt.
 
 
@@ -1275,25 +1287,25 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 <figures/recorte_nucleo.png, id=524, 313.17pt x 188.20313pt>
 File: figures/recorte_nucleo.png Graphic file (type png)
 <use figures/recorte_nucleo.png>
-Package pdftex.def Info: figures/recorte_nucleo.png  used on input line 798.
+Package pdftex.def Info: figures/recorte_nucleo.png  used on input line 812.
 (pdftex.def)             Requested size: 211.26027pt x 126.96269pt.
 
-Underfull \hbox (badness 1132) in paragraph at lines 803--804
+Underfull \hbox (badness 1132) in paragraph at lines 817--818
 \OT1/cmr/m/n/12 a bead in a cell nu-cleus while an-other
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 803--804
+Underfull \hbox (badness 1635) in paragraph at lines 817--818
 \OT1/cmr/m/n/12 of the nu-cleus. The re-sults pre-sented
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 803--804
+Underfull \hbox (badness 10000) in paragraph at lines 817--818
 
  []
 
 Package svg Info: Last page of `./svg-inkscape/raw_data_graph_2_svg-tex.pdf' is
- 1 on input line 809.
+ 1 on input line 823.
 (svg-inkscape/raw_data_graph_2_svg-tex.pdf_tex
 <./svg-inkscape/raw_data_graph_2_svg-tex.pdf, id=528, page=1, 569.76628pt x 222
 .24928pt>
@@ -1323,7 +1335,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 [27 <./svg-inkscape/raw_data_graph_2_svg-tex.pdf>]
 Package svg Info: Last page of `./svg-inkscape/transformada_fourier_limpia_svg-
-tex.pdf' is 1 on input line 820.
+tex.pdf' is 1 on input line 834.
 
 (svg-inkscape/transformada_fourier_limpia_svg-tex.pdf_tex
 <./svg-inkscape/transformada_fourier_limpia_svg-tex.pdf, id=546, page=1, 511.92
@@ -1345,7 +1357,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 [28 <./svg-inkscape/transformada_fourier_limpia_svg-tex.pdf>]
 Package svg Info: Last page of `./svg-inkscape/filtered_data_graph_2_svg-tex.pd
-f' is 1 on input line 833.
+f' is 1 on input line 847.
 
 (svg-inkscape/filtered_data_graph_2_svg-tex.pdf_tex
 <./svg-inkscape/filtered_data_graph_2_svg-tex.pdf, id=558, page=1, 564.53838pt 
@@ -1356,21 +1368,8 @@ Package pdftex.def Info: ./svg-inkscape/filtered_data_graph_2_svg-tex.pdf , pag
 e1 used on input line 56.
 (pdftex.def)             Requested size: 469.47046pt x 183.01892pt.
 )
-Package svg Info: Calling Inkscape on input line 840.
-runsystem(inkscape "figures/fourier_datos_pinzas_filtrados_fixed.svg" -D --expo
-rt-latex --export-filename="fourier_datos_pinzas_filtrados_fixed_svg-tex.pdf").
-..executed.
-
-runsystem(if not exist "./svg-inkscape/" mkdir "./svg-inkscape/")...executed.
-
-runsystem(move "fourier_datos_pinzas_filtrados_fixed_svg-tex.pdf" "./svg-inksca
-pe/fourier_datos_pinzas_filtrados_fixed_svg-tex.pdf")...executed.
-
-runsystem(move "fourier_datos_pinzas_filtrados_fixed_svg-tex.pdf_tex" "./svg-in
-kscape/fourier_datos_pinzas_filtrados_fixed_svg-tex.pdf_tex")...executed.
-
 Package svg Info: Last page of `./svg-inkscape/fourier_datos_pinzas_filtrados_f
-ixed_svg-tex.pdf' is 1 on input line 840.
+ixed_svg-tex.pdf' is 1 on input line 854.
 
 (svg-inkscape/fourier_datos_pinzas_filtrados_fixed_svg-tex.pdf_tex
 <./svg-inkscape/fourier_datos_pinzas_filtrados_fixed_svg-tex.pdf, id=560, page=
@@ -1398,7 +1397,7 @@ s_fixed_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in
 a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/viscosity_freq_svg-tex.pdf' is 1
- on input line 861.
+ on input line 875.
  (svg-inkscape/viscosity_freq_svg-tex.pdf_tex
 <./svg-inkscape/viscosity_freq_svg-tex.pdf, id=570, page=1, 431.24455pt x 230.1
 3608pt>
@@ -1503,14 +1502,14 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  )
 (\end occurred inside a group at level 2)
 
-### semi simple group (level 2) entered at line 1025 (\begingroup)
+### semi simple group (level 2) entered at line 1039 (\begingroup)
 ### semi simple group (level 1) entered at line 33 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 16371 strings out of 478864
- 275626 string characters out of 2848660
+ 16369 strings out of 478864
+ 275518 string characters out of 2848660
  625341 words of memory out of 3000000
- 33702 multiletter control sequences out of 15000+600000
+ 33700 multiletter control sequences out of 15000+600000
  411509 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,12n,94p,1311b,2017s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1529,7 +1528,7 @@ nts/cm/cmr8.pfb><D:/Users/avale/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb><D:/Users/avale/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/amsfonts/cm/cmsy8.pfb><D:/Users/avale/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (45 pages, 7868188 bytes).
+Output written on main.pdf (45 pages, 7870079 bytes).
 PDF statistics:
  728 PDF objects out of 1000 (max. 8388607)
  190 named destinations out of 1000 (max. 500000)
