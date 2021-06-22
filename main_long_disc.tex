@@ -558,7 +558,7 @@ For one-dimensional simulations, the number of nodes $N$ was the parameter $n$. 
 \end{equation}
 For this purpose, it was necessary to determine the transmission rate initial for the extended Kalman filter in the cell nucleus as shown below:
 \begin{equation} \label{eqn:c}
-	c = \sqrt{\frac{E}{\rho}}
+	c = \sqrt{\frac{E}{p}}
 \end{equation}
 The parameter $E$ is Young's modulus, which can be obtained from the force contributed in an area, $\sigma$, and the proportional deformation of that area, $\epsilon$. The value of the initial Young's modulus has not been calculated in this work and depends on another project of the group. When that project is completed, the value obtained in this study will be used.
 
@@ -580,7 +580,7 @@ For correlating damping with viscosity, the damped spring-mass model was used:
 		
 		m\ddot{x} - \xi \dot{x} = 0 \\
 		\ddot{x} = \frac{\xi}{m^{3}p}\dot{x} \\
-		b = \frac{\xi}{\bar{Vol} \rho} = \frac{\xi}{\Delta x^{3} \rho}
+		b = \frac{\xi}{\bar{Vol} p} = \frac{\xi}{\Delta x p}
 		
 	\end{array}
 \end{equation}
@@ -629,7 +629,7 @@ The Jurkat cell has been fragmented to obtain the isolated nucleus. The images o
 	\label{fig:jurkat_cells}
 \end{figure}
 
-The Jurkat cell nuclei were isolated correctly as the methodology was optimized.
+The Jurkat cell nuclei were isolated correctly as the methodology was optimized. However, the concentration of drug that was used degraded most nuclei and it was quite difficult to find unbroken nuclei. Perhaps it would be better to use a lower drug concentration or the same drug concentration for a shorter time. 
 
 \setlength{\parskip}{0mm}
 
@@ -641,17 +641,12 @@ HeLa cells have been incubated with the beads in two possible approaches, the fi
 
 \setlength{\parskip}{4mm}
 
-Bead internalisation in HeLa cells has not been optimised, but several factors that appeared to be important have been identified.
-\newpage
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.60\textwidth]{figures/hela_cell_shape.png}
 	\caption{A. HeLa cell incubated in cell-culture treated multidishes. B. HeLa cell incubated on the cover glass in an individual petri dish.}
 	\label{fig:hela_cell_shape} 
 \end{figure}
- On the one hand, it is necessary to have a high concentration of cells when the incubation is started, because when the beads were added, the cells grew worse and divided less. It is also important that the medium is changed when the beads are added, because if the medium has been used for more than two days, it has been observed that the beads are barely internalised. In addition, if the cells have been attached less than 24 hours ago, more beads are internalised and this could happen because they are adherent cells that tend to extend, which could cause that the cell membrane is too tense to internalise the beads. It is important to carry out a more detailed study in the future in which cells that have internalised beads and those that have not are counted to optimise this methodology.
-
-In addition, incubation of the cells on the cover glass in an individual petri dish has the advantage that the cells are attached and not in suspension, so there is no need to wait for them to re-attach to the cover glass and it was expected that the properties could change whether the cell was attached or not.
 
 \setlength{\parskip}{0mm}
 
@@ -669,9 +664,7 @@ The nuclei of HeLa cells and Jurkat cells have been indented. A dataset of eight
 	\caption{Force values recorded on the optical tweezers. The first row corresponds to the identation in the nucleus of a HeLa cell and the second row to the identation in the isolated nucleus of a Jurkat cell.The first column corresponds to the beads that make identations and the second column to the beads that receive the signal at the other side of the nucleus. The frequency of the identations is 2Hz.}
 	\label{fig:raw_data_cells}
 \end{figure}
-On the one hand, indentations on single nuclei of Jurkat cells have been successfully performed, however, this was only possible with 3$\mu$m size beads, as 2$\mu$m size beads were very difficult to trap. 
 
-On the other hand, no results have been obtained with HeLa cells. Indentations were made with the shaker trap, but the tactile bead did not register the force after passing through the nucleus. This may happen because 2$\mu$m size beads were used, which were later discovered that they are poorly trapped, and they were apparently trapped in the cell but in fact were not. Moreover, the bead was contained inside a vesicle in the cell, where its movement was limited by the cell structure. Perhaps in order to perform force detection correctly in the Hela cell it is necessary to internalise 3$\mu$m size beads which are better captured than the 2$\mu$m size beads.
 \setlength{\parskip}{0mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -704,12 +697,9 @@ A plot of the generated signal, the Fourier transform, and the averaged Fourier 
 	\label{fig:noisy_filtered_data_simulated}
 \end{figure}
 
-The simulated signal was a very noisy signal with three frequencies and the fast Fourier transform and the averaged fast Fourier transform showed these frequencies. 
-
-The signal filtered showed flattened maxima and peaked minima, a perfect signal was not obtained. However, with the fast Fourier transform and the averaged fast Fourier transform it can be seen that the only frequency of the signal was the desired one. In both transforms it was observed that the 10Hz peak lost a little intensity and in the averaged one the close frequencies were observed with a little intensity. This could be due to artefacts in the averaging or because the reduction of higher and lower frequencies did not result in a perfect signal and this is due to the maxima and minima, which did not have the shape of a perfect curve, but instead had straight lines and peaks.
-
 \setlength{\parskip}{0mm}
 
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{One-dimension wave model simulation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -717,15 +707,15 @@ The signal filtered showed flattened maxima and peaked minima, a perfect signal 
 \setlength{\parskip}{0mm}
 
 A one-dimensional wave has been obtained from the one-dimensional wave model in polar coordinates with Matlab. The units of the parameters are simulation units.
+
 \setlength{\parskip}{4mm}
+
 \begin{figure}[htbp]
     \centering
     \includesvg[width=0.5\textwidth]{figures/modelo_1d_sin_ruido_1.svg}
     \caption{Simulated wave captured by a sensor. It has been simulated with the 1-dimensional wave model in polar coordinates with Matlab.}
     \label{fig:modelo1}
 \end{figure}
-
-The one-dimensional polar wave model worked well and produced simulated data, and the one-dimensional aspect of the model meant that the computational cost was low, which made it possible to obtain the data quickly.
 
 \setlength{\parskip}{0mm}
 
@@ -743,7 +733,8 @@ From the two-dimensional wave model in Cartesian coordinates implemented in Matl
     \caption{Simulated wave captured by a sensor. It has been simulated with the two-dimensional wave model in cartesian coordinates with Matlab. The first graph is an ideal model without noise and the second one has 40\% random noise.}
     \label{fig:modelo2}
 \end{figure}
-The two-dimensional wave model worked well and simulated data were obtained without and with noise to test the extended Kalman filter.
+
+\newpage
 
 \setlength{\parskip}{0mm}
 
@@ -764,7 +755,6 @@ The figure \ref{fig:kalman1} shows the parameters obtained by the extended Kalma
     \label{fig:kalman1}
 \end{figure}
 
-\newpage
 To see the robustness of the extended Kalman filter depending on how close the proposed initial values of the transmission rate and damping are to the real ones, several tests have been performed changing the proposed initial value.  
 First, figure \ref{fig:kalman1c} shows an initial value of the propagation velocity $c$ that is 25\% higher than the real one, that is an initial value of $1,25 c_{real}$.
 
@@ -775,7 +765,6 @@ First, figure \ref{fig:kalman1c} shows an initial value of the propagation veloc
     \label{fig:kalman1c}
 \end{figure}
 
-\newpage
 Furthermore, the value of the parameters obtained with the extended Kalman filter is shown when the damping given at the beginning is $1,25 d_{real}$ in figure \ref{fig:kalman1d}.
 
 \begin{figure}[h!]
@@ -798,9 +787,6 @@ As it is not usual to have the exact value of one parameter a priori and not of 
     \label{fig:kalman1dc}
 \end{figure}
 
-On the basis of these tests it was determined that the state (position) with and without noise was corrected very well, however, the same did not happen for the parameters. The propagation velocity in most cases converged to the real parameter. However, the final damping parameter was estimated always to be at least twice the real one, a situation that became worse when the values collected by the sensor were noisy. These means that the extended Kalman filter corrects the states better than the parameters and the parameter values change throughout the estimation cycle process, searching for the best parameters.
-\newpage
-
 Several simulations have been carried out with the extended Kalman filter to determine the final error of the parameters $c$ and $d$ as a function of the percentage difference between the initial value of the parameters and the actual value. The results of this analysis are presented the figure \ref{fig:valorescd}. The heat map shows if the final estimated value of the parameter is higher or lower than the real one, depending on the initial estimated parameter value is higher or lower than the real one. In addition, it is distinguished according to whether the system is noiseless or has 40\% random noise.
 
 \begin{figure}[h!]
@@ -810,11 +796,7 @@ Several simulations have been carried out with the extended Kalman filter to det
     \label{fig:valorescd}
 \end{figure}
 
-Firstly, when the data were noise-free there was a clear dynamic between the final estimated parameters and the initial value of the dispersion velocity. When the initial value of the scattering velocity was lower than the actual value, the final dispersion velocity was lower than the actual value and the estimated damping was higher than the actual value. However, as the initial value of the scattering velocity increased, the final value of the scattering velocity also increased, while the final value of the damping decreased. However, when the initial dispersion velocity value was 1,50 times the actual value, the damping parameter was no longer estimated , and from a dispersion value of 2,00 times the actual value, the dispersion velocity was also not estimated.
-
-On the other hand, when the data analysed with the filter were noisy, the patterns in the parameters were not as constant although the trends were the same but with different values due to the noise.
-
-This has shown that the parameters indicated at the start of extended Kalman filter are important, as the filter only approximates the real value and sometimes, if they are very different from the real value, it cannot even estimate them. Furthermore, if the signal is not noisy it has a better convergence to the true value than if the data is noisy.
+\newpage
 
 \setlength{\parskip}{0mm}
 
@@ -832,8 +814,11 @@ This has shown that the parameters indicated at the start of extended Kalman fil
     \caption{Isolated nucleus of a Jurkat cell in which one bead was being indented while another bead received the signal}
     \label{fig:myfig3}
 \end{wrapfigure}
-Real data have been obtained by embedding a bead in a cell nucleus while another bead captured the waves at the other edge of the nucleus. The results presented have been obtained from the image \ref{fig:myfig3}, a isolated Jurkat cell nucleus. It has been indented with a force amplitude of 0,5$\mu$m and frequencies of 2Hz, 4Hz, 5Hz, 8Hz, and 10Hz for 30 seconds. Figure \ref{fig:raw_data} have several graphs which compare the force emitted by the identing bead and the force that reaches the bead sensor.
+
+Real data have been obtained by embedding a bead in a cell nucleus while another bead captured the waves at the other edge of the nucleus. The results presented have been obtained from the image \ref{fig:myfig3}, a isolated Jurkat cell nucleus. It has been indented with a force amplitude of 0,5$\mu$m and frequencies of 2Hz, 4Hz, 5Hz, 8Hz, and 10Hz for 30 seconds. Figure \ref{fig:raw_data} have several graphs which compare the force emitted by the identing bead and the force that reaches the bead sensor. \\
+
 \setlength{\parskip}{4mm}
+
 \begin{figure}[htbp]
   \centering
   \includesvg[width=1\textwidth]{figures/raw_data_graph_2.svg}
@@ -841,7 +826,10 @@ Real data have been obtained by embedding a bead in a cell nucleus while another
   \label{fig:raw_data}
 \end{figure}
 
-As the values captured by the force sensor of the optical tweezers were noisy, a filtering was performed. An averaged fast Fourier transform was used to determine the frequencies corresponding to the noise. Although the force values collected by the bead performing the identations had noise, only the fast Fourier transform of the beads acting as sensors are shown in figure \ref{fig:fourier_sin_filtro}, as these values were the most affected by noise. 
+As the values captured by the force sensor of the optical tweezers were noisy, a filtering was performed. An averaged fast Fourier transform was used to determine the frequencies corresponding to the noise. Although the force values collected by the bead performing the identations had noise, only the fast Fourier transform and averaged fast Fourier transform of the beads acting as sensors are shown in figure \ref{fig:fourier_sin_filtro}, as these values were the most affected by noise. 
+
+\newpage
+
 \begin{figure}[htbp]
   \centering
   \includesvg[width=0.70\textwidth]{figures/transformada_fourier_limpia.svg}
@@ -849,15 +837,11 @@ As the values captured by the force sensor of the optical tweezers were noisy, a
   \label{fig:fourier_sin_filtro}
 \end{figure}
 
-\newpage
-
-With fast Fourier transforms it was determined that there was noise at both high and low frequencies and it limited the appropriate frequency to work with.
-
 Then, these signals were filtered using the low pass and high pass FIR filter to obtain the filtered forces shown in figure \ref{fig:filtered_data}. Moreover, the Fourier transform and the average of the Fourier transform were also performed to verify that the signal has been filtered by removing high and low frequency noise with the low pass and high pass FIR filter. Both Fourier transforms are plotted in the figure \ref{fig:fourier_con_filtro_todo}.
 
-After inspecting the filtered signal, it was found that at least the high-frequency noise was not significant, and the Fourier transform showed that the dominant frequency was the working frequency and that there was barely any noise. One aspect to take into account is that the averaged Fourier transform, having few values, shows graphs that can induce doubts, this can be observed especially with the graphs of the 2Hz and 5Hz data, while the 10Hz one has a greater number of values and was more similar to the non-averaged transform. Therefore, it is necessary to have a longer sampling time at low frequencies.
-
 With this analysis, the preprocessing of the real data was finished and the force captured by the optical tweezers was stored filtered.
+
+\newpage
 
 \begin{figure}[htbp]
   \centering
@@ -865,6 +849,7 @@ With this analysis, the preprocessing of the real data was finished and the forc
   \caption{Force captured by the optical tweezers during identation, filtered with the high pass and low pass FIR filter. The first column corresponds to the beads that make identations and the second column to the beads that receive the signal at the other side of the nucleus. The frequency of the identations was 2Hz in the first row, 5Hz in the second row and 10Hz in the third row.}
   \label{fig:filtered_data}
 \end{figure}
+
 \begin{figure}[H]
     \centering
     \includesvg[width=0.7\textwidth]{figures/fourier_datos_pinzas_filtrados_fixed.svg}
@@ -904,14 +889,145 @@ The viscosity was calculated to calculate the damping, which was obtained from G
 \rhead{Discussion}
 \section{Discussion}
 
-The final purpose of this work was to develop a sensor to monitor the mechanical properties of the cell nucleus, and for this purpose the work was divided into its components. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Experimental desing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Jurkat cells, cell fragmentation and incubation with drug}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The Jurkat cell nuclei were isolated correctly as the methodology was optimized. However, the concentration of drug that was used degraded most nuclei and it was quite difficult to find unbroken nuclei. Perhaps it would be better to use a lower drug concentration or the same drug concentration for a shorter time. 
+
+\setlength{\parskip}{4mm} 
+
+\setlength{\parskip}{0mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{HeLa cells and incubation with beads}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bead internalisation in HeLa cells has not been optimised, but several factors that appeared to be important have been identified.
 
 \setlength{\parskip}{4mm}
 
-Firstly, the experimental component has been optimised to work with isolated Jurkat cell nuclei, however, to work with HeLa cells further investigation was necessary. First, the internalisation of beads into cells was not optimised, although some were successfully phagocytosed. Second, it was not possible to obtain experimental indentation data in HeLa cells, whereas in Jurkat cell nuclei it was. It is necessary to investigate whether other beads can be better trapped by the optical tweezers to achieve a higher indentation movement and closer approach to the nucleus.
+ On the one hand, it is necessary to have a high concentration of cells when the incubation is started, because when the beads were added, the cells grew worse and divided less. It is also important that the medium is changed when the beads are added, because if the medium has been used for more than two days, it has been observed that the beads are barely internalised. In addition, if the cells have been attached less than 24 hours ago, more beads are internalised and this could happen because they are adherent cells that tend to extend, which could cause that the cell membrane is too tense to internalise the beads. It is important to carry out a more detailed study in the future in which cells that have internalised beads and those that have not are counted to optimise this methodology.
 
-Second, the computational component has been finalised so that noise can be removed from the data and parameter estimation can be performed with the extended Kalman filter. The performance of these algorithms has been tested on simulated data, which has allowed studies of the system. As a result, this has shown that the use of a one-dimensional polar wave model does not represent a loss of information compared to a two-dimensional Cartesian wave model. 
-In addition, it has been proved the importance of using initial parameter values that are as close as possible to the real ones, because the extended Kalman filter approximates them if they are close to the real value.
+In addition, incubation of the cells on the cover glass in an individual petri dish has the advantage that the cells are attached and not in suspension, so there is no need to wait for them to re-attach to the cover glass and it was expected that the properties could change whether the cell was attached or not.
+
+\setlength{\parskip}{0mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Identation of cell nucleus with optical tweezers}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Indentation in the optical tweezers has been performed on isolated Jurkat cell nuclei and HeLa nuclei with different results.
+
+\setlength{\parskip}{4mm}
+
+On the one hand, indentations on single nuclei of Jurkat cells have been successfully performed, however, this was only possible with 3$\mu$m size beads, as 2$\mu$m size beads were very difficult to trap. 
+
+On the other hand, no results have been obtained with HeLa cells. Indentations were made with the shaker trap, but the tactile bead did not register the force after passing through the nucleus. This may happen because 2$\mu$m size beads were used, which were later discovered that they are poorly trapped, and they were apparently trapped in the cell but in fact were not. Moreover, the bead was contained inside a vesicle in the cell, where its movement was limited by the cell structure. Perhaps in order to perform force detection correctly in the Hela cell it is necessary to internalise 3$\mu$m size beads which are better captured than the 2$\mu$m size beads.
+
+\setlength{\parskip}{0mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Computational desing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Preprocessing of the simulated data}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+To check that the data pre-processing algorithm works correctly, it was tested with a simulated signal. The simulated signal was composed of three sine components with different frequencies, which results in a very noisy signal. The fast Fourier transform and the averaged fast Fourier transform showed the three frequencies of the signal. 
+
+\setlength{\parskip}{4mm}
+
+This signal was processed with the high pass and low pass FIR filter, removing frequencies above and below 10Hz. The signal showed flattened maxima and peaked minima, a perfect signal was not obtained.
+
+However, with the fast Fourier transform and the averaged fast Fourier transform it can be seen that the only frequency of the signal was the desired one. In both transforms it was observed that the 10Hz peak lost a little intensity and in the averaged one the close frequencies were observed with a little intensity. This could be due to artefacts in the averaging or because the reduction of higher and lower frequencies did not result in a perfect signal and this is due to the maxima and minima, which did not have the shape of a perfect curve, but instead had straight lines and peaks.
+
+\setlength{\parskip}{0mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{One-dimension wave model simulation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The one-dimensional polar wave model worked well and produced simulated data, and the one-dimensional aspect of the model meant that the computational cost was low, which made it possible to obtain the data quickly.
+
+\setlength{\parskip}{0mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Two-dimension wave model simulation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The two-dimensional wave model worked well and simulated data were obtained without and with noise to test the extended Kalman filter.
+
+\setlength{\parskip}{0mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Kalman filter analysis with simulated data}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The performance of the extended Kalman filter has been analysed. The data used were those obtained with the two-dimensional wave simulation without and with 40\% random noise. 
+
+\setlength{\parskip}{4mm}
+
+The filter was tested when the initial values of the transmission velocity and damping parameters were the actual values and when they were not the real ones. In this way it was found that the state (position) with and without noise was corrected very well, however, the same did not happen for the parameters. The propagation velocity in most cases converged to the real parameter. However, the final damping parameter was estimated always to be at least twice the real one, a situation that became worse when the values collected by the sensor were noisy.
+
+With these results it was determined that the extended Kalman filter corrects the states better than the parameters and the parameter values change throughout the estimation cycle process, searching for the best parameters.
+
+Several heatmaps to see the relationship between the value indicated at the beginning and the final value estimated by the filter were performed. 
+
+Firstly, when the data were noise-free there was a clear dynamic between the final estimated parameters and the initial value of the dispersion velocity. When the initial value of the scattering velocity was lower than the actual value, the final dispersion velocity was lower than the actual value and the estimated damping was higher than the actual value. However, as the initial value of the scattering velocity increased, the final value of the scattering velocity also increased, while the final value of the damping decreased. However, when the initial dispersion velocity value was 1,50 times the actual value, the damping parameter was no longer estimated , and from a dispersion value of 2,00 times the actual value, the dispersion velocity was also not estimated.
+
+On the other hand, when the data analysed with the filter were noisy, the patterns in the parameters were not as constant although the trends were the same but with different values due to the noise.
+
+This has shown that the parameters indicated at the start of extended Kalman filter are important, as the filter only approximates the real value and sometimes, if they are very different from the real value, it cannot even estimate them. Furthermore, if the signal is not noisy it has a better convergence to the true value than if the data is noisy.
+
+\setlength{\parskip}{0mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Validation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Pre-processing of real data}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Signals with apparently low noise at different frequencies have been captured, but to check what the real noise was, the fast Fourier transform was used. This determined that there was noise at both high and low frequencies, which limited the appropriate frequency to work with.
+
+\setlength{\parskip}{4mm}
+
+Subsequently, the data were filtered by the high pass and low pass FIR filter. After inspecting the signal, it was found that at least the high-frequency noise was not significant, and the Fourier transform showed that the dominant frequency was the working frequency and that there was barely any noise.
+
+One aspect to take into account is that the averaged Fourier transform, having few values, shows graphs that can induce doubts, this can be observed especially with the graphs of the 2Hz and 5Hz data, while the 10Hz one has a greater number of values and was more similar to the non-averaged transform. Therefore, it is necessary to have a longer sampling time at low frequencies.
+
+\setlength{\parskip}{0mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Obtain the real parameters}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In the determination of actual parameters, there were some of them such as the size of the nucleus that were measured and determined, and others, such as the number of nodes used to solve the model that have been selected. On the other hand, other parameters were not calculated and were approximated, such as density, which was used as that of water due to its similarity.
+
+\setlength{\parskip}{4mm}
+
+One parameter that has been calculated from the indentation data was viscosity, for which G' and G'' were calculated. The viscosity calculated for two isolated Jurkat cell nuclei showed the same dynamics with very similar values, where at low frequencies the viscosity is higher than at high frequencies. In addition, the modulus of elasticity G' and the modulus of loss G'' had very small values (of the order of $10^{-24}$Pa) which include negative numbers. These values, compared to those obtained in previous experiments on similar nuclear systems, were very small, since G' and G'' for a DNA strand are in the order of $10^{-1}$ and $10^{-2}$ Pa \cite{robertson2018optical}. These small values could be due to the fact that in microreology the beads are inside the medium they are measuring, whereas in this case only a part of the bead was in contact with the medium whose properties are to be measured. Perhaps with some corrections the viscosity inside the cell nucleus can be determined, or a bead can be inserted inside the nucleus and using the same methodology, the viscosity can be calculated.
+
+\setlength{\parskip}{0mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{New sensor desing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The final purpose of this work was to develop a sensor to monitor the mechanical properties of the core, and for this purpose the work was divided into its components. 
+
+\setlength{\parskip}{4mm}
+
+Firstly, the experimental component has been optimised to work with isolated Jurkat cell nuclei, however, to work with HeLa cells further investigation was necessary.
+
+Second, the computational component has been finalised so that noise can be removed from the data and parameter estimation can be performed with the extended Kalman filter. In addition, it has been proved the importance of using initial parameter values that are as close as possible to the real ones.
 
 Finally, the validation of the sensor could not be finalised, but the introduction of the real data into the computational part has started, as they have been pre-processed. The final part that could not be reached was the input of the filtered data into the extended Kalman filter with the actual values. However, some results have been obtained in the project that have provided a significant breakthrough in the development of the sensor, which is expected to be validated in the near future.
 
