@@ -10,15 +10,6 @@ T.~Vellai and G.~Vida, ``The origin of eukaryotes: the difference between
   London. Series B: Biological Sciences}, vol.~266, no.~1428, pp.~1571--1577,
   1999.
 
-\bibitem{keeling2008organelle}
-P.~J. Keeling and J.~M. Archibald, ``Organelle evolution: what's in a name?,''
-  {\em Current Biology}, vol.~18, no.~8, pp.~R345--R347, 2008.
-
-\bibitem{rapoport2007protein}
-T.~A. Rapoport, ``Protein translocation across the eukaryotic endoplasmic
-  reticulum and bacterial plasma membranes,'' {\em Nature}, vol.~450, no.~7170,
-  pp.~663--669, 2007.
-
 \bibitem{cook1983mucus}
 A.~Cook and R.~Shirbhate, ``The mucus producing glands and the distribution of
   the cilia of the pulmonate slug limax pseudoflavus,'' {\em Journal of
@@ -27,11 +18,6 @@ A.~Cook and R.~Shirbhate, ``The mucus producing glands and the distribution of
 \bibitem{ossareh2001protein}
 B.~Ossareh-Nazari, C.~Gwizdek, and C.~Dargemont, ``Protein export from the
   nucleus,'' {\em Traffic}, vol.~2, no.~10, pp.~684--689, 2001.
-
-\bibitem{hoffmann2011integrin}
-C.~Hoffmann, K.~Ohlsen, and C.~R. Hauck, ``Integrin-mediated uptake of
-  fibronectin-binding bacteria,'' {\em European journal of cell biology},
-  vol.~90, no.~11, pp.~891--896, 2011.
 
 \bibitem{lammerding2011mechanics}
 J.~Lammerding, ``Mechanics of the nucleus,'' {\em Comprehensive physiology},
@@ -224,5 +210,10 @@ A.~El~Kaffas, ``Measuring the mechanical properties of apoptotic cells using
 \bibitem{robertson2018optical}
 R.~M. Robertson-Anderson, ``Optical tweezers microrheology: from the basics to
   advanced techniques and applications,'' 2018.
+
+\bibitem{mezger2020rheology}
+T.~Mezger, {\em The rheology handbook: for users of rotational and oscillatory
+  rheometers}.
+\newblock European Coatings, 2020.
 
 \end{thebibliography}

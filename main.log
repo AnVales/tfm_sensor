@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.10)  22 JUN 2021 18:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.10)  23 JUN 2021 18:16
 entering extended mode
 **./main.tex
 (main.tex
@@ -668,842 +668,940 @@ File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count308
 \l__pdf_internal_box=\box105
 ) (main.aux
+! Undefined control sequence.
+l.25 \abx@aux@refcontext
+                        {none/global//global/global}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \abx@aux@refcontext{n
+                          one/global//global/global}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.28 \abx@aux@cite
+                  {mazzarello1999unifying}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.29 \abx@aux@segm
+                  {0}{0}{mazzarello1999unifying}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.30 \abx@aux@cite
+                  {vellai1999origin}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.31 \abx@aux@segm
+                  {0}{0}{vellai1999origin}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.32 \abx@aux@cite
+                  {cook1983mucus}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.33 \abx@aux@segm
+                  {0}{0}{cook1983mucus}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.34 \abx@aux@cite
+                  {ossareh2001protein}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.35 \abx@aux@segm
+                  {0}{0}{ossareh2001protein}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.36 \abx@aux@cite
+                  {lammerding2011mechanics}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.37 \abx@aux@segm
+                  {0}{0}{lammerding2011mechanics}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.38 \abx@aux@cite
+                  {lammerding2004lamin}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.39 \abx@aux@segm
+                  {0}{0}{lammerding2004lamin}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.40 \abx@aux@cite
+                  {jacobs2012introduction}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.41 \abx@aux@segm
+                  {0}{0}{jacobs2012introduction}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.42 \abx@aux@cite
+                  {lekka2019measuring}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.43 \abx@aux@segm
+                  {0}{0}{lekka2019measuring}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.44 \abx@aux@cite
+                  {cross2007nanomechanical}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.45 \abx@aux@segm
+                  {0}{0}{cross2007nanomechanical}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.46 \abx@aux@cite
+                  {liu2017mitosis}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.47 \abx@aux@segm
+                  {0}{0}{liu2017mitosis}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.48 \abx@aux@cite
+                  {gonzalez2019advances}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.49 \abx@aux@segm
+                  {0}{0}{gonzalez2019advances}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.50 \abx@aux@cite
+                  {janel2019stiffness}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.51 \abx@aux@segm
+                  {0}{0}{janel2019stiffness}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.52 \abx@aux@cite
+                  {murphy2011automated}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.53 \abx@aux@segm
+                  {0}{0}{murphy2011automated}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.54 \abx@aux@cite
+                  {lammerding2011mechanics}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.55 \abx@aux@segm
+                  {0}{0}{lammerding2011mechanics}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.56 \abx@aux@cite
+                  {lammerding2007nuclear}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.57 \abx@aux@segm
+                  {0}{0}{lammerding2007nuclear}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.58 \abx@aux@cite
+                  {de2007direct}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.59 \abx@aux@segm
+                  {0}{0}{de2007direct}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.62 \abx@aux@cite
+                  {gennisson2013ultrasound}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.63 \abx@aux@segm
+                  {0}{0}{gennisson2013ultrasound}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.64 \abx@aux@cite
+                  {achenbach2012wave}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.65 \abx@aux@segm
+                  {0}{0}{achenbach2012wave}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.66 \abx@aux@cite
+                  {novotny1997theory}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.67 \abx@aux@segm
+                  {0}{0}{novotny1997theory}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.68 \abx@aux@cite
+                  {ombid2020vitro}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.69 \abx@aux@segm
+                  {0}{0}{ombid2020vitro}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.70 \abx@aux@cite
+                  {ashkin1992forces}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.71 \abx@aux@segm
+                  {0}{0}{ashkin1992forces}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.72 \abx@aux@cite
+                  {farre2014force}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.73 \abx@aux@segm
+                  {0}{0}{farre2014force}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.74 \abx@aux@cite
+                  {ashkin20182018}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.75 \abx@aux@segm
+                  {0}{0}{ashkin20182018}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.78 \abx@aux@cite
+                  {rabiner1973approximate}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.79 \abx@aux@segm
+                  {0}{0}{rabiner1973approximate}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.80 \abx@aux@cite
+                  {mondal2012novel}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.81 \abx@aux@segm
+                  {0}{0}{mondal2012novel}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.82 \abx@aux@cite
+                  {kim2018introduction}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.83 \abx@aux@segm
+                  {0}{0}{kim2018introduction}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.84 \abx@aux@cite
+                  {pearson1974Kalman}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.85 \abx@aux@segm
+                  {0}{0}{pearson1974Kalman}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.86 \abx@aux@cite
+                  {ribeiro2004Kalman}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.87 \abx@aux@segm
+                  {0}{0}{ribeiro2004Kalman}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.90 \abx@aux@cite
+                  {gey1952tissue}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.91 \abx@aux@segm
+                  {0}{0}{gey1952tissue}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.92 \abx@aux@cite
+                  {schneider1977characterization}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.93 \abx@aux@segm
+                  {0}{0}{schneider1977characterization}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.94 \abx@aux@cite
+                  {gioia2018genome}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.95 \abx@aux@segm
+                  {0}{0}{gioia2018genome}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.96 \abx@aux@cite
+                  {andersen2002directed}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.97 \abx@aux@segm
+                  {0}{0}{andersen2002directed}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.98 \abx@aux@cite
+                  {holzinger2001jasplakinolide}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.99 \abx@aux@segm
+                  {0}{0}{holzinger2001jasplakinolide}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.104 \abx@aux@cite
+                   {schneider1977characterization}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.105 \abx@aux@segm
+                   {0}{0}{schneider1977characterization}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.108 \abx@aux@cite
+                   {gey1952tissue}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.109 \abx@aux@segm
+                   {0}{0}{gey1952tissue}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.118 \abx@aux@cite
+                   {mondal2012novel}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.119 \abx@aux@segm
+                   {0}{0}{mondal2012novel}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.120 \abx@aux@cite
+                   {jacob2015digital}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.121 \abx@aux@segm
+                   {0}{0}{jacob2015digital}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.122 \abx@aux@cite
+                   {de2001transformada}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.123 \abx@aux@segm
+                   {0}{0}{de2001transformada}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.124 \abx@aux@cite
+                   {shabaninezhad2021matlab}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.125 \abx@aux@segm
+                   {0}{0}{shabaninezhad2021matlab}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.126 \abx@aux@cite
+                   {FourierTransform}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.127 \abx@aux@segm
+                   {0}{0}{FourierTransform}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.128 \abx@aux@cite
+                   {frigo1998fftw}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.129 \abx@aux@segm
+                   {0}{0}{frigo1998fftw}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.130 \abx@aux@cite
+                   {achenbach2012wave}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.131 \abx@aux@segm
+                   {0}{0}{achenbach2012wave}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.132 \abx@aux@cite
+                   {d'alembert_1749}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.132 \abx@aux@cite{d'alembert_
+                               1749}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 1
+32.
+(D:\Users\avale\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 132
+.
+
+(D:\Users\avale\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 132
+.
+
+(D:\Users\avale\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+! Extra }, or forgotten $.
+l.132 \abx@aux@cite{d'alembert_1749}
+                                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+l.133 \abx@aux@segm
+                   {0}{0}{d'alembert_1749}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.135 \abx@aux@cite
+                   {petter2017finite}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.136 \abx@aux@segm
+                   {0}{0}{petter2017finite}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.137 \abx@aux@cite
+                   {mathews2000metodos}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.138 \abx@aux@segm
+                   {0}{0}{mathews2000metodos}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 LaTeX Warning: Label `eqn:matrixI' multiply defined.
 
 
 LaTeX Warning: Label `eqn:uk+1' multiply defined.
 
-)
-\openout1 = `main.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-
-(D:\Users\avale\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count309
-\scratchdimen=\dimen260
-\scratchbox=\box106
-\nofMPsegments=\count310
-\nofMParguments=\count311
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count312
-\MPscratchDim=\dimen261
-\MPnumerator=\count313
-\makeMPintoPDFobject=\count314
-\everyMPtoPDFconversion=\toks48
-)
-(D:\Users\avale\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(D:\Users\avale\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
-fg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-))
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: float package is loaded.
-Package caption Info: hyperref package is loaded.
-Package caption Info: wrapfig package is loaded.
-Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 35.
-
-(D:\Users\avale\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
-Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
-
-(D:\Users\avale\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(D:\Users\avale\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
-lestring.sty
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-)
-\c@section@level=\count315
-)
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
-LaTeX Info: Redefining \nameref on input line 35.
- (main.out) (main.out)
-\@outlinefile=\write5
-\openout5 = `main.out'.
-
-Package svg Info: Last page of `./svg-inkscape/logos_svg-tex.pdf' is 1 on input
- line 47.
- (svg-inkscape/logos_svg-tex.pdf_tex
-<./svg-inkscape/logos_svg-tex.pdf, id=87, page=1, 528.79785pt x 132.11467pt>
-File: ./svg-inkscape/logos_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/logos_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/logos_svg-tex.pdf , page1 used on input
- line 56.
-(pdftex.def)             Requested size: 469.47046pt x 117.29541pt.
-)
-Overfull \hbox (8.0pt too wide) in paragraph at lines 47--49
-[][]
- []
-
-[1
-
-{C:/Users/avale/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./svg-inkscape/
-logos_svg-tex.pdf>]
-Overfull \hbox (12.14398pt too wide) in paragraph at lines 76--77
-\OT1/cmr/m/n/12 based on a new method-ol-ogy which is called nu-clear elas-tog-
-ra-phy, to de-ter-mine some me-chan-i-cal
- []
-
-
-Overfull \hbox (7.933pt too wide) in paragraph at lines 84--85
-[]\OT1/cmr/m/n/12 Although the fi-nal val-i-da-tion sec-tion has not been com-p
-leted, the pre-filtering of ex-per-i-men-tal
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.89 \newpage
-              [1] (main.toc
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 3
-.
-
-(D:\Users\avale\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
-
-(D:\Users\avale\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
-
-(D:\Users\avale\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-[2])
-\tf@toc=\write6
-\openout6 = `main.toc'.
-
- [3]
-Overfull \hbox (7.5269pt too wide) in paragraph at lines 120--121
-\OT1/cmr/m/n/12 cel-lu-lar ac-tiv-i-ties [[]]. In ad-di-tion, the nu-cleus has 
-rel-e-vant struc-ture and me-chan-i-cal prop-er-ties,
- []
-
-
-Overfull \hbox (8.48846pt too wide) in paragraph at lines 126--127
-\OT1/cmr/m/n/12 prop-er-ties but have some prob-lems such as dam-age to the nu-
-cleus, the in-va-sive-ness, de-pen-dence
- []
-
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.127 
-       [1]
-Overfull \hbox (0.19975pt too wide) in paragraph at lines 128--129
-[]\OT1/cmr/m/n/12 Based on the study of these tech-niques, a new tech-nique was
- pro-posed, nu-clear elas-tog-ra-phy,
- []
-
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.155 
-       [2]
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.173 
-       [3]
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[4]
-<figures/esquema_trabajo_metodos_2.png, id=238, 583.58025pt x 290.70607pt>
-File: figures/esquema_trabajo_metodos_2.png Graphic file (type png)
-<use figures/esquema_trabajo_metodos_2.png>
-Package pdftex.def Info: figures/esquema_trabajo_metodos_2.png  used on input l
-ine 199.
-(pdftex.def)             Requested size: 469.47046pt x 233.8693pt.
-
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[5 <./figures/esquema_trabajo_metodos_2.png>]
-Overfull \hbox (40.36464pt too wide) in paragraph at lines 224--225
-\OT1/cmr/m/n/12 the pel-let was re-sus-pended in 300$\OML/cmm/m/it/12 $\OT1/cm
-r/m/n/12 l buffer A and 3$\OML/cmm/m/it/12 $\OT1/cmr/m/n/12 l pro-tease in-hib
-itor cock-tail (Sigma-Aldrich/USA)
- []
-
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[6]
-<figures/jurkat_nucleus_waves.png, id=266, 569.12625pt x 516.0078pt>
-File: figures/jurkat_nucleus_waves.png Graphic file (type png)
-<use figures/jurkat_nucleus_waves.png>
-Package pdftex.def Info: figures/jurkat_nucleus_waves.png  used on input line 2
-50.
-(pdftex.def)             Requested size: 211.26027pt x 191.5419pt.
-
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[7]
-Underfull \hbox (badness 3302) in paragraph at lines 255--256
-[]\OT1/cmr/m/n/12 The equip-ment used were an in-verted
- []
-
-
-Overfull \hbox (4.02213pt too wide) in paragraph at lines 255--256
-\OT1/cmr/m/n/12 mi-cro-scope (Nikon Eclipse 2000Ti) con-nected
- []
-
-
-Underfull \hbox (badness 1264) in paragraph at lines 255--256
-\OT1/cmr/m/n/12 (Sensocell) cou-pled with a force sen-sor.
- []
-
-
-Underfull \hbox (badness 1442) in paragraph at lines 255--256
-\OT1/cmr/m/n/12 A fast cam-era (FAS-CAM SA3-Photron)
- []
-
-
-Underfull \hbox (badness 1521) in paragraph at lines 255--256
-\OT1/cmr/m/n/12 the mi-cro-scope, with which the im-ages
- []
-
-
-Underfull \hbox (badness 1189) in paragraph at lines 259--260
-\OT1/cmr/m/n/12 and the cover glass was placed on the
- []
-
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[8 <./figures/jurkat_nucleus_waves.png>]
-<figures/esquema_preprocesado_metodos_1.png, id=277, 536.78543pt x 135.1449pt>
-File: figures/esquema_preprocesado_metodos_1.png Graphic file (type png)
-<use figures/esquema_preprocesado_metodos_1.png>
-Package pdftex.def Info: figures/esquema_preprocesado_metodos_1.png  used on in
-put line 301.
-(pdftex.def)             Requested size: 469.47046pt x 118.1958pt.
-
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[9 <./figures/esquema_preprocesado_metodos_1.png>]
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[10]
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[11]
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[12]
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[13]
-<figures/esquema_extended_kalman_filter.png, id=344, 312.38707pt x 235.78087pt>
-
-File: figures/esquema_extended_kalman_filter.png Graphic file (type png)
-<use figures/esquema_extended_kalman_filter.png>
-Package pdftex.def Info: figures/esquema_extended_kalman_filter.png  used on in
-put line 522.
-(pdftex.def)             Requested size: 305.15292pt x 230.32613pt.
-
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[14 <./figures/esquema_extended_kalman_filter.png>]
-Overfull \hbox (5.74683pt too wide) in paragraph at lines 543--544
-\OT1/cmr/m/n/12 To val-i-date the sys-tem it was nec-es-sary to merge the real 
-data ob-tained with the com-pu-ta-tional
- []
-
-
-Overfull \hbox (4.47977pt too wide) in paragraph at lines 554--556
-\OT1/cmr/m/n/12 For one-dimensional sim-u-la-tions, the num-ber of nodes $\OML/
-cmm/m/it/12 N$ \OT1/cmr/m/n/12 was the pa-ram-e-ter $\OML/cmm/m/it/12 n$\OT1/cm
-r/m/n/12 . The dif-fer-en-tial
- []
-
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[15]
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[16]
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[17]
-<figures/jurkat_cell_shape.png, id=387, 426.75435pt x 119.2455pt>
-File: figures/jurkat_cell_shape.png Graphic file (type png)
-<use figures/jurkat_cell_shape.png>
-Package pdftex.def Info: figures/jurkat_cell_shape.png  used on input line 627.
-
-(pdftex.def)             Requested size: 422.52054pt x 118.06248pt.
-
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[18 <./figures/jurkat_cell_shape.png>]
-<figures/hela_cell_shape.png, id=394, 282.93706pt x 115.99335pt>
-File: figures/hela_cell_shape.png Graphic file (type png)
-<use figures/hela_cell_shape.png>
-Package pdftex.def Info: figures/hela_cell_shape.png  used on input line 648.
-(pdftex.def)             Requested size: 281.68513pt x 115.49214pt.
-Package svg Info: Last page of `./svg-inkscape/datos_pinzas_no_filtrados_hela_j
-urkat_svg-tex.pdf' is 1 on input line 668.
-
-(svg-inkscape/datos_pinzas_no_filtrados_hela_jurkat_svg-tex.pdf_tex
-<./svg-inkscape/datos_pinzas_no_filtrados_hela_jurkat_svg-tex.pdf, id=396, page
-=1, 568.20508pt x 154.7713pt>
-File: ./svg-inkscape/datos_pinzas_no_filtrados_hela_jurkat_svg-tex.pdf Graphic 
-file (type pdf)
-<use ./svg-inkscape/datos_pinzas_no_filtrados_hela_jurkat_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/datos_pinzas_no_filtrados_hela_jurkat_s
-vg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 469.47046pt x 127.87918pt.
-)
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[19 <./figures/hela_cell_shape.png>]
-Package svg Info: Last page of `./svg-inkscape/noisy_data_fourier_composition_s
-vg-tex.pdf' is 1 on input line 694.
-
-(svg-inkscape/noisy_data_fourier_composition_svg-tex.pdf_tex
-<./svg-inkscape/noisy_data_fourier_composition_svg-tex.pdf, id=407, page=1, 525
-.54253pt x 309.84915pt>
-File: ./svg-inkscape/noisy_data_fourier_composition_svg-tex.pdf Graphic file (t
-ype pdf)
-<use ./svg-inkscape/noisy_data_fourier_composition_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/noisy_data_fourier_composition_svg-tex.
-pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 422.52054pt x 249.11362pt.
-)
-Package svg Info: Last page of `./svg-inkscape/noisy_data_fourier_composition_f
-ilter_svg-tex.pdf' is 1 on input line 702.
-
-(svg-inkscape/noisy_data_fourier_composition_filter_svg-tex.pdf_tex
-<./svg-inkscape/noisy_data_fourier_composition_filter_svg-tex.pdf, id=409, page
-=1, 524.78125pt x 309.47847pt>
-File: ./svg-inkscape/noisy_data_fourier_composition_filter_svg-tex.pdf Graphic 
-file (type pdf)
-<use ./svg-inkscape/noisy_data_fourier_composition_filter_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/noisy_data_fourier_composition_filter_s
-vg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 422.52054pt x 249.18394pt.
-)
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[20 <./svg-inkscape/datos_pinzas_no_filtrados_hela_jurkat_svg-tex.pdf>]
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[21 <./svg-inkscape/noisy_data_fourier_composition_svg-tex.pdf> <./svg-inkscape
-/noisy_data_fourier_composition_filter_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/noisy_data_fourier_compositio
-n_filter_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in
- a single page
->]
-Package svg Info: Last page of `./svg-inkscape/modelo_1d_sin_ruido_1_svg-tex.pd
-f' is 1 on input line 723.
- (svg-inkscape/modelo_1d_sin_ruido_1_svg-tex.pdf_tex
-<./svg-inkscape/modelo_1d_sin_ruido_1_svg-tex.pdf, id=429, page=1, 251.54779pt 
-x 154.78769pt>
-File: ./svg-inkscape/modelo_1d_sin_ruido_1_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/modelo_1d_sin_ruido_1_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/modelo_1d_sin_ruido_1_svg-tex.pdf , pag
-e1 used on input line 56.
-(pdftex.def)             Requested size: 234.73523pt x 144.44232pt.
-)
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[22 <./svg-inkscape/modelo_1d_sin_ruido_1_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/modelo_2d_con_sin_ruido_svg-tex.
-pdf' is 1 on input line 742.
-
-(svg-inkscape/modelo_2d_con_sin_ruido_svg-tex.pdf_tex
-<./svg-inkscape/modelo_2d_con_sin_ruido_svg-tex.pdf, id=440, page=1, 503.25905p
-t x 153.74518pt>
-File: ./svg-inkscape/modelo_2d_con_sin_ruido_svg-tex.pdf Graphic file (type pdf
-)
-<use ./svg-inkscape/modelo_2d_con_sin_ruido_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/modelo_2d_con_sin_ruido_svg-tex.pdf , p
-age1 used on input line 56.
-(pdftex.def)             Requested size: 469.47046pt x 143.42491pt.
-)
-Package svg Info: Last page of `./svg-inkscape/filtro_kalman_1_fixed_svg-tex.pd
-f' is 1 on input line 762.
-
-(svg-inkscape/filtro_kalman_1_fixed_svg-tex.pdf_tex
-<./svg-inkscape/filtro_kalman_1_fixed_svg-tex.pdf, id=447, page=1, 513.88643pt 
-x 407.63565pt>
-File: ./svg-inkscape/filtro_kalman_1_fixed_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/filtro_kalman_1_fixed_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/filtro_kalman_1_fixed_svg-tex.pdf , pag
-e1 used on input line 56.
-(pdftex.def)             Requested size: 469.47046pt x 372.40451pt.
-)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[23 <./svg-inkscape/modelo_2d_con_sin_ruido_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/filtro_kalman_1_25_c_fixed_svg-t
-ex.pdf' is 1 on input line 773.
-
-(svg-inkscape/filtro_kalman_1_25_c_fixed_svg-tex.pdf_tex
-<./svg-inkscape/filtro_kalman_1_25_c_fixed_svg-tex.pdf, id=458, page=1, 513.887
-59pt x 407.3868pt>
-File: ./svg-inkscape/filtro_kalman_1_25_c_fixed_svg-tex.pdf Graphic file (type 
-pdf)
-<use ./svg-inkscape/filtro_kalman_1_25_c_fixed_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/filtro_kalman_1_25_c_fixed_svg-tex.pdf 
-, page1 used on input line 56.
-(pdftex.def)             Requested size: 469.47046pt x 372.17715pt.
-)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[24 <./svg-inkscape/filtro_kalman_1_fixed_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/filtro_kalman_1_25_d_fixed_svg-t
-ex.pdf' is 1 on input line 783.
-
-(svg-inkscape/filtro_kalman_1_25_d_fixed_svg-tex.pdf_tex
-<./svg-inkscape/filtro_kalman_1_25_d_fixed_svg-tex.pdf, id=468, page=1, 513.354
-66pt x 406.92763pt>
-File: ./svg-inkscape/filtro_kalman_1_25_d_fixed_svg-tex.pdf Graphic file (type 
-pdf)
-<use ./svg-inkscape/filtro_kalman_1_25_d_fixed_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/filtro_kalman_1_25_d_fixed_svg-tex.pdf 
-, page1 used on input line 56.
-(pdftex.def)             Requested size: 469.47046pt x 372.14264pt.
-)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[25 <./svg-inkscape/filtro_kalman_1_25_c_fixed_svg-tex.pdf>]
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[26 <./svg-inkscape/filtro_kalman_1_25_d_fixed_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/filtro_kalman_1_25_c_d_fixed_svg
--tex.pdf' is 1 on input line 796.
-
-(svg-inkscape/filtro_kalman_1_25_c_d_fixed_svg-tex.pdf_tex
-<./svg-inkscape/filtro_kalman_1_25_c_d_fixed_svg-tex.pdf, id=485, page=1, 513.3
-4491pt x 407.3542pt>
-File: ./svg-inkscape/filtro_kalman_1_25_c_d_fixed_svg-tex.pdf Graphic file (typ
-e pdf)
-<use ./svg-inkscape/filtro_kalman_1_25_c_d_fixed_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/filtro_kalman_1_25_c_d_fixed_svg-tex.pd
-f , page1 used on input line 56.
-(pdftex.def)             Requested size: 469.47046pt x 372.55762pt.
-)
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[27 <./svg-inkscape/filtro_kalman_1_25_c_d_fixed_svg-tex.pdf>]
-<figures/dependencia_valores_iniciales_1.png, id=494, 549.61336pt x 288.89932pt
->
-File: figures/dependencia_valores_iniciales_1.png Graphic file (type png)
-<use figures/dependencia_valores_iniciales_1.png>
-Package pdftex.def Info: figures/dependencia_valores_iniciales_1.png  used on i
-nput line 808.
-(pdftex.def)             Requested size: 469.47046pt x 246.77783pt.
-
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[28 <./figures/dependencia_valores_iniciales_1.png>]
-<figures/recorte_nucleo.png, id=501, 313.17pt x 188.20313pt>
-File: figures/recorte_nucleo.png Graphic file (type png)
-<use figures/recorte_nucleo.png>
-Package pdftex.def Info: figures/recorte_nucleo.png  used on input line 831.
-(pdftex.def)             Requested size: 211.26027pt x 126.96269pt.
-Package svg Info: Last page of `./svg-inkscape/raw_data_graph_2_svg-tex.pdf' is
- 1 on input line 839.
-
-(svg-inkscape/raw_data_graph_2_svg-tex.pdf_tex
-<./svg-inkscape/raw_data_graph_2_svg-tex.pdf, id=505, page=1, 569.76628pt x 222
-.24928pt>
-File: ./svg-inkscape/raw_data_graph_2_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/raw_data_graph_2_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/raw_data_graph_2_svg-tex.pdf , page1 us
-ed on input line 56.
-(pdftex.def)             Requested size: 469.47046pt x 183.13069pt.
-)
-Underfull \hbox (badness 1132) in paragraph at lines 835--843
-\OT1/cmr/m/n/12 a bead in a cell nu-cleus while an-other
- []
-
-
-Underfull \hbox (badness 1635) in paragraph at lines 835--843
-\OT1/cmr/m/n/12 of the nu-cleus. The re-sults pre-sented
- []
-
-Package svg Info: Last page of `./svg-inkscape/transformada_fourier_limpia_svg-
-tex.pdf' is 1 on input line 847.
-(svg-inkscape/transformada_fourier_limpia_svg-tex.pdf_tex
-<./svg-inkscape/transformada_fourier_limpia_svg-tex.pdf, id=508, page=1, 511.92
-206pt x 414.14088pt>
-File: ./svg-inkscape/transformada_fourier_limpia_svg-tex.pdf Graphic file (type
- pdf)
-<use ./svg-inkscape/transformada_fourier_limpia_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/transformada_fourier_limpia_svg-tex.pdf
- , page1 used on input line 56.
-(pdftex.def)             Requested size: 328.62788pt x 265.86444pt.
-)
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[29 <./figures/recorte_nucleo.png>]
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[30 <./svg-inkscape/raw_data_graph_2_svg-tex.pdf> <./svg-inkscape/transformada_
-fourier_limpia_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/transformada_fourier_limpia_s
-vg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
->]
-Package svg Info: Last page of `./svg-inkscape/filtered_data_graph_2_svg-tex.pd
-f' is 1 on input line 864.
- (svg-inkscape/filtered_data_graph_2_svg-tex.pdf_tex
-<./svg-inkscape/filtered_data_graph_2_svg-tex.pdf, id=526, page=1, 564.53838pt 
-x 220.07997pt>
-File: ./svg-inkscape/filtered_data_graph_2_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/filtered_data_graph_2_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/filtered_data_graph_2_svg-tex.pdf , pag
-e1 used on input line 56.
-(pdftex.def)             Requested size: 469.47046pt x 183.01892pt.
-)
-Package svg Info: Last page of `./svg-inkscape/fourier_datos_pinzas_filtrados_f
-ixed_svg-tex.pdf' is 1 on input line 870.
-
-(svg-inkscape/fourier_datos_pinzas_filtrados_fixed_svg-tex.pdf_tex
-<./svg-inkscape/fourier_datos_pinzas_filtrados_fixed_svg-tex.pdf, id=528, page=
-1, 511.92215pt x 412.63522pt>
-File: ./svg-inkscape/fourier_datos_pinzas_filtrados_fixed_svg-tex.pdf Graphic f
-ile (type pdf)
-<use ./svg-inkscape/fourier_datos_pinzas_filtrados_fixed_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/fourier_datos_pinzas_filtrados_fixed_sv
-g-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 328.62788pt x 264.89786pt.
-)
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[31 <./svg-inkscape/filtered_data_graph_2_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/viscosity_freq_svg-tex.pdf' is 1
- on input line 891.
-
-(svg-inkscape/viscosity_freq_svg-tex.pdf_tex
-<./svg-inkscape/viscosity_freq_svg-tex.pdf, id=539, page=1, 431.24455pt x 230.1
-3608pt>
-File: ./svg-inkscape/viscosity_freq_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/viscosity_freq_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/viscosity_freq_svg-tex.pdf , page1 used
- on input line 56.
-(pdftex.def)             Requested size: 469.47046pt x 250.54836pt.
-)
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[32 <./svg-inkscape/fourier_datos_pinzas_filtrados_fixed_svg-tex.pdf>]
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[33 <./svg-inkscape/viscosity_freq_svg-tex.pdf>]
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-4.49998pt}.
-
-[34] (main.bbl
-Underfull \hbox (badness 3735) in paragraph at lines 32--35
-[]\OT1/cmr/m/n/12 C. Hoff-mann, K. Ohlsen, and C. R. Hauck, ``Integrin-mediated
- up-take of
- []
-
-
-Underfull \hbox (badness 1102) in paragraph at lines 32--35
-\OT1/cmr/m/n/12 fibronectin-binding bac-te-ria,'' \OT1/cmr/m/it/12 Eu-ro-pean j
-our-nal of cell bi-ol-ogy\OT1/cmr/m/n/12 , vol. 90, no. 11,
- []
-
-
-Underfull \hbox (badness 2050) in paragraph at lines 66--70
-\OT1/cmr/m/n/12 as-pi-ra-tion: ap-pli-ca-tions in cell biome-chan-ics, mod-els,
- and ex-tended stud-ies,''
- []
-
-
-Underfull \hbox (badness 1259) in paragraph at lines 72--76
-\OT1/cmr/m/n/12 ``Stiff-ness to-mog-ra-phy of eu-kary-otic in-tra-cel-lu-lar co
-m-part-ments by atomic force
- []
-
-[35] [36] [37]) [38] [39] (main.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5E02B47B41F37BB3DFE0430857B45534;2866.
- )
-(\end occurred inside a group at level 2)
-
-### semi simple group (level 2) entered at line 924 (\begingroup)
-### semi simple group (level 1) entered at line 33 (\begingroup)
-### bottom level 
+! Undefined control sequence.
+l.166 \abx@aux@cite
+                   {patterson1994measurement}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.167 \abx@aux@segm
+                   {0}{0}{patterson1994measurement}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.168 \abx@aux@cite
+                   {el2008measuring}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.169 \abx@aux@segm
+                   {0}{0}{el2008measuring}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.170 \abx@aux@cite
+                   {robertson2018optical}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.171 \abx@aux@segm
+                   {0}{0}{robertson2018optical}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.227 \abx@aux@cite
+                   {mezger2020rheology}
+(That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 16350 strings out of 478864
- 275213 string characters out of 2848660
- 625338 words of memory out of 3000000
- 33696 multiletter control sequences out of 15000+600000
- 411509 words of font info for 57 fonts, out of 8000000 for 9000
+ 15155 strings out of 478864
+ 245661 string characters out of 2848660
+ 600816 words of memory out of 3000000
+ 32793 multiletter control sequences out of 15000+600000
+ 409000 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,12n,94p,1311b,2029s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\avale\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/
-ec/dpi600\tcrm1200.pk><D:/Users/avale/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmbx12.pfb><D:/Users/avale/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmex10.pfb><D:/Users/avale/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Users/avale/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Users/avale/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Users/aval
-e/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Us
-ers/avale/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pf
-b><D:/Users/avale/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmr6.pfb><D:/Users/avale/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb><D:/Users/avale/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb><D:/Users/avale/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmsy8.pfb><D:/Users/avale/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (43 pages, 7861418 bytes).
-PDF statistics:
- 679 PDF objects out of 1000 (max. 8388607)
- 175 named destinations out of 1000 (max. 500000)
- 363 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 94i,3n,94p,709b,574s stack positions out of 5000i,500n,10000p,200000b,80000s
 
+!  ==> Fatal error occurred, no output PDF file produced!
