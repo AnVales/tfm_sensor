@@ -51,18 +51,23 @@
 		
 		\centering
 		{ \bfseries \Large UNIVERSIDAD POLITÉCNICA DE MADRID}
-		\vspace{2cm}
+		\vspace{1.50cm}
+		
+		{ \large ESCUELA TÉCNICA SUPERIOR DE INGENIERÍA AGRONÓMICA,ALIMENTARIA Y DE BIOSISTEMAS }
+		\vspace{1.50cm}
 		
 		{ \Large MÁSTER EN BIOLOGÍA COMPUTACIONAL}
-		\vspace{2cm}
+		\vspace{1.50cm}
 		
-		{\Large Computational tool for monitoring the cellular nucleus activity}\vspace{2cm}
+		{\bfseries \Large Computational tool for monitoring the cellular nucleus activity}\vspace{1.50cm}
 		
-		{\bfseries \LARGE Ángela Vales Estepa}\vspace{2cm}
+		{\Large Autor: Ángela Vales Estepa}\vspace{2mm} 
 		
-		{\Large Directors: Francisco Monroy Muñoz y Horacio López Menéndez}\vspace{20mm} 
+		{\Large Directores: Francisco Monroy Muñoz y Horacio López Menéndez}\vspace{2mm}
 		
-		{\large Curso acad\'emico 2020-21}\vspace{5mm} 
+		{\Large Centro: Universidad Complutense de Madrid, Departamento de Química Física}\vspace{20mm}
+		
+		{\large Curso acad\'emico 2020-21}\vspace{1mm} 
 		
 	\end{titlepage}
 	\newpage
@@ -73,15 +78,17 @@
 	
 	{\bfseries \Large Abstract }\vspace{5mm} 
 	
-	The mechanical properties of the cell nucleus are associated with cell type, the cell cycle and diseases such as cancer. Because of these, the development of a sensor based on a new methodology which is called nuclear elastography, to determine some mechanical properties of the cell nucleus in a non-invasive process in real time has been pursued.
+	The mechanical properties of the cell nucleus are associated with the cell type, the cell cycle and some diseases such as cancer. Because of these, the development of a sensor based on a new methodology which is called nuclear elastography, to determine some mechanical properties of the cell nucleus in a non-invasive process in real time has been pursued.
 	
 	Nuclear elastography is a technique in which the transmission of a mechanical wave through the nucleus is used to analyse its mechanical properties. For the transmission of the wave, optical tweezers are used to hit beads against the nucleus causing a wave, while another one receives the signal after passing through the nucleus. The development had three approaches: experimental, computational and validation. 
 	
-	The experimental approach has focused on Jurkat cells, whose nuclei have been isolated for study with an optimised methodology, and HeLa cells, whose bead insertion methodology needs to be optimised. In addition, indentations have been made in Jurkat cell nuclei with the optical tweezers.
+	The experimental approach has focused on Jurkat cells, whose nuclei have been isolated with an optimised methodology, and HeLa cells, whose bead insertion methodology needs to be optimised. In addition, indentations have been made in Jurkat cell nuclei with the optical tweezers.
 	
-	In the computational approach, a data preprocessing system has been implemented in which the noise was removed from the dataset obtained with the optical tweezers and the data was analysed with the extended Kalman filter coupled to a one-dimensional wave model. Thus, the mechanical properties of the nucleus related with the dispersion velocity and damping, such as Young's modulus and viscosity, could be obtained. These algorithms have been tested on simulated data and have been shown to work well, so they were ready to be adapted for the next stage.
+	In the computational approach, a data preprocessing system has been implemented in which the noise was removed from the dataset obtained with the optical tweezers and the data was analysed with the extended Kalman filter coupled to a one-dimensional wave model. Thus, the mechanical properties of the nucleus related with the dispersion velocity and damping, such as Young's modulus and viscosity, could be obtained. These algorithms have been tested with simulated data and have been shown to work well.
 	
-	Although the final validation section has not been completed, the pre-filtering of experimental data from Jurkat cells has been successfully performed and most of the noise captured by the optical tweezers has been removed.
+	In the validation approach, the pre-filtering of experimental data from Jurkat cells has been performed and most of the noise has been removed.
+	
+	Although the sensor has not yet been finalised, significant progress has been made in the development and it is expected to be completed soon.
 	
 	\vspace{1cm}
 	
@@ -112,17 +119,17 @@
 	\subsection{Cell nucleus structure and mechanical properties}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
-	All life forms are composed of at least one cell \cite{mazzarello1999unifying} and these cells are either prokaryotic or eukaryotic \cite{vellai1999origin}. Although both cells have differences, they have one important feature in common, they contain genetic information. However, they do not store the genetic information in the same way, since in the eukaryotic cell it is in the nucleus of the cell, whereas in the prokaryotic cell it is located in the cytoplasm \cite{cook1983mucus}.
+	All life forms are composed of at least one cell \cite{mazzarello1999unifying} and these cells are either prokaryotic or eukaryotic \cite{vellai1999origin}. Although both cells have differences, they have one important feature in common, they contain genetic information. However, they do not store the genetic information in the same way, since in the eukaryotic cell it is in the nucleus, whereas in the prokaryotic cell it is located in the cytoplasm \cite{cook1983mucus}.
 	
 	\setlength{\parskip}{4mm}
 	
-	Therefore, the nucleus in eukaryotic cells is important as it contains genetic information stored as nucleic acids, which are replicated and transmitted to daughter cells and control cellular activities \cite{ossareh2001protein}. In addition, the nucleus has relevant structure and mechanical properties, which is essential for cellular functions. 
+	Therefore, the nucleus in eukaryotic cells is important as it contains genetic information stored as nucleic acids, which are replicated and transmitted to daughter cells and control cellular activities \cite{ossareh2001protein}. In addition, the nucleus has relevant structure and mechanical properties, which are essential for cellular functions. 
 	
 	Cell function may be damaged due to defects that change cellular properties \cite{lammerding2011mechanics}. Mutations in genes that encode the nuclear envelope protein lamin A/C, which change some of the mechanical properties of the cell nucleus, cause diseases in humans such as congenital muscular dystrophy \cite{lammerding2004lamin}. Another disease that also causes changes not only in the mechanical properties of the nucleus, but also in the properties of the whole cell, is cancer \cite{jacobs2012introduction, lekka2019measuring, cross2007nanomechanical}.
 	
 	However, nuclear proprieties are constantly changing in the cells as the cell cycle nucleus undergoes different tasks and conformations that require the progressive remodelling of its microstructure \cite{liu2017mitosis}.
 	
-	Because of the relationship of the mechanical properties of the nucleus with cell function, cell cycle, and several diseases in humans, the mechanical properties are sought to be determined. There are several techniques to determine the mechanical properties of the cell nucleus as micropipette aspiration \cite{gonzalez2019advances}, atomic force microscopy \cite{janel2019stiffness} and substrate strain \cite{murphy2011automated}. These techniques use external forces to determine global nuclear properties but have some problems such as damage to the nucleus, the invasiveness, dependence on the probe, the material to which the cell is attached, the requirement for well-attached cells and the requirement to study the cytoskeleton of the cell. In addition, there are another two techniques that determine local properties in the nucleus by inserting beads into the cell nucleus, passive and active microrheology \cite{lammerding2011mechanics, lammerding2007nuclear, de2007direct}. However, they also have problems such as the insertion of beads that are too large compared to the cell nucleus in it and a high sensitivity to the size of the beads as if they are not embedded enough, they provide incorrect values.
+	Because of the relationship of the mechanical properties of the nucleus with cell function, cell cycle, and several diseases in humans, the mechanical properties are sought to be determined. There are several techniques to determine the mechanical properties of the cell nucleus as micropipette aspiration \cite{gonzalez2019advances}, atomic force microscopy \cite{janel2019stiffness} and substrate strain \cite{murphy2011automated}. These techniques use external forces to determine global nuclear properties but have some problems such as damage to the nucleus, the invasiveness, the dependence on the probe, the material to which the cell is attached and the requirement of well-attached cells and the study the cytoskeleton of the cell. In addition, there are another two techniques, passive and active microrheology, that determine local properties in the nucleus by inserting beads into the cell nucleus \cite{lammerding2011mechanics, lammerding2007nuclear, de2007direct}. However, they also have problems such as the insertion of beads that are too large compared to the cell nucleus in it and a high sensitivity to the size of the beads as if they are not embedded enough, they provide incorrect values.
 	
 	Based on the study of these techniques, a new technique was proposed, nuclear elastography, which shared the measurement of the mechanical properties of the nucleus with an external force applied by beads, as in microreology, but without introducing them into the nucleus. 
 	
@@ -132,7 +139,7 @@
 	\subsection{The use of waves}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
-	The new technique currently under development, called nuclear elastography, taked its name from its similarity to elastography, a technique that measures the stiffness of tissues by propagating mechanical waves \cite{gennisson2013ultrasound}. 
+	The new technique currently under development, called nuclear elastography, takes its name from its similarity to elastography, a technique that measures the stiffness of tissues by propagating mechanical waves \cite{gennisson2013ultrasound}. 
 	
 	\setlength{\parskip}{4mm}
 	
@@ -146,11 +153,11 @@
 	\subsection{Indentation with optical tweezers}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
-	The induction of waves into the cell nucleus and their detection once they have passed through the nucleus requires the use of equipment capable of moving small objects that act as force carriers and is able to measure the force of the wave once it has passed through the nucleus. 
+	The induction of waves into the cell nucleus and their detection once they have passed through the nucleus requires the use of an equipment capable of moving small objects that act as force carriers and is able to measure the force of the wave once it has passed through the nucleus. 
 	
 	\setlength{\parskip}{4mm}
 	
-	One instrument that fits these requirements is the optical tweezers, which is a laser ray capable of trapping microscopic dielectric objects. Because of this, optical tweezers can manipulate cells, organelles and even microscopic polyester beads \cite{novotny1997theory, ombid2020vitro, ashkin1992forces}. In addition, there are optical tweezers that are not only capable of capturing microscopic objects, but can also measure the force captured by these objects \cite{farre2014force}. The concept of optical trapping as a mechanical reporter is insightful \cite{ashkin20182018}, thus it is proposed this approach as a noninvasive tool to inspect isolated nuclei and living cells in the future in the range of nanometers and fast readout.
+	One instrument that fits these requirements are the optical tweezers, which is a laser ray capable of trapping microscopic dielectric objects. Because of this, optical tweezers can manipulate cells, organelles and even microscopic polyester beads \cite{novotny1997theory, ombid2020vitro, ashkin1992forces}. In addition, there are optical tweezers that are not only capable of capturing microscopic objects, but can also measure the force captured by these objects \cite{farre2014force}. The concept of optical trapping as a mechanical reporter is insightful \cite{ashkin20182018}, thus it is proposed this approach as a noninvasive tool to inspect isolated nuclei and living cells in the future in the range of nanometers and fast readout.
 	
 	By means of an optical trap, it is set a shaking bead placed out of the nucleus to impinge a sound field as a propagation front wave travelling into the nucleus; the trap performing this task is referred to as a shaker trap (ST). Then, it is used as a single trap for detecting wave fading caused by the rigidity of the granular chromatin; this trap is referred to as a tactile trap (TT). Nevertheless, the measured signal by the TT will be very small, so it can be masked by environmental noise. 
 	
@@ -167,7 +174,7 @@
 	Two suitable filters in the first filtering step are the low pass and high pass finite impulse response filters. The noise of the signals can be attenuated by the low pass FIR filter \cite{rabiner1973approximate}, and if the noise occurs at frequencies lower than the working frequency, it is reduced with the high-pass FIR filter \cite{mondal2012novel}.
 	
 	Then, a frequent filter that is used not only to remove noise from measurements, but also to determine variables that cannot be measured directly is the Kalman filter. This filter is used in terrain-referenced navigation (TRN) \cite{kim2018introduction}, and single target tracking systems in airborne radar \cite{pearson1974Kalman}. The Kalman filter has two stages, the first is the initial stage, in which the values of the state variables are predicted and the second stage corrects the values. An important limitation of this filter is that it only works for a linear model. If the model is not linear, the Extended Kalman filter is used, which, in addition to correcting the state, corrects other system parameters \cite{ribeiro2004Kalman}.
-	
+	\newpage
 	Thus, by using the extended Kalman filter coupled with a wave model for prediction, the signal captured by the beads can be analysed. Furthermore, pre-filtering the noise in the captured signal is important, as the extended Kalman filter can filter signals with high-frequency noise but not low-frequency noise, as it converges to the estimated parameters before removing the low-frequency noise. In addition, filtering out high-frequency noise results in better parameter estimation, as the estimated state will be easier to achieve.
 	
 	\setlength{\parskip}{0mm}
@@ -176,7 +183,7 @@
 	\subsection{New sensor design}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
-	Therefore, due to the relationship between the mechanical properties of the nucleus and the cell cycle and some diseases, such as cancer, it has been decided to look for a new technique to determine them. For this purpose, previous techniques have been studied, concluding in the use of optical tweezers to obtain cell nucleus data by indentations, whose data were analysed by the extended Kalman filter. In addition, to improve the estimation of the extended Kalman filter, the data obtained with the optical tweezers were filtered with a low-pass and a high-pass finite impulse response filter.
+	Due to the relationship between the mechanical properties of the nucleus and the cell cycle and some diseases, such as cancer, it has been decided to look for a new technique to determine them. For this purpose, previous techniques have been studied, concluding in the use of optical tweezers to obtain cell nucleus data by indentations, whose data were analysed by the extended Kalman filter. In addition, to improve the estimation of the extended Kalman filter, the data obtained with the optical tweezers were filtered with a low-pass and a high-pass finite impulse response filter.
 	
 	\setlength{\parskip}{4mm}
 	
@@ -213,7 +220,7 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\subsubsection{Jurkat cells, cell fragmentation and incubation with drug}
+	\subsubsection{Jurkat cells, cell fragmentation and incubation with drugs}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	In this study, human Jurkat cells have been used,  which is a human CD4 T-lymphocyte leukaemia cell line \cite{schneider1977characterization}. They were cultured in a humidified atmosphere with 5\% of CO$_{2}$ and 95\% of air at 37ºC. The medium for Jurkat cells was composed of 90\% RPMI 1640 with L-Glutamine (Sigma-Aldrich/USA) and 10\% FBS (Sigma-Aldrich/USA).
@@ -222,7 +229,7 @@
 	
 	For the isolation of Jurkat cell nuclei, 3ml of the indicated medium with a cell concentration of 1,5$\cdot$10$^6$cells/ml were used. First, the samples were centrifuged in the thermo scientific Micro 21R centrifuge at 2000rpm over 5 minutes. Then, the sobrenadant was discarded and the pellet was resuspended in 300$\mu$l buffer A and 3$\mu$l protease inhibitor cocktail (Sigma-Aldrich/USA) were added. The sample was incubated on ice for 5 minutes and subsequently centrifuged at 8000rpm for 5 minutes at 4ºC. The sobrenadant was removed and the pellet was resuspended with 300$\mu$l buffer A and 3$\mu$l protease inhibitors. It was incubated for 5 minutes on ice and then centrifuged for 5 minutes at 8000rpm at 4ºC in the same centrifuge. Finally, the sobrenadant was removed and the nucleus pellet was resuspended in TKM buffer. This was the stock solution of the cell nucleus.
 	
-	For experiments with drug-incubated nuclei, 3ml of nuclei extracted in TKM solution were used. These 3ml were separated into two samples of 1,50ml each. One of these samples was the control and the other sample with nuclei affected by the drug jasplakinolide. In the sample whose nuclei were affected by jasplakinolide, the nuclei were incubated with the drug at a concentration of 10$\mu$g/ml (11,11$\mu$l of jasplakinolide at a concentration of 100$\mu$g/ml) for 30 minutes at room temperature. The control sample was added 11.11$\mu$l of DMSO, as the jasplakinolide drug was dissolved in this organic solvent. The control sample was incubated for 30 minutes as well. Subsequently, both samples were centrifuged with the thermo scientific Micro 21R centrifuge at 8000rpm at 4ºC for 5 minutes. Finally, the sobrenadant was removed and the pellet was resuspended with 150$\mu$l of TKM. Both samples were stock solutions of nuclei, one sample affected by the drug and the other the control.
+	For experiments with drug-incubated nuclei, 3ml of nuclei extracted in TKM solution were used. These 3ml were separated into two samples of 1,50ml each. One of these samples was the control and the other sample had nuclei affected by the drug jasplakinolide. In the sample whose nuclei were affected by jasplakinolide, the nuclei were incubated with the drug at a concentration of 10$\mu$g/ml (11,11$\mu$l of jasplakinolide at a concentration of 100$\mu$g/ml) for 30 minutes at room temperature. The control sample was added 11.11$\mu$l of DMSO, as the jasplakinolide drug was dissolved in this organic solvent. The control sample was incubated for 30 minutes as well. Subsequently, both samples were centrifuged with the thermo scientific Micro 21R centrifuge at 8000rpm at 4ºC for 5 minutes. Finally, the sobrenadant was removed and the pellet was resuspended with 150$\mu$l of TKM. Both samples were stock solutions of nuclei, one sample was affected by the drug and the other was the control.
 	
 	\setlength{\parskip}{0mm}
 	
@@ -234,14 +241,14 @@
 	
 	\setlength{\parskip}{4mm}
 	
-	Different methodologies have been used to incubate HeLa cells with beads. First, a cell-culture treated multidishes of 24 dishes was used, and 500$\mu$l of DMEM (GIBCO/UK) and 10$\mu$l of a concentration 3,95 $\times$ 10$^{5}$ cells/ml were added. After 48h, the medium was removed and each dish was filled with new medium and a different percentage of beads of 2,0$\mu$m (Sigma-Aldrich/DE). In the control no beads were added, only 500$\mu$l DMEM, in another dish 500$\mu$l of DMEM with 0,05mg/ml of beads was added and in another one 500$\mu$l of DMEM with 0,1mg/ml of beads was added. After 24 hours, the medium was removed and the cells were washed. For this purpose, 500$\mu$l of PBS with pH 7.4 (GIBKO/UK) was added to each dish and after 3 minutes, PBS was removed and the process was repeated three times for each dish. When the PBS was removed for the last time, the cells were stored with 500$\mu$l of DMEM.
+	Different methodologies have been used to incubate HeLa cells with beads. First, a cell-culture treated multidishes of 24 dishes was used, and 500$\mu$l of DMEM (GIBCO/UK) and 10$\mu$l of a concentration 3,95 $\cdot$ 10$^{5}$ cells/ml were added. After 48h, the medium was removed and each dish was filled with new medium and a different percentage of beads of 2,0$\mu$m (Sigma-Aldrich/DE). In the control no beads were added, only 500$\mu$l DMEM, in another dish 500$\mu$l of DMEM with 0,05mg/ml of beads was added and in another one 500$\mu$l of DMEM with 0,1mg/ml of beads was added. After 24 hours, the medium was removed and the cells were washed. For this purpose, 500$\mu$l of PBS with pH 7.4 (GIBKO/UK) was added to each dish and after 3 minutes, PBS was removed and the process was repeated three times for each dish. When the PBS was removed for the last time, the cells were stored with 500$\mu$l of DMEM.
 	
-	Another methodology used was to use individual sterile 60mm $\times$ 20mm petri dishes, and cover glasses of 20 mm $\times$ 20 mm were inserted into them, here the cells were incubated. 200$\mu$l of DMEM with a concentration of 3,95 cells/ml was added to each plate and 1,50ml of DMEM. After 24 hours, the medium was removed and each dish was filled with new medium and a different percentage of 2,0$\mu$m beads, the control one had no beads and was filled with 1,50ml of DMEM and the other dishes were filled with 0,05mg/ml of beads solution in DMEM. After 24 hours, the medium was removed and the cells were washed, 1,50ml of PBS with pH 7.4 (GIBKO/UK) was added to each dish and after 3 minutes, PBS was removed and the process was repeated three times for each dish. When the PBS was removed for the last time, the cells were stored with 1,50ml of DMEM. 
+	Another methodology used was to use individual sterile 60mm $\times$ 20mm petri dishes, and cover glasses of 20 mm $\times$ 20 mm were inserted into them, here the cells were incubated. 200$\mu$l of DMEM with a concentration of 3,95 $\cdot$ 10$^{5}$ cells/ml was added to each plate and 1,50ml of DMEM. After 24 hours, the medium was removed and each dish was filled with new medium and a different percentage of 2,0$\mu$m beads, the control one had no beads and was filled with 1,50ml of DMEM and the other dishes were filled with 0,05mg/ml of beads solution in 1,50ml of DMEM. After 24 hours, the medium was removed and the cells were washed, 1,50ml of PBS with pH 7.4 (GIBKO/UK) was added to each dish and after 3 minutes, PBS was removed and the process was repeated three times for each dish. When the PBS was removed for the last time, the cells were stored with 1,50ml of DMEM. 
 	
 	\setlength{\parskip}{0mm}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\subsubsection{Identation of cell nucleus with optical tweezers}
+	\subsubsection{Indentation of cell nucleus with optical tweezers}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\begin{wrapfigure}{l}{0.50\linewidth}
@@ -251,7 +258,7 @@
 		\label{fig:myfig2}
 	\end{wrapfigure}
 	
-	The equipment used were an inverted microscope (Nikon Eclipse 2000Ti) connected with an external light and optical tweezers (Sensocell) coupled with a force sensor. A fast camera (FASCAM SA3-Photron) was used to visualise the sample under the microscope, with which the images presented in the paper were also taken.
+	The equipment used were an inverted microscope (Nikon Eclipse 2000Ti) connected with an external light and optical tweezers coupled with a force sensor (Sensocell). A fast camera (FASCAM SA3-Photron) was used to visualise the sample under the microscope, with which the images presented in the paper were also taken.
 	
 	\setlength{\parskip}{4mm}
 	
@@ -267,7 +274,7 @@
 	
 	\setlength{\parindent}{8pt}
 	
-	The sample was focused and a rounded nucleus with no traces of the rest of the cell was looked for. Then, two beads were picked up with optical tweezers and placed on either side of the nucleus. Finally, one bead was oscillated and the position, force and tramp power at each time was collected by both other bead.
+	The sample was focused and a rounded nucleus with no traces of the rest of the cell was looked for. Then, two beads were picked up with optical tweezers and placed on both side of the nucleus. Finally, one bead was oscillated and the position and the force at each time was collected by both beads.
 	
 	\setlength{\parindent}{0pt}
 	
@@ -288,7 +295,7 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\subsubsection{Preprocessing of the signal}
+	\subsubsection{Signal pre-processing}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	The data obtained in the experiment required filtering as the installation in which they were obtained was not isolated. In addition to noise, the signal required off-set correction. The purpose of this first preprocessing was not only the preparation of my data, but the development of a script to process all data coming from the optical tweezers. 
@@ -352,7 +359,7 @@
 	\subsubsection{Wave model and implementation}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
-	To interpret the results obtained from the optical tweezers, a one-dimensional polar wave model was implemented in Matlab. This makes the computational cost lower than with a two-wave model, and the energy dispersion is more representative than in a one dimension model with Cartesian coordinates. This model was coupled with the Kalman filter, so in order to verify that it worked, a two-dimensional wave model in Cartesian coordinates was also implemented, obtaining simulated values with which to perform the test. For this purpose, the wave equation with transmitting velocity $c$, damping $d$ and external force $\delta_{Fext}$, was used as a starting point \cite{achenbach2012wave, d'alembert_1749}.
+	To interpret the results obtained from the optical tweezers, a one-dimensional polar wave model was implemented in Matlab. This makes the computational cost lower than with a two-dimensional wave model, and the energy dispersion is more representative than in a one dimension model with Cartesian coordinates. This model was coupled with the extended Kalman filter, so in order to verify that it worked, a two-dimensional wave model in Cartesian coordinates was also implemented, obtaining simulated values with which to perform the test. For this purpose, the wave equation with transmitting velocity $c$, damping $d$ and external force $\delta_{Fext}$, was used as a starting point \cite{achenbach2012wave, d'alembert_1749}.
 	\setlength{\parskip}{4mm}
 	\begin{equation} \label{eqn:wave_model}
 		\frac{\partial^{2}u}{\partial t^{2}} = c^{2}\nabla^{2}u + d\frac{\partial u}{\partial t} + \delta_{Fext}
@@ -397,11 +404,11 @@
 	
 	The squared gradient of u, $\nabla^{2}u$, was obtained as follows.
 	\begin{equation} \label{eqn:nabla2u1d}
-		\nabla^{2}u = \frac{\partial^{2}u}{\partial r^{2}} + \frac{1}{r} \times \frac{\partial u}{\partial r} + \frac{1}{r^{2}} \times \frac{\partial ^{2} u}{\partial \theta^{2}} = \frac{1}{r} A_{2Da} + \frac{1}{r^{2}} A_{2Db}
+		\nabla^{2}u = \frac{\partial^{2}u}{\partial r^{2}} + \frac{1}{r} \times \frac{\partial u}{\partial r} + \frac{1}{r^{2}} \times \frac{\partial ^{2} u}{\partial \theta^{2}} = \frac{1}{r} A_{1Da} + \frac{1}{r^{2}} A_{1Db}
 	\end{equation}
-	In the equation \ref{eqn:nabla2u1d}, $A$ was a matrix obtained from the equation \ref{eqn:deltau_deltat2}. Matrix $A_{2Da}$ and matrix $A_{2Db}$ for a one-dimensional node network with three nodes were defined as:
+	In the equation \ref{eqn:nabla2u1d}, $A$ was a matrix obtained from the equation \ref{eqn:deltau_deltat2}. Matrix $A_{1Da}$ and matrix $A_{1Db}$ for a one-dimensional node network with three nodes were defined as:
 	\begin{equation} \label{eqn:matrixA_2Da}
-		A_{2Da} = 
+		A_{1Da} = 
 		\begin{pmatrix}
 			-2 & 1 & 0\\
 			2 & -2 & 2\\
@@ -409,7 +416,7 @@
 		\end{pmatrix}
 	\end{equation}
 	\begin{equation} \label{eqn:matrixA_2Db}
-		A_{2Db} = 
+		A_{1Db} = 
 		\begin{pmatrix}
 			-1 & 1/2 & 0\\
 			0 & -1/2 & 1/3\\
@@ -421,7 +428,7 @@
 		u^{k + 1} = u^{k} + \Delta t v^{k} + \Delta t^{2} \delta_{Fext}
 	\end{equation}
 	\begin{equation} \label{eqn:vk+1}
-		v^{k + 1} = v^{k}(1 + \Delta t d) + \frac{\Delta t c^{2} u^{k}}{\Delta r^{2}} (A_{2Da} + A_{2Db}) +  \Delta t \delta_{Fext}
+		v^{k + 1} = v^{k}(1 + \Delta t d) + \frac{\Delta t c^{2} u^{k}}{\Delta r^{2}} (A_{1Da} + A_{1Db}) +  \Delta t \delta_{Fext}
 	\end{equation}
 	\setlength{\parindent}{0pt}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -539,7 +546,7 @@
 	\subsubsection{Obtain the real parameters}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
-	To validate the system it was necessary to merge the real data obtained with the computational system. To do this it was necessary to establish what the actual values were, which were then introduced into the computational model.
+	To validate the system it was necessary to merge the real data obtained with the computational system. To do this it was necessary to establish the actual values which were introduced in the model.
 	
 	\setlength{\parskip}{4mm}
 	
@@ -551,7 +558,7 @@
 	\begin{equation} \label{eqn:n}
 		n = \sqrt{N}
 	\end{equation}
-	For one-dimensional simulations, the number of nodes $N$ was the parameter $n$. The differential time differential value $dt$ was determined as follows.
+	For one-dimensional simulations, the number of nodes $N$ was the parameter $n$. The differential time value $dt$ was determined as follows.
 	\begin{equation} \label{eqn:dt}
 		dt = \frac{dx}{c}
 	\end{equation}
@@ -559,7 +566,7 @@
 	\begin{equation} \label{eqn:c}
 		c = \sqrt{\frac{E}{\rho}}
 	\end{equation}
-	The parameter $E$ is Young's modulus, which can be obtained from the force contributed in an area, $\sigma$, and the proportional deformation of that area, $\epsilon$. The value of the initial Young's modulus has not been calculated in this work and depends on another project of the group. When that project is completed, the value obtained in this study will be used.
+	The parameter $E$ is Young's modulus, which can be obtained from the force contributed in an area, $\sigma$, and the proportional deformation of that area, $\epsilon$. The value of the initial Young's modulus has not been calculated in this work and depends on another project of the group. When that project is completed, the value obtained will be used in this model.
 	
 	The parameter $\rho$ is the density, which has been estimated as the density of water \cite{patterson1994measurement}. 
 	
@@ -569,7 +576,7 @@
 			
 			G'(w) = \frac{F_{max}}{6\pi R x_{max}} cos(\Delta \theta) \\
 			G''(w) = \frac{F_{max}}{6\pi R x_{max}} sin(\Delta \theta) \\
-			\eta *(w) = [G'(w)^{2}+G'(w)^{2}]^{1/2}/w = [G'(w)^{2}+G'(w)^{2}]^{1/2}/2\pi f
+			\eta *(w) = [G'(w)^{2}+G''(w)^{2}]^{1/2}/w = [G'(w)^{2}+G''(w)^{2}]^{1/2}/2\pi f
 			
 		\end{array}
 	\end{equation}
@@ -583,7 +590,7 @@
 			
 		\end{array}
 	\end{equation}
-	To obtain the value of $\xi$ , the Stokes problem was considered, in which there is a ball that has a frictional force.
+	To obtain the value of $\xi$, the Stokes problem was considered, in which there is a ball that has a frictional force.
 	\begin{equation} \label{eqn:stokes}
 		F = 6\pi D \eta v = \xi v
 	\end{equation}
@@ -614,7 +621,7 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\subsubsection{Jurkat cells, cell fragmentation and incubation with drug}
+	\subsubsection{Jurkat cells, cell fragmentation and incubation with drugs}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	The Jurkat cell has been fragmented to obtain the isolated nucleus. The images obtained of the isolated nuclei in the optical tweezers are shown below in figure \ref{fig:jurkat_cells} for an isolated nucleus, an isolated nucleus that was a control for the jasplakinolide experiment and a nucleus that has been incubated with the jasplakinolide drug.
@@ -655,7 +662,7 @@
 	\setlength{\parskip}{0mm}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\subsubsection{Identation of cell nucleus with optical tweezers}
+	\subsubsection{Indentation of cell nucleus with optical tweezers}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	The nuclei of HeLa cells and Jurkat cells have been indented. A dataset of eight cells (two HeLa cells and six Jurkat cells), with a total of 54 indentations, was obtained. Some of the data captured with the optical tweezers traps is shown in figure \ref{fig:raw_data_cells}.
@@ -665,7 +672,7 @@
 	\begin{figure}[htbp]
 		\centering
 		\includesvg[width=1\textwidth]{figures/datos_pinzas_no_filtrados_hela_jurkat.svg}
-		\caption{Force values recorded on the optical tweezers. The first row corresponds to the identation in the nucleus of a HeLa cell and the second row to the identation in the isolated nucleus of a Jurkat cell.The first column corresponds to the beads that make identations and the second column to the beads that receive the signal at the other side of the nucleus. The frequency of the identations is 2Hz.}
+		\caption{Force values recorded on the optical tweezers. The first row corresponds to the indentation in the nucleus of a HeLa cell and the second row to the indentation in the isolated nucleus of a Jurkat cell.The first column corresponds to the beads that make indentations and the second column to the beads that receive the signal at the other side of the nucleus. The frequency of the indentations is 2Hz.}
 		\label{fig:raw_data_cells}
 	\end{figure}
 	On the one hand, indentations on single nuclei of Jurkat cells have been successfully performed, however, this was only possible with 3$\mu$m size beads, as 2$\mu$m size beads were very difficult to trap. 
@@ -678,7 +685,7 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\subsubsection{Preprocessing of the simulated data}
+	\subsubsection{Simulated signal pre-processing}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	A test has been carried out to check that the preprocessing algorithm works. To do this, a simulated signal (\ref{eqn:simulated_signal_preprocess}) with simulation units $s.u$ has been created with the desired study frequency and two frequencies associated with the noise. 
@@ -686,7 +693,7 @@
 	\begin{equation} \label{eqn:simulated_signal_preprocess}
 		x = sin(2\pi\cdot 2t) + sin(2\pi\cdot 10t) + sin(2\pi\cdot 24t)
 	\end{equation}
-	A plot of the generated signal, the Fourier transform, and the averaged Fourier transform is shown below in figure \ref{fig:noisy_data_simulated}. Also, modelled signal was filtered using the high-pass and low-pass filter, obtaining the filtered signal shown below in figure \ref{fig:noisy_filtered_data_simulated}. The simulated signal was a very noisy signal with three frequencies and the fast Fourier transform and the averaged fast Fourier transform showed these frequencies. 
+	A plot of the generated signal, the Fourier transform, and the averaged Fourier transform is shown below in figure \ref{fig:noisy_data_simulated}. Also, modelled signal was filtered using the high-pass and low-pass FIR filter, obtaining the filtered signal shown below in figure \ref{fig:noisy_filtered_data_simulated}. The simulated signal was a very noisy signal with three frequencies and the fast Fourier transform and the averaged fast Fourier transform showed these frequencies. 
 	
 	\begin{figure}[htbp]
 		\centering
@@ -699,16 +706,16 @@
 	\begin{figure}[htbp]
 		\centering
 		\includesvg[width=0.9\textwidth]{figures/noisy_data_fourier_composition_filter.svg}
-		\caption{The first row shows the modelled signal with frequencies of 2, 10 and 24Hz filtered to remove frequencies below and above 10Hz. The second row shows firstly the Fourier transform frequency spectrum and secondly the averaged Fourier transform frequency spectrum.}
+		\caption{The first row shows the modelled signal with equation \ref{eqn:simulated_signal_preprocess} filtered to remove frequencies below and above 10Hz. The second row shows firstly the Fourier transform frequency spectrum and secondly the averaged Fourier transform frequency spectrum.}
 		\label{fig:noisy_filtered_data_simulated}
 	\end{figure}
 	
-	The filtered signal showed flattened maxima and peaked minima, a perfect signal was not obtained. However, with the fast Fourier transform and the averaged fast Fourier transform it can be seen that the only frequency of the signal was the desired one. In both transforms it was observed that the 10Hz peak lost a little intensity and in the averaged one the close frequencies were observed with a little intensity. This could be due to artefacts in the averaging or because the reduction of higher and lower frequencies did not result in a perfect signal and this is due to the maxima and minima, which did not have the shape of a perfect curve, but instead had straight lines and peaks.
+	The filtered signal showed flattened maxima and peaked minima, a perfect signal was not obtained. However, with the fast Fourier transform and the averaged fast Fourier transform it can be seen that the only frequency of the signal was the desired one. In both transforms it was observed that the 10Hz peak lost a little intensity and in the averaged one the close frequencies were observed with a little intensity. This could be due to artefacts in the averaging or because the reduction of higher and lower frequencies did not result in a perfect signal and this was due to the maxima and minima, which did not have the shape of a perfect curve, but instead had straight lines and peaks.
 	
 	\setlength{\parskip}{0mm}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\subsubsection{One-dimension wave model simulation}
+	\subsubsection{One-dimensional wave model simulation}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\setlength{\parskip}{0mm}
@@ -726,7 +733,7 @@
 	\setlength{\parskip}{0mm}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\subsubsection{Two-dimension wave model simulation}
+	\subsubsection{Two-dimensional wave model simulation}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	From the two-dimensional wave model in Cartesian coordinates implemented in Matlab, simulated data have been obtained. The values used in the simulation of this wave were the same as in figure \ref{fig:modelo1}. The graphs are presented in figure \ref{fig:modelo2}, the first graph is an ideal model without external noise, while in the second one there is a random noise of 40\%.
@@ -736,7 +743,7 @@
 	\begin{figure}[h!]
 		\centering
 		\includesvg[width=1\textwidth]{figures/modelo_2d_con_sin_ruido.svg}
-		\caption{Simulated wave captured by a sensor. It has been simulated with the two-dimensional wave model in cartesian coordinates with Matlab. The first graph is an ideal model without noise and the second one has 40\% random noise.}
+		\caption{Simulated wave captured by a sensor. It has been simulated with the two-dimensional wave model in cartesian coordinates with Matlab. The first graph was an ideal model without noise and the second one had 40\% random noise.}
 		\label{fig:modelo2}
 	\end{figure}
 	The two-dimensional wave model worked well and simulated data were obtained without and with noise to test the extended Kalman filter.
@@ -744,14 +751,14 @@
 	\setlength{\parskip}{0mm}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\subsubsection{Kalman filter analysis with simulated data}
+	\subsubsection{Extended Kalman filter analysis with simulated data}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
-	An analysis of the performance of the extended Kalman filter implemented in Matlab with equation systems \ref{eqn:predictor} and \ref{eqn:corrector} has been carried out. In all these simulations, the data obtained from the two-dimension model of figure \ref{fig:modelo2} have been used as real data and the data obtained from the one dimensional wave model in figure \ref{fig:modelo1} have been used as model data.
+	An analysis of the performance of the extended Kalman filter implemented in Matlab with equation systems \ref{eqn:predictor} and \ref{eqn:corrector} has been carried out. In all these simulations, the data obtained from the two-dimension model of figure \ref{fig:modelo2} have been used as real data and the data obtained from the one-dimensional wave model in figure \ref{fig:modelo1} have been used as model data.
 	
 	\setlength{\parskip}{4mm}
 	
-	The figure \ref{fig:kalman1} shows the parameters obtained by the extended Kalman filter, the change in position, $u$, transmission velocity, $c$, and damping, $d$. In addition, the proposed initial values for propagation speed, $c$, and damping, $d$, are the real values.
+	The figure \ref{fig:kalman1} shows the parameters obtained by the extended Kalman filter, the change in position, $u$, transmission velocity, $c$, and damping, $d$. In addition, the proposed initial values for propagation speed, $c$, and damping, $d$, were the real values.
 	
 	\begin{figure}[h!]
 		\centering
@@ -783,7 +790,7 @@
 	
 	\newpage
 	
-	As it is not usual to have the exact value of one parameter a priori and not of another, in figure \ref{fig:kalman1dc} an estimation of the parameters with Kalman filter was performed where the initial values of the propagation rate was $1,25 c_{real}$ and the damping was $1,25 d_{real}$.
+	As it is not usual to have the exact value of one parameter a priori and not of another, in figure \ref{fig:kalman1dc} an estimation of the parameters with Kalman filter was performed where the initial value of the propagation rate was $1,25 c_{real}$ and the damping was $1,25 d_{real}$.
 	
 	\newpage
 	
@@ -810,7 +817,7 @@
 	
 	Moreover, when the data analysed with the filter were noisy, the patterns in the parameters were not as constant although the trends were the same but with different values due to the noise.
 	
-	This has shown that the parameters indicated at the start of extended Kalman filter are important, as the filter only approximates the real value and sometimes, if they are very different from the real value, it cannot even estimate them. Furthermore, if the signal is not noisy it has a better convergence to the true value than if the data is noisy.
+	These has shown that the parameters indicated at the start of extended Kalman filter are important, as the filter only approximates to the real value and sometimes, if they are very different from the real value, it cannot even correct them. Furthermore, if the signal is not noisy it has a better convergence to the true value than if the data is noisy.
 	
 	\setlength{\parskip}{0mm}
 	
@@ -819,25 +826,25 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\subsection{Pre-processing of real data}
+	\subsubsection{Real signal pre-processing}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\begin{wrapfigure}{r}{0.5\linewidth}
 		\centering
 		\includegraphics[width=0.45\textwidth]{figures/recorte_nucleo.png}
-		\caption{Isolated nucleus of a Jurkat cell in which one bead was being indented while another bead received the signal}
+		\caption{Isolated nucleus of a Jurkat cell in which one bead was being indented while another bead was receiving the signal.}
 		\label{fig:myfig3}
 	\end{wrapfigure}
-	Real data have been obtained by embedding a bead in a cell nucleus while another bead captured the waves at the other edge of the nucleus. The results presented have been obtained from the image \ref{fig:myfig3}, a isolated Jurkat cell nucleus. It has been indented with a force amplitude of 0,5$\mu$m and frequencies of 2Hz, 4Hz, 5Hz, 8Hz, and 10Hz for 30 seconds (figure \ref{fig:raw_data}).
+	Real data have been obtained by embedding a bead in a cell nucleus while another bead captured the waves at the other edge of the nucleus. The results shown have been obtained from the isolated Jurkat cell nucleus of image \ref{fig:myfig3}. It has been indented with a force amplitude of 0,5$\mu$m and frequencies of 2Hz, 4Hz, 5Hz, 8Hz, and 10Hz for 30 seconds (figure \ref{fig:raw_data}).
 	\setlength{\parskip}{4mm}
 	\begin{figure}[htbp]
 		\centering
 		\includesvg[width=1\textwidth]{figures/raw_data_graph_2.svg}
-		\caption{Force captured by the optical tweezers during identation of a isolated Jurkat cell nucleus. The first column corresponds to the beads that make identations and the second column to the beads that receive the signal at the other side of the nucleus. The frequency of the identations was 2Hz in the first row, 5Hz in the second row and 10Hz in the third row.}
+		\caption{Force captured by the optical tweezers during indentation of a isolated Jurkat cell nucleus. The first column corresponds to the beads that make indentations and the second column to the beads that receive the signal at the other side of the nucleus. The frequency of the indentations was 2Hz in the first row, 5Hz in the second row and 10Hz in the third row.}
 		\label{fig:raw_data}
 	\end{figure}
 	
-	As the values captured by the force sensor of the optical tweezers were noisy, a filtering was performed. An averaged fast Fourier transform was used to determine the frequencies corresponding to the noise. Although the force values collected by the bead performing the identations had noise, only the fast Fourier transform of the beads acting as sensors are shown in figure \ref{fig:fourier_sin_filtro}, as these values were the most affected by noise. 
+	As the values captured by the force sensor of the optical tweezers were noisy, a filtering was performed. An averaged fast Fourier transform was used to determine the frequencies corresponding to the noise. Although the force values collected by the bead performing the indentations had noise, only the fast Fourier transform of the beads acting as sensors are shown in figure \ref{fig:fourier_sin_filtro}, as these values were the most affected by noise. 
 	\begin{figure}[htbp]
 		\centering
 		\includesvg[width=0.70\textwidth]{figures/transformada_fourier_limpia.svg}
@@ -849,20 +856,20 @@
 	
 	With fast Fourier transforms it was determined that there was noise at both high and low frequencies. Then, these signals were filtered using the low pass and high pass FIR filter to obtain the filtered forces shown in figure \ref{fig:filtered_data}. Moreover, the Fourier transform and the average of the Fourier transform were also performed to verify that the signal has been filtered by removing high and low frequency noise with the low pass and high pass FIR filter(figure \ref{fig:fourier_con_filtro_todo}).
 	
-	After inspecting the filtered signal, it was found that at least the high-frequency noise was not significant, and the Fourier transform showed that the dominant frequency was the working frequency. One aspect to take into account is that the averaged Fourier transform, having few values, shows graphs that can induce doubts, this can be observed especially with the graphs of the 2Hz and 5Hz data, while the 10Hz one has a greater number of values and was more similar to the non-averaged transform. Therefore, it is necessary to have a longer sampling time at low frequencies.
+	After inspecting the filtered signal, it was found that at least the high-frequency noise was not significant, and the Fourier transform showed that the dominant frequency was the working frequency. One aspect to take into account was that the averaged Fourier transform, having few values, shows graphs that can induce doubts, this can be observed especially with the graphs of the 2Hz and 5Hz data, while the 10Hz one has a greater number of values and was more similar to the non-averaged transform. Therefore, it is necessary to have a longer sampling time at low frequencies.
 	
 	With this analysis, the preprocessing of the real data was finished and the force captured by the optical tweezers was stored filtered.
 	
 	\begin{figure}[htbp]
 		\centering
 		\includesvg[width=1\textwidth]{figures/filtered_data_graph_2.svg}
-		\caption{Force captured by the optical tweezers during identation, filtered with the high pass and low pass FIR filter. The first column corresponds to the beads that make identations and the second column to the beads that receive the signal at the other side of the nucleus. The frequency of the identations was 2Hz in the first row, 5Hz in the second row and 10Hz in the third row.}
+		\caption{Force captured by the optical tweezers during indentation filtered with the high pass and low pass FIR filter. The first column corresponds to the beads that make indentations and the second column to the beads that receive the signal at the other side of the nucleus. The frequency of the indentations was 2Hz in the first row, 5Hz in the second row and 10Hz in the third row.}
 		\label{fig:filtered_data}
 	\end{figure}
 	\begin{figure}[H]
 		\centering
 		\includesvg[width=0.7\textwidth]{figures/fourier_datos_pinzas_filtrados_fixed.svg}
-		\caption{Force captured by the optical tweezers during identation filtered with the high pass and low pass FIR filter. The first column corresponds to the beads that make identations and the second column to the beads that receive the signal at the other side of the nucleus. The frequency of the identations was 2Hz in the first row, 5Hz in the second row and 10Hz in the third row.}
+		\caption{Force captured by the optical tweezers during indentation filtered with the high pass and low pass FIR filter. The first column corresponds to the beads that make indentations and the second column to the beads that receive the signal at the other side of the nucleus. The frequency of the indentations was 2Hz in the first row, 5Hz in the second row and 10Hz in the third row.}
 		\label{fig:fourier_con_filtro_todo}
 	\end{figure}
 	
@@ -874,28 +881,26 @@
 	
 	In order to introduce the data obtained into the extended Kalman filter, it was necessary to obtain the real parameters of the system. 
 	
-	Jurkat cell nucleus size was 14,27$\mu$m for the nucleus in the figure \ref{fig:myfig3}. The higher the number of nodes, the better the resolution of the wave model, but for an initial proof of concept, 50 nodes in length were established, which means that in two dimensions there were 2500 nodes. With these values a position differential $dx$ and $dr$ of 0,2854$\mu$m was established.
-	
 	\setlength{\parskip}{4mm}
 	
-	The density of the nucleus, $\rho$, has not been calculated, but it has been approximated as 997 kg/m³, as this is the density of water.
+	Jurkat cell nucleus size was 14,27$\mu$m for the nucleus in the figure \ref{fig:myfig3}. The higher the number of nodes, the better the resolution of the wave model, but for an initial proof of concept, 50 nodes in length were established, which means that in two dimensions there were 2500 nodes. With these values a position differential $dx$ and $dr$ of 0,2854$\mu$m was established.
+	
+	The density of the nucleus, $\rho$, has not been calculated, but it has been approximated as 997 kg/m³, as it is the density of water.
 	
 	\newpage
 	
-	The complex viscosity, $\eta *$,was calculated to calculate the damping, which was obtained from elastic modulus G' and loss modulus G''. Figure \ref{fig:vicosidad} shows the variation of viscosity and its components G' and G'' against the frequency of indentations. \setlength{\parskip}{0mm}
+	To calculate the damping, the complex viscosity, $\eta *$ was calculated, which was obtained from elastic modulus G' and loss modulus G''. Figure \ref{fig:vicosidad} shows the variation of viscosity and its components G' and G'' against the frequency of indentations. \setlength{\parskip}{0mm}
 	\begin{figure}[H]
 		\centering
 		\includesvg[width=1\textwidth]{figures/g_and_viscosity.svg}
 		\caption{Variation of viscosity and its components, elastic modulus G' and loss modulus G'' against the frequency of indentations.}
 		\label{fig:vicosidad}
 	\end{figure}
-	The values of the viscosity components G' and G'' were in the expected order of magnitude. In addition, the values of the loss component were higher than those of the elastic component, showing a viscoelastic material with a mostly viscous behaviour. 
+	The values of the viscosity components G' and G'' were in the expected order of magnitude. In addition, the values of the loss component were higher than those of the elastic component, showing a viscoelastic material with a mostly viscous behaviour. Moreover, it was observed that the viscosity decreases as the frequency used in the indentation increases. This behaviour is called shear-thinning behaviour or pseudoplastic flow behaviour and it is characteristic of polymer solutions \cite{mezger2020rheology} and it was the behaviour that was expected for the nucleus interior. 
 	
-	Moreover, it was observed that the viscosity decreases as the frequency used in the indentation increases. This behaviour is called shear-thinning behaviour or pseudoplastic flow behaviour and it is characteristic of polymer solutions \cite{mezger2020rheology} and it was the behaviour that was expected for the nucleus interior. 
-	
-	\newpage
-	
-	It was determined that the viscosity value of the nuclear interior was not the real one, as a microrheology approach has been used in which the bead with which the indentations are made must be located inside the nucleus and the bead used in this experiment was located outside of the nucleus while it was making indentations to the nucleus. However, the calculated viscosity has shown the expected behaviour of the nucleus, and as the exact value was not necessary but a close approximation, it could be used as a starting point in the extended Kalman filter algorithm. It would also be interesting to perform experiments in which the real value of the complex viscosity inside the cell nucleus (active microreology) is determined and to study if there is a relationship between both values, so that the value obtained in the exterior with some corrections can be used. It is important to find a way to correct the complex viscosity value as the aim is to determine the mechanical properties of a cell nucleus in real time using the mechanical waves propagated with the beads in the optical tweezers without having to perform active microrheology.
+		\setlength{\parskip}{4mm}
+		
+	It was determined that the viscosity value of the nuclear interior was not the real one, as a microrheology approach has been used in which the bead with which the indentations are made must be located inside the nucleus and the bead used in this experiment was outside. However, the calculated viscosity has shown the expected behaviour of the nucleus, and as the exact value was not necessary but a close approximation, it could be used as a starting point in the extended Kalman filter algorithm. It would also be interesting to perform experiments in which the real value of the complex viscosity inside the cell nucleus (active microreology) is determined and study if there is a relationship between both values, so that the value obtained in the exterior with some corrections could be used. It is important to find a way to correct the complex viscosity value as the aim is to determine the mechanical properties of a cell nucleus in real time using the mechanical waves propagated with the beads in the optical tweezers without having to perform active microrheology.
 	
 	
 	\newpage
@@ -909,18 +914,18 @@
 	\rhead{Discussion}
 	\section{Discussion}
 	
-	The final purpose of this work was to develop a sensor to monitor the mechanical properties of the cell nucleus, and for this purpose the work was divided into its components. 
+	The final purpose of this work was to develop a sensor to monitor the mechanical properties of the cell nucleus, and for this purpose the work was divided into three components. 
 	
 	\setlength{\parskip}{4mm}
 	
-	Firstly, the experimental component has been optimised to work with isolated Jurkat cell nuclei, however, to work with HeLa cells further investigation was necessary. First, the internalisation of beads into cells was not optimised, although some were successfully phagocytosed. Second, it was not possible to obtain experimental indentation data in HeLa cells, whereas in Jurkat cell nuclei it was. It is necessary to investigate whether other beads can be better trapped by the optical tweezers to achieve a higher indentation movement and closer approach to the nucleus.
+	Firstly, the experimental component has been optimised to work with isolated Jurkat cell nuclei, however, to work with HeLa cells further investigation was necessary. The internalisation of beads into cells was not optimised, although some were successfully phagocytosed. Moreover, it was not possible to obtain experimental indentation data in HeLa cells, whereas in Jurkat cell nuclei it was. It was necessary to investigate whether other beads could be better trapped by the optical tweezers to achieve a higher indentation movement and closer approach to the nucleus.
 	
-	Second, the computational component has been finalised so that noise can be removed from the data and parameter estimation can be performed with the extended Kalman filter. The performance of these algorithms has been tested on simulated data, which has allowed studies of the system. As a result, this has shown that the use of a one-dimensional polar wave model does not represent a loss of information compared to a two-dimensional Cartesian wave model. 
-	In addition, it has been proved the importance of using initial parameter values that are as close as possible to the real ones, because the extended Kalman filter approximates them if they are close to the real value.
+	Second, the computational component has been finalised so that noise was removed from the data and parameter estimation was performed with the extended Kalman filter. The performance of these algorithms has been tested on simulated data, which has allowed studies of the system. As a result, this has shown that the use of a one-dimensional polar wave model did not represent a loss of information compared to a two-dimensional Cartesian wave model. 
+	In addition, it has been proved the importance of using initial parameter values that are as close as possible to the real ones, because the extended Kalman filter approached them if they were close to the real value.
 	
-	Finally, the validation of the sensor could not be finalised, but the introduction of the real data into the computational part has started, as they have been pre-processed. The final part that could not be reached was the input of the filtered data into the extended Kalman filter with the actual values. It remained to be determined the Young's modulus value that was being obtained with another project and whether the viscosity value obtained in this work was useful or needed correction, which could be achieved in an active microrheology study. 
+	Finally, the validation of the sensor could not be completed, but the introduction of the real data into the computational part has started, as they have been pre-processed. The final part that could not be reached was the input of the filtered data into the extended Kalman filter with the actual values. It remained to be determined the Young's modulus value that was being obtained with another project and whether the viscosity value obtained in this work was useful or needed correction, which could be achieved in an active microrheology study. 
 	
-	Although the development of the sensor was not completed, some results have been obtained in the project that have provided a significant breakthrough in the development of the sensor, which is expected to be validated in the near future.
+	Although the development of the sensor was not completed, some results have been obtained in the project that have provided a significant breakthrough in the development of the sensor, which was expected to be validated in the near future.
 	
 	\newpage
 	\setlength{\parskip}{0mm}
@@ -938,6 +943,7 @@
 	% APPENDIX %
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\setlength{\parskip}{0mm}
+	\appendix
 	\section{Appendix}
 	
 	\subsection{Buffer A recipe}
